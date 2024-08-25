@@ -38,11 +38,12 @@ namespace Stock_Management_System
 
         }
 
-        private void btnSingup_Click(object sender, EventArgs e)
+        public void btnSingup_Click(object sender, EventArgs e)
         {
             userName = txtUserName.Text;
             password = txtPassword.Text;
 
+                Form1 form1 = new Form1();
             SqlConnection sqlCon = new SqlConnection(connectionString);
             try
             {
@@ -52,35 +53,45 @@ namespace Stock_Management_System
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
+
                 if (dt.Rows.Count > 0)
                 {
                     userName = txtUserName.Text;
                     password = txtPassword.Text;
+
                     if (userName == "admin123")
                     {
-                    Form1 form1 = new Form1();
+                   
+                       
                     this.Hide();
                     form1.ShowDialog();
+                     
 
-                    }else if(userName == "user123")
-                    {
-                        page1 page1 = new page1();
-                        this.Hide();
-                        page1.Show();
                     }
-                    
+                    else if(userName == "user123")
+                    {
+                       
+                        this.Hide();
+                        form1.Show();
+                    }
+
+                   
+
                 }
                 else
                 {
                     MessageBox.Show("Invalid details","error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     Clear();
                 }
-            }catch (Exception ex)
+               
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             finally
             {
+                form1.FormClosed += (s, args) => this.Close();
                 sqlCon.Close();
             }
             

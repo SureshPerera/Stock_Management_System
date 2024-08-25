@@ -17,14 +17,14 @@ namespace Stock_Management_System
             InitializeComponent();
         }
 
-        private void btnPage2_Click(object sender, EventArgs e)
+        public void btnPage2_Click(object sender, EventArgs e)
         {
             page2 page2 = new page2();
             Form1 form1 = new Form1();
 
             page2.Show();
             this.Hide();
-
+            
             page2.FormClosed += (s, args) => this.Close();
         }
 
@@ -38,6 +38,24 @@ namespace Stock_Management_System
             page1.FormClosed += (s, args) => this.Close();
            
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            formLoging FL = new formLoging();
+
+
+           
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

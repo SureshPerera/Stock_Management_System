@@ -129,5 +129,11 @@
   <ItemGroup>
     <None Include="Resources\Twitter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory-product1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventry.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
