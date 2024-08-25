@@ -120,5 +120,14 @@
   <ItemGroup>
     <None Include="Resources\Eye.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App Symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook Circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
