@@ -135,5 +135,92 @@
   <ItemGroup>
     <None Include="Resources\Inventry.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashbord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Population Return yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Population Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchace yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trolley yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashbord yello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashbord new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supplier yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receipt Terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Total Sales yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Total Sales new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invoice yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashbord green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Total Sales green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supplier green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card Payment greeen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppliar return greeen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invoice green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill greeen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trolley green.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,10 +42,16 @@ namespace Stock_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            formLoging FL = new formLoging();
+           btnDashbord_Click(sender, e);
+           btnDashbord.Select();
+            btnDashbord.Focus();
 
-
-           
+            pnlsaleOverview.Visible = false;
+            pnlpurchasOverview.Visible = false;
+            pnlInventorySummary.Visible = false;
+            pnlNoOfUsers.Visible = false;
+            pnlsaleOverview.Visible = false;
+            pnlProductDetailes.Visible = false;
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -54,6 +60,114 @@ namespace Stock_Management_System
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImageSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDashbord_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                txtmainSection.Text = "Dashbord";
+                pictureboxMainSection.Image = imgbtnDashbord.Image;
+                pnlsaleOverview.Show();
+                pnlpurchasOverview.Show();
+                pnlNoOfUsers.Show();
+                pnlProductDetailes.Show();
+                pnlInventorySummary.Show();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Inventory";
+                pictureboxMainSection.Image = imgbtnInventory.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPurchase_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Purchase";
+                pictureboxMainSection.Image = imgbtnPurchase.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnSupReturn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Supplies Returns";
+                pictureboxMainSection.Image = imgbtnSupReturn.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Invoice";
+                pictureboxMainSection.Image = imgbtnInvoice.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Sales";
+                pictureboxMainSection.Image = imgbtnSales.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtmainSection.Text = "Bills";
+                pictureboxMainSection.Image = imgbtnBills.Image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
