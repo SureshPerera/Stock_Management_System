@@ -31,6 +31,9 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnl1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnHome
@@ -65,7 +68,7 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(406, 175);
+            this.guna2TextBox1.Location = new System.Drawing.Point(353, 13);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -74,17 +77,39 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox1.TabIndex = 2;
             // 
+            // pnl1
+            // 
+            this.pnl1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnl1.Controls.Add(this.label1);
+            this.pnl1.Location = new System.Drawing.Point(43, 118);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(633, 241);
+            this.pnl1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
             // page2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1283, 703);
+            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnHome);
+            this.Location = new System.Drawing.Point(450, 150);
             this.Name = "page2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "page2";
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -94,5 +119,7 @@
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button button2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        public Guna.UI2.WinForms.Guna2Panel pnl1;
+        public System.Windows.Forms.Label label1;
     }
 }

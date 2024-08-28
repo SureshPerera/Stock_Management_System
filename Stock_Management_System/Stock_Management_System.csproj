@@ -222,5 +222,38 @@
   <ItemGroup>
     <None Include="Resources\Trolley green.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revenue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Low Price.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total suppliears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\will be recived.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quntity in hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel Order.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

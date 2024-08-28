@@ -63,6 +63,16 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _return {
+            get {
+                object obj = ResourceManager.GetObject("_return", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap App_Symbol {
             get {
                 object obj = ResourceManager.GetObject("App_Symbol", resourceCulture);
@@ -76,6 +86,16 @@ namespace Stock_Management_System.Properties {
         internal static System.Drawing.Bitmap bill_greeen {
             get {
                 object obj = ResourceManager.GetObject("bill_greeen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel_Order {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_Order", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +223,29 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Low_Price {
+            get {
+                object obj = ResourceManager.GetObject("Low_Price", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Population_Return {
             get {
                 object obj = ResourceManager.GetObject("Population_Return", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profit {
+            get {
+                object obj = ResourceManager.GetObject("profit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +263,49 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap purchas {
+            get {
+                object obj = ResourceManager.GetObject("purchas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quntity_in_hand {
+            get {
+                object obj = ResourceManager.GetObject("quntity_in_hand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Receipt_Terminal {
             get {
                 object obj = ResourceManager.GetObject("Receipt_Terminal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap revenue {
+            get {
+                object obj = ResourceManager.GetObject("revenue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sale {
+            get {
+                object obj = ResourceManager.GetObject("sale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +353,16 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap total_customers {
+            get {
+                object obj = ResourceManager.GetObject("total_customers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Total_Sales_green {
             get {
                 object obj = ResourceManager.GetObject("Total_Sales_green", resourceCulture);
@@ -286,6 +376,16 @@ namespace Stock_Management_System.Properties {
         internal static System.Drawing.Bitmap Total_Sales_new {
             get {
                 object obj = ResourceManager.GetObject("Total_Sales_new", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap total_suppliears {
+            get {
+                object obj = ResourceManager.GetObject("total_suppliears", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +416,16 @@ namespace Stock_Management_System.Properties {
         internal static System.Drawing.Bitmap Twitter {
             get {
                 object obj = ResourceManager.GetObject("Twitter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap will_be_recived {
+            get {
+                object obj = ResourceManager.GetObject("will_be_recived", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -124,6 +124,9 @@
   <data name="bill_greeen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill greeen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancel_Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel Order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Card_Payment_greeen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card Payment greeen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,14 +163,32 @@
   <data name="Invoice_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Invoice green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Low_Price" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Low Price.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Population_Return" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Population Return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="purchace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\purchace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="purchas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quntity_in_hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quntity in hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Receipt_Terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Receipt Terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="revenue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\revenue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +202,17 @@
   <data name="Supplier_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Supplier green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="total_customers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\total customers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Total_Sales_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Total Sales green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Total_Sales_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Total Sales new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="total_suppliears" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\total suppliears.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Trolley" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trolley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,5 +222,11 @@
   </data>
   <data name="Twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="will_be_recived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\will be recived.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
