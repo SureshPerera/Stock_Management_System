@@ -98,7 +98,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
-                page2.Hide();
+                //page2.Hide();
 
                 //update data
                 //sale overview
@@ -156,7 +156,7 @@ namespace Stock_Management_System
 
                 
 
-                page2.Show();
+                //page2.Show();
                 
 
             }
@@ -313,6 +313,12 @@ namespace Stock_Management_System
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnImgAddUsers_Click(object sender, EventArgs e)
+        {
+            UserSingUp userSingUp = new UserSingUp();
+            userSingUp.Show();
         }
 
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)

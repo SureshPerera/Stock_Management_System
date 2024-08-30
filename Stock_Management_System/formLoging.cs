@@ -47,6 +47,9 @@ namespace Stock_Management_System
             SqlConnection sqlCon = new SqlConnection(connectionString);
             try
             {
+                SqlCommand cmd = new SqlCommand("CheckPassword",sqlCon);
+                cmd.CommandType = CommandType.Text;
+
                 string quarry = "SELECT * FROM Passwords WHERE UserName ='" + userName + "' AND Passwords ='" + password + "' ";
                 SqlDataAdapter sda = new SqlDataAdapter(quarry,sqlCon);
 
@@ -116,6 +119,51 @@ namespace Stock_Management_System
         {
             txtPassword.Text = txtUserName.Text = "";
             txtUserName.Select();
+        }
+
+        private void lblSingup_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblTermOfUse_Sizechange(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void lblTermOfUse_MouseHover(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Red;
+            label6.Font = new Font(label6.Font.FontFamily, 10, FontStyle.Bold);
+        }
+
+        private void lblTermOfUse_MouseLeave(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Blue;
+            label6.Font = new Font(label6.Font.FontFamily, 8, FontStyle.Bold);
+
+
+        }
+
+        private void lblSingup_MouseHover(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblSingup_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

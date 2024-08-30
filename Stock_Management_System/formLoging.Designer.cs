@@ -104,6 +104,7 @@
             this.btnLoging.FillColor = System.Drawing.Color.MediumBlue;
             this.btnLoging.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnLoging.ForeColor = System.Drawing.Color.White;
+            this.btnLoging.HoverState.FillColor = System.Drawing.Color.Blue;
             this.btnLoging.Location = new System.Drawing.Point(56, 307);
             this.btnLoging.Name = "btnLoging";
             this.btnLoging.Size = new System.Drawing.Size(329, 58);
@@ -116,7 +117,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(147, 485);
+            this.label7.Location = new System.Drawing.Point(167, 489);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 17);
             this.label7.TabIndex = 2;
@@ -134,13 +135,16 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Term of use ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.MouseLeave += new System.EventHandler(this.lblTermOfUse_MouseLeave);
+            this.label6.MouseHover += new System.EventHandler(this.lblTermOfUse_MouseHover);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(65, 385);
+            this.label5.Location = new System.Drawing.Point(72, 385);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(195, 17);
             this.label5.TabIndex = 2;
@@ -176,7 +180,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(154, 64);
+            this.label4.Location = new System.Drawing.Point(174, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 37);
             this.label4.TabIndex = 5;
@@ -205,15 +209,15 @@
             this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
             this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
             this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgFb.ImageRotate = 0F;
-            this.btnImgFb.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgFb.ImageSize = new System.Drawing.Size(30, 30);
             this.btnImgFb.Location = new System.Drawing.Point(309, 519);
             this.btnImgFb.Name = "btnImgFb";
             this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgFb.Size = new System.Drawing.Size(76, 58);
             this.btnImgFb.TabIndex = 9;
             this.btnImgFb.UseTransparentBackground = true;
@@ -225,15 +229,15 @@
             this.btnImgApple.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
             this.btnImgApple.HoverState.ImageRotate = 2F;
-            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
             this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgApple.ImageRotate = 0F;
-            this.btnImgApple.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgApple.ImageSize = new System.Drawing.Size(30, 30);
             this.btnImgApple.Location = new System.Drawing.Point(191, 519);
             this.btnImgApple.Name = "btnImgApple";
             this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgApple.Size = new System.Drawing.Size(76, 58);
             this.btnImgApple.TabIndex = 9;
             this.btnImgApple.UseTransparentBackground = true;
@@ -245,15 +249,15 @@
             this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
             this.btnImgSwiter.HoverState.ImageRotate = 2F;
-            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
             this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgSwiter.ImageRotate = 0F;
-            this.btnImgSwiter.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgSwiter.ImageSize = new System.Drawing.Size(30, 30);
             this.btnImgSwiter.Location = new System.Drawing.Point(56, 519);
             this.btnImgSwiter.Name = "btnImgSwiter";
             this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(37, 37);
             this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
             this.btnImgSwiter.TabIndex = 9;
             this.btnImgSwiter.UseTransparentBackground = true;
@@ -285,6 +289,7 @@
             this.txtPassword.Size = new System.Drawing.Size(329, 58);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // guna2PictureBox1
             // 
@@ -309,6 +314,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formLoging";
