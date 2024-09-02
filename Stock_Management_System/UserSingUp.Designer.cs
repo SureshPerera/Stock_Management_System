@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnImgFb = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImgApple = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImgSwiter = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSingup = new Guna.UI2.WinForms.Guna2Button();
+            this.txtPasswordCon = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,12 +43,7 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnImgFb = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImgApple = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImgSwiter = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPasswordCon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,90 @@
             this.guna2Panel1.TabIndex = 4;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // btnImgFb
+            // 
+            this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgFb.ImageRotate = 0F;
+            this.btnImgFb.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgFb.Location = new System.Drawing.Point(300, 596);
+            this.btnImgFb.Name = "btnImgFb";
+            this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.Size = new System.Drawing.Size(76, 58);
+            this.btnImgFb.TabIndex = 9;
+            this.btnImgFb.UseTransparentBackground = true;
+            // 
+            // btnImgApple
+            // 
+            this.btnImgApple.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgApple.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgApple.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.HoverState.ImageRotate = 2F;
+            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgApple.ImageRotate = 0F;
+            this.btnImgApple.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgApple.Location = new System.Drawing.Point(182, 596);
+            this.btnImgApple.Name = "btnImgApple";
+            this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.Size = new System.Drawing.Size(76, 58);
+            this.btnImgApple.TabIndex = 9;
+            this.btnImgApple.UseTransparentBackground = true;
+            // 
+            // btnImgSwiter
+            // 
+            this.btnImgSwiter.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.HoverState.ImageRotate = 2F;
+            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgSwiter.ImageRotate = 0F;
+            this.btnImgSwiter.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgSwiter.Location = new System.Drawing.Point(47, 596);
+            this.btnImgSwiter.Name = "btnImgSwiter";
+            this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
+            this.btnImgSwiter.TabIndex = 9;
+            this.btnImgSwiter.UseTransparentBackground = true;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
+            this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.txtPassword.Location = new System.Drawing.Point(56, 344);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(329, 58);
+            this.txtPassword.TabIndex = 6;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
             // btnSingup
             // 
             this.btnSingup.Animated = true;
@@ -92,6 +176,33 @@
             this.btnSingup.TabIndex = 8;
             this.btnSingup.Text = "Sing up";
             this.btnSingup.Click += new System.EventHandler(this.btnSingup_Click);
+            // 
+            // txtPasswordCon
+            // 
+            this.txtPasswordCon.BackColor = System.Drawing.Color.Transparent;
+            this.txtPasswordCon.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPasswordCon.BorderRadius = 8;
+            this.txtPasswordCon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPasswordCon.DefaultText = "";
+            this.txtPasswordCon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPasswordCon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPasswordCon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPasswordCon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPasswordCon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPasswordCon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPasswordCon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPasswordCon.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
+            this.txtPasswordCon.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.txtPasswordCon.Location = new System.Drawing.Point(56, 419);
+            this.txtPasswordCon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPasswordCon.Name = "txtPasswordCon";
+            this.txtPasswordCon.PasswordChar = '●';
+            this.txtPasswordCon.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPasswordCon.PlaceholderText = "Conform Password";
+            this.txtPasswordCon.SelectedText = "";
+            this.txtPasswordCon.Size = new System.Drawing.Size(329, 58);
+            this.txtPasswordCon.TabIndex = 6;
+            this.txtPasswordCon.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -239,133 +350,23 @@
             this.label4.Text = "Add New User";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ControlBox1
+            // btnControlBox1
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderRadius = 20;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.MediumBlue;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(-1, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(57, 50);
-            this.guna2ControlBox1.TabIndex = 5;
-            // 
-            // btnImgFb
-            // 
-            this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgFb.ImageRotate = 0F;
-            this.btnImgFb.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnImgFb.Location = new System.Drawing.Point(300, 596);
-            this.btnImgFb.Name = "btnImgFb";
-            this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgFb.Size = new System.Drawing.Size(76, 58);
-            this.btnImgFb.TabIndex = 9;
-            this.btnImgFb.UseTransparentBackground = true;
-            // 
-            // btnImgApple
-            // 
-            this.btnImgApple.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgApple.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgApple.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.HoverState.ImageRotate = 2F;
-            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgApple.ImageRotate = 0F;
-            this.btnImgApple.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnImgApple.Location = new System.Drawing.Point(182, 596);
-            this.btnImgApple.Name = "btnImgApple";
-            this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgApple.Size = new System.Drawing.Size(76, 58);
-            this.btnImgApple.TabIndex = 9;
-            this.btnImgApple.UseTransparentBackground = true;
-            // 
-            // btnImgSwiter
-            // 
-            this.btnImgSwiter.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.HoverState.ImageRotate = 2F;
-            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgSwiter.ImageRotate = 0F;
-            this.btnImgSwiter.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnImgSwiter.Location = new System.Drawing.Point(47, 596);
-            this.btnImgSwiter.Name = "btnImgSwiter";
-            this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
-            this.btnImgSwiter.TabIndex = 9;
-            this.btnImgSwiter.UseTransparentBackground = true;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPassword.BorderRadius = 8;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
-            this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.txtPassword.Location = new System.Drawing.Point(56, 344);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(329, 58);
-            this.txtPassword.TabIndex = 6;
-            this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // txtPasswordCon
-            // 
-            this.txtPasswordCon.BackColor = System.Drawing.Color.Transparent;
-            this.txtPasswordCon.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPasswordCon.BorderRadius = 8;
-            this.txtPasswordCon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPasswordCon.DefaultText = "";
-            this.txtPasswordCon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPasswordCon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPasswordCon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPasswordCon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPasswordCon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPasswordCon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPasswordCon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPasswordCon.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
-            this.txtPasswordCon.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.txtPasswordCon.Location = new System.Drawing.Point(56, 419);
-            this.txtPasswordCon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPasswordCon.Name = "txtPasswordCon";
-            this.txtPasswordCon.PasswordChar = '●';
-            this.txtPasswordCon.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPasswordCon.PlaceholderText = "Conform Password";
-            this.txtPasswordCon.SelectedText = "";
-            this.txtPasswordCon.Size = new System.Drawing.Size(329, 58);
-            this.txtPasswordCon.TabIndex = 6;
-            this.txtPasswordCon.UseSystemPasswordChar = true;
+            this.btnControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.btnControlBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.btnControlBox1.BorderRadius = 20;
+            this.btnControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.btnControlBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnControlBox1.HoverState.IconColor = System.Drawing.Color.Red;
+            this.btnControlBox1.IconColor = System.Drawing.Color.MediumBlue;
+            this.btnControlBox1.Location = new System.Drawing.Point(-1, 0);
+            this.btnControlBox1.Name = "btnControlBox1";
+            this.btnControlBox1.Size = new System.Drawing.Size(57, 50);
+            this.btnControlBox1.TabIndex = 5;
+            this.btnControlBox1.Click += new System.EventHandler(this.btnControlBox1_click);
             // 
             // UserSingUp
             // 
@@ -373,7 +374,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(515, 739);
-            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.btnControlBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -404,6 +405,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox btnControlBox1;
     }
 }

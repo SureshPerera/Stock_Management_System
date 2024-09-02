@@ -22,18 +22,22 @@ namespace Stock_Management_System
             InitializeComponent();
         }
 
+        private void btnControlBox1_click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void btnSingup_Click(object sender, EventArgs e)
         {
             try
             {
                 
 
-                fname = Convert.ToString( txtFirstName.Text);
-                lname = Convert.ToString(txtLastName.Text);
-                address = txtEmail.Text;
-                userName = txtUsername.Text;
-                password = txtPassword.Text;
+                fname = txtFirstName.Text;
+                lname = txtLastName.Text;
                 email = txtEmail.Text;
+                userName = txtUsername.Text;
+                password = txtPassword.Text;      
                 conPassword = txtPasswordCon.Text;
 
                 if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(conPassword))
@@ -52,7 +56,7 @@ namespace Stock_Management_System
                         sqlCon.Open();
                         SqlCommand cmd = new SqlCommand("CheckPassword", sqlCon);
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "select * from Passwords where UserName = '" + userName + "'";
+                        cmd.CommandText = "select * from Passwords WHERE UserName = '" + userName + "'";
                         cmd.ExecuteNonQuery();
                         DataTable dataTable = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -86,6 +90,12 @@ namespace Stock_Management_System
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Form1 form1 = new Form1();
+                form1.FormClosed += (s, args) => this.Close();
+                
             }
         }
 

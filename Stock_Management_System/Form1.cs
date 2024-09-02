@@ -17,6 +17,14 @@ namespace Stock_Management_System
         double totalSale, revenue, saleCost, profit, noOfPurchase, purchaseCost, canselOrder, returns, quntityInHand, willBeRecived, lowStockItems, itemGroup, noOfItem, totalCustomer, totalSupplier;
         page2 page2 = new page2();
 
+        bool a;
+        bool b;
+        bool c;
+
+        inventry inventry = new inventry();
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -58,6 +66,8 @@ namespace Stock_Management_System
             pnlNoOfUsers.Visible = false;
             pnlsaleOverview.Visible = false;
             pnlProductDetailes.Visible = false;
+
+         
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -81,7 +91,36 @@ namespace Stock_Management_System
         {
             try
             {
+                bool a = true;
+                bool b = false;
+
+                //page2.Hide();
+
+                //update data
+
+
                 
+            
+                    pressDashbordbtn();
+
+
+
+                
+               
+                   
+
+               
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void pressDashbordbtn()
+        {
+            
                 txtmainSection.Text = "Dashbord";
                 pictureboxMainSection.Image = imgbtnDashbord.Image;
                 pnlsaleOverview.Show();
@@ -98,11 +137,9 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
-                //page2.Hide();
 
-                //update data
                 //sale overview
-                txtTotalSale.Text = totalSale.ToString("Rs"+"250000");
+                txtTotalSale.Text = totalSale.ToString("Rs" + "250000");
                 txtSaleCost.Text = saleCost.ToString("Rs" + "100000");
                 txtRevenue.Text = revenue.ToString("Rs" + "500000");
                 txtProfit.Text = profit.ToString("Rs" + "200000");
@@ -124,6 +161,24 @@ namespace Stock_Management_System
                 txtTotalCustomer.Text = totalCustomer.ToString("1.8K");
                 txtSuppliers.Text = totalSupplier.ToString("30");
 
+            inventry.Hide();
+        }
+        public void btnInventory_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                    pressInventrybtn();
+
+                
+                
+                    
+                    
+                  
+
+                
+
+                //page2.Show();
+
 
             }
             catch (Exception ex)
@@ -132,10 +187,9 @@ namespace Stock_Management_System
             }
         }
 
-        private void btnInventory_Click(object sender, EventArgs e)
+        void pressInventrybtn()
         {
-            try
-            {
+          
                 pnlsaleOverview.Hide();
                 pnlpurchasOverview.Hide();
                 pnlNoOfUsers.Hide();
@@ -154,18 +208,14 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
 
-                
+              
 
-                //page2.Show();
-                
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+               inventry.Show();
+               
+               
         }
 
+        
         private void btnPurchase_Click(object sender, EventArgs e)
         {
             try

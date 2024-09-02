@@ -64,21 +64,23 @@ namespace Stock_Management_System
 
                     if (userName == "admin123")
                     {
-                   
-                       
-                    this.Hide();
-                    form1.ShowDialog();
-                     
+
+                        this.Hide();
+                        form1.ShowDialog();
 
                     }
-                    else if(userName == "user123")
+                    else if (userName == "user123")
                     {
-                       
                         this.Hide();
                         form1.Show();
+                        form1.btnImgAddUsers.Enabled = false;
                     }
-
-                   
+                    else if (userName == "suresh123")
+                    {
+                        this.Hide();
+                        form1.Show();
+                        form1.btnImgAddUsers.Enabled=false;
+                    }
 
                 }
                 else
