@@ -98,18 +98,8 @@ namespace Stock_Management_System
 
                 //update data
 
-
-                
-            
                     pressDashbordbtn();
 
-
-
-                
-               
-                   
-
-               
 
             }
             catch (Exception ex)
@@ -128,6 +118,7 @@ namespace Stock_Management_System
                 pnlNoOfUsers.Show();
                 pnlProductDetailes.Show();
                 pnlInventorySummary.Show();
+
                 SelectButton(btnDashbord);
                 SelectButtonClear(btnInventory);
                 SelectButtonClear(btnBills);
@@ -137,6 +128,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
+                pnlInventry.Hide();
 
                 //sale overview
                 txtTotalSale.Text = totalSale.ToString("Rs" + "250000");
@@ -161,21 +153,13 @@ namespace Stock_Management_System
                 txtTotalCustomer.Text = totalCustomer.ToString("1.8K");
                 txtSuppliers.Text = totalSupplier.ToString("30");
 
-            inventry.Hide();
+                inventry.Hide();
         }
         public void btnInventory_Click(object sender, EventArgs e)
         {
             try
             { 
                     pressInventrybtn();
-
-                
-                
-                    
-                    
-                  
-
-                
 
                 //page2.Show();
 
@@ -207,12 +191,11 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
-
+                
+                pnlInventry.Show();
+                
               
 
-               inventry.Show();
-               
-               
         }
 
         
@@ -369,6 +352,11 @@ namespace Stock_Management_System
         {
             UserSingUp userSingUp = new UserSingUp();
             userSingUp.Show();
+        }
+
+        private void btnaddnewItem_click(object sender, EventArgs e)
+        {
+            inventry.Show();
         }
 
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)

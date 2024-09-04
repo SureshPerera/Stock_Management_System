@@ -279,5 +279,14 @@
   <ItemGroup>
     <None Include="Resources\Add User Male green.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Database black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Databases.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
