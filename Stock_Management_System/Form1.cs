@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Stock_Management_System
     {
         double totalSale, revenue, saleCost, profit, noOfPurchase, purchaseCost, canselOrder, returns, quntityInHand, willBeRecived, lowStockItems, itemGroup, noOfItem, totalCustomer, totalSupplier;
         page2 page2 = new page2();
-
+        string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         bool a;
         bool b;
         bool c;
@@ -67,7 +68,25 @@ namespace Stock_Management_System
             pnlsaleOverview.Visible = false;
             pnlProductDetailes.Visible = false;
 
-         
+            //no of item update 
+
+            string noOfItemquary = "SELECT SUM(CAST(Item_Code AS DECIMAL(10,2))) AS total FROM item WHERE ISNUMERIC(Item_Code) = 1";
+            using (SqlConnection sqlCon = new SqlConnection(connectionString))
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand(noOfItemquary, sqlCon);
+                object result = cmd.ExecuteNonQuery();
+
+              
+                if (result != DBNull.Value)
+                {
+                    decimal TotalNumOfItem = Convert.ToDecimal(result);
+                    txtNoOfItems.Text = TotalNumOfItem.ToString();                }
+                else
+                {
+                    txtNoOfItems.Text = "0";
+                }
+            }
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -147,7 +166,7 @@ namespace Stock_Management_System
                 //product details
                 txtLowStockItems.Text = lowStockItems.ToString("20");
                 txtItemGroup.Text = itemGroup.ToString("15");
-                txtNoOfItems.Text = noOfItem.ToString("270");
+                //txtNoOfItems.Text = noOfItem.ToString();
 
                 //No Of Users
                 txtTotalCustomer.Text = totalCustomer.ToString("1.8K");
@@ -357,6 +376,11 @@ namespace Stock_Management_System
         private void btnaddnewItem_click(object sender, EventArgs e)
         {
             inventry.Show();
+        }
+
+        private void txtNoOfItems_Click(object sender, EventArgs e)
+        {
+           
         }
 
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)

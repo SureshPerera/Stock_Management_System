@@ -81,6 +81,12 @@ namespace Stock_Management_System
                         form1.Show();
                         form1.btnImgAddUsers.Enabled=false;
                     }
+                    else if (userName == "anuki123")
+                    {
+                        this.Hide();
+                        form1.Show();
+                        form1.btnImgAddUsers.Enabled = false;
+                    }
 
                 }
                 else

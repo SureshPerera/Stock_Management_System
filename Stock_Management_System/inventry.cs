@@ -14,6 +14,7 @@ namespace Stock_Management_System
     public partial class inventry : Form
     {
         string sqlConnection = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        int id;
         public inventry()
         {
             InitializeComponent();
@@ -122,6 +123,22 @@ namespace Stock_Management_System
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            using (SqlConnection sqlCon = new SqlConnection(sqlConnection))
+            {
+                sqlCon.Open();
+                string quary = "DELETE FROM item WHERE Item_Id ='" + id+"'";
+                SqlCommand cmd = new SqlCommand(quary,sqlCon);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Item delete suscessfully");
+                sqlCon.Close();
+                showSqlInventryTable();
+            }
+        }
+
+        private void gridviewcellclick_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            id = Convert.ToInt32(row.Cells[0].Value);
 
         }
     }
