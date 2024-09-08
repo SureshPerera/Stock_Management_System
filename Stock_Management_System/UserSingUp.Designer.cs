@@ -43,7 +43,7 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -350,23 +350,23 @@
             this.label4.Text = "Add New User";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnControlBox1
+            // guna2ControlBox1
             // 
-            this.btnControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.btnControlBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.btnControlBox1.BorderRadius = 20;
-            this.btnControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.btnControlBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnControlBox1.HoverState.IconColor = System.Drawing.Color.Red;
-            this.btnControlBox1.IconColor = System.Drawing.Color.MediumBlue;
-            this.btnControlBox1.Location = new System.Drawing.Point(-1, 0);
-            this.btnControlBox1.Name = "btnControlBox1";
-            this.btnControlBox1.Size = new System.Drawing.Size(57, 50);
-            this.btnControlBox1.TabIndex = 5;
-            this.btnControlBox1.Click += new System.EventHandler(this.btnControlBox1_click);
+            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 15;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1, 1);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
+            this.guna2ControlBox1.TabIndex = 6;
             // 
             // UserSingUp
             // 
@@ -374,7 +374,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(515, 739);
-            this.Controls.Add(this.btnControlBox1);
+            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -405,6 +405,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2ControlBox btnControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

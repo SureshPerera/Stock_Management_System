@@ -81,7 +81,8 @@ namespace Stock_Management_System
                 if (result != DBNull.Value)
                 {
                     decimal TotalNumOfItem = Convert.ToDecimal(result);
-                    txtNoOfItems.Text = TotalNumOfItem.ToString();                }
+                    txtNoOfItems.Text = TotalNumOfItem.ToString();              
+                }
                 else
                 {
                     txtNoOfItems.Text = "0";
