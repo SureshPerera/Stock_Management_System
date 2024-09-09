@@ -148,7 +148,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
-                pnlInventry.Hide();
+                pnlmain.Hide();
 
                 //sale overview
                 txtTotalSale.Text = totalSale.ToString("Rs" + "250000");
@@ -199,6 +199,12 @@ namespace Stock_Management_System
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
+                btnImgPurchaseOrder.Hide();
+                
+                pnlmain.Show();
+                btnImgPurchaseOrder.Hide();
+                btnImgAddUsers.Show();
+                btnImgAddUsers.Location = new Point(16, 14);
 
                 txtmainSection.Text = "Inventory";
                 pictureboxMainSection.Image = imgbtnInventory.Image;
@@ -212,7 +218,6 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
                 
-                pnlInventry.Show();
                 
               
 
@@ -228,6 +233,11 @@ namespace Stock_Management_System
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
+                
+                pnlmain.Show();
+                btnaddnewItem.Hide();
+                btnImgPurchaseOrder.Show();
+                btnImgPurchaseOrder.Location = new Point(16, 14);
 
                 txtmainSection.Text = "Purchase";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
@@ -242,6 +252,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
+
+
             }
             catch (Exception ex)
             {
@@ -371,17 +383,24 @@ namespace Stock_Management_System
         private void btnImgAddUsers_Click(object sender, EventArgs e)
         {
             UserSingUp userSingUp = new UserSingUp();
-            userSingUp.Show();
+            userSingUp.ShowDialog();
         }
 
         private void btnaddnewItem_click(object sender, EventArgs e)
         {
-            inventry.Show();
+            inventry.ShowDialog();
         }
 
         private void txtNoOfItems_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnImgPurchaseOrder_click(object sender, EventArgs e)
+        {
+            purchace_list purchace_List = new purchace_list();
+            purchace_List.ShowDialog();
+
         }
 
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)

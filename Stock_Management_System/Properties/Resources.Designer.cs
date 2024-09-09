@@ -373,6 +373,16 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Shopping_Cart {
+            get {
+                object obj = ResourceManager.GetObject("Shopping Cart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap suppliar_return_greeen {
             get {
                 object obj = ResourceManager.GetObject("suppliar_return_greeen", resourceCulture);

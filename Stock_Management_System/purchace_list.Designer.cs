@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,6 +38,17 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
+            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product_name = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Product_discriptions = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,13 +56,9 @@
             this.product_Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unit_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPurchaseList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPurchaseList
@@ -116,6 +124,8 @@
             this.dgvPurchaseList.ThemeStyle.RowsStyle.Height = 24;
             this.dgvPurchaseList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPurchaseList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvPurchaseList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPurchaseList_cellContentClick);
+            this.dgvPurchaseList.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPurchaseList_cellleave);
             // 
             // btnAdd
             // 
@@ -182,51 +192,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(151, 22);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Purchase_date";
-            // 
-            // product_Id
-            // 
-            this.product_Id.HeaderText = "product_Id";
-            this.product_Id.MinimumWidth = 6;
-            this.product_Id.Name = "product_Id";
-            this.product_Id.Visible = false;
-            // 
-            // Product_name
-            // 
-            this.Product_name.HeaderText = "Product_name";
-            this.Product_name.MinimumWidth = 6;
-            this.Product_name.Name = "Product_name";
-            // 
-            // Product_discriptions
-            // 
-            this.Product_discriptions.HeaderText = "Product_discriptions";
-            this.Product_discriptions.MinimumWidth = 6;
-            this.Product_discriptions.Name = "Product_discriptions";
-            // 
-            // Dealer_name
-            // 
-            this.Dealer_name.HeaderText = "Dealer_name";
-            this.Dealer_name.MinimumWidth = 6;
-            this.Dealer_name.Name = "Dealer_name";
-            this.Dealer_name.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dealer_name.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // product_Qty
-            // 
-            this.product_Qty.HeaderText = "Product_Qty";
-            this.product_Qty.MinimumWidth = 6;
-            this.product_Qty.Name = "product_Qty";
-            // 
-            // unit_price
-            // 
-            this.unit_price.HeaderText = "Unit_Price";
-            this.unit_price.MinimumWidth = 6;
-            this.unit_price.Name = "unit_price";
-            // 
-            // total_price
-            // 
-            this.total_price.HeaderText = "Total_price";
-            this.total_price.MinimumWidth = 6;
-            this.total_price.Name = "total_price";
             // 
             // guna2HtmlLabel3
             // 
@@ -324,17 +289,113 @@
             this.guna2HtmlLabel4.Text = "Purchase Order";
             this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
+            // inventry_Management_SystemDataSet
+            // 
+            this.inventry_Management_SystemDataSet.DataSetName = "Inventry_Management_SystemDataSet";
+            this.inventry_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.inventry_Management_SystemDataSet;
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnaddnewItem
+            // 
+            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnaddnewItem.ImageRotate = 0F;
+            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnaddnewItem.Location = new System.Drawing.Point(41, 50);
+            this.btnaddnewItem.Name = "btnaddnewItem";
+            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.Size = new System.Drawing.Size(62, 49);
+            this.btnaddnewItem.TabIndex = 14;
+            this.btnaddnewItem.UseTransparentBackground = true;
+            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(31, 97);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(111, 22);
+            this.guna2HtmlLabel5.TabIndex = 2;
+            this.guna2HtmlLabel5.Text = "Add New Item";
+            // 
+            // product_Id
+            // 
+            this.product_Id.HeaderText = "product_Id";
+            this.product_Id.MinimumWidth = 6;
+            this.product_Id.Name = "product_Id";
+            this.product_Id.Visible = false;
+            // 
+            // Product_name
+            // 
+            this.Product_name.DataPropertyName = "product_name";
+            this.Product_name.DataSource = this.itemBindingSource;
+            this.Product_name.DisplayMember = "Item_Name";
+            this.Product_name.HeaderText = "Product_name";
+            this.Product_name.MinimumWidth = 6;
+            this.Product_name.Name = "Product_name";
+            // 
+            // Product_discriptions
+            // 
+            this.Product_discriptions.DataPropertyName = "Item_Discription";
+            this.Product_discriptions.HeaderText = "Product_discriptions";
+            this.Product_discriptions.MinimumWidth = 6;
+            this.Product_discriptions.Name = "Product_discriptions";
+            // 
+            // Dealer_name
+            // 
+            this.Dealer_name.HeaderText = "Dealer_name";
+            this.Dealer_name.MinimumWidth = 6;
+            this.Dealer_name.Name = "Dealer_name";
+            this.Dealer_name.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dealer_name.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // product_Qty
+            // 
+            this.product_Qty.HeaderText = "Product_Qty";
+            this.product_Qty.MinimumWidth = 6;
+            this.product_Qty.Name = "product_Qty";
+            // 
+            // unit_price
+            // 
+            this.unit_price.HeaderText = "Unit_Price";
+            this.unit_price.MinimumWidth = 6;
+            this.unit_price.Name = "unit_price";
+            // 
+            // total_price
+            // 
+            this.total_price.HeaderText = "Total_price";
+            this.total_price.MinimumWidth = 6;
+            this.total_price.Name = "total_price";
+            // 
             // purchace_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1201, 530);
+            this.Controls.Add(this.btnaddnewItem);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2DateTimePicker2);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Button3);
@@ -345,7 +406,10 @@
             this.Name = "purchace_list";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "purchace_list";
+            this.Load += new System.EventHandler(this.purchace_list_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPurchaseList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,6 +422,17 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Inventry_Management_SystemDataSet inventry_Management_SystemDataSet;
+        private System.Windows.Forms.BindingSource itemBindingSource;
+        private Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter itemTableAdapter;
+        private Guna.UI2.WinForms.Guna2ImageButton btnaddnewItem;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Id;
         private System.Windows.Forms.DataGridViewComboBoxColumn Product_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Product_discriptions;
@@ -365,11 +440,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn unit_price;
         private System.Windows.Forms.DataGridViewTextBoxColumn total_price;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
     }
 }
