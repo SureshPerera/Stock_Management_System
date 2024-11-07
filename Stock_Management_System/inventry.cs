@@ -141,5 +141,10 @@ namespace Stock_Management_System
             id = Convert.ToInt32(row.Cells[0].Value);
 
         }
+
+        private void btnComboboxSelectCategory_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

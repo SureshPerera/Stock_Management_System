@@ -88,6 +88,7 @@ namespace Stock_Management_System
                     txtNoOfItems.Text = "0";
                 }
             }
+            pressDashbordbtn();
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -201,10 +202,10 @@ namespace Stock_Management_System
                 pnlInventorySummary.Hide();
                 btnImgPurchaseOrder.Hide();
                 
-                pnlmain.Show();
-                btnImgPurchaseOrder.Hide();
-                btnImgAddUsers.Show();
-                btnImgAddUsers.Location = new Point(16, 14);
+                //pnlmain.Show();
+                //btnImgPurchaseOrder.Hide();
+                //btnImgAddUsers.Show();
+                //btnImgAddUsers.Location = new Point(16, 14);
 
                 txtmainSection.Text = "Inventory";
                 pictureboxMainSection.Image = imgbtnInventory.Image;
@@ -218,12 +219,40 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSupReturn);
                 SelectButtonClear(btnInvoice);
                 
-                
+                inventryDashbord inventryDashbord = new inventryDashbord();
+                inventryDashbord.ShowDialog();
+            
               
 
         }
 
-        
+        void pressCategorybtn()
+        {
+
+            pnlsaleOverview.Hide();
+            pnlpurchasOverview.Hide();
+            pnlNoOfUsers.Hide();
+            pnlProductDetailes.Hide();
+            pnlInventorySummary.Hide();
+            btnImgPurchaseOrder.Hide();
+
+            txtmainSection.Text = "Item Category";
+            pictureboxMainSection.Image =  btnCategoryImg.Image;
+            SelectButton(btnCategory);
+            SelectButtonClear(btnInventory);
+            SelectButtonClear(btnDashbord);
+            SelectButtonClear(btnBills);
+            SelectButtonClear(btnSales);
+            SelectButtonClear(btnPurchase);
+            SelectButtonClear(btnSuppliers);
+            SelectButtonClear(btnCustomers);
+            SelectButtonClear(btnSupReturn);
+            SelectButtonClear(btnInvoice);
+
+            categoryDashbord category = new categoryDashbord();
+            category.ShowDialog();
+
+        }
         private void btnPurchase_Click(object sender, EventArgs e)
         {
             try
@@ -234,10 +263,10 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
                 
-                pnlmain.Show();
-                btnaddnewItem.Hide();
-                btnImgPurchaseOrder.Show();
-                btnImgPurchaseOrder.Location = new Point(16, 14);
+                //pnlmain.Show();
+                //btnaddnewItem.Hide();
+                //btnImgPurchaseOrder.Show();
+                //btnImgPurchaseOrder.Location = new Point(16, 14);
 
                 txtmainSection.Text = "Purchase";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
@@ -246,13 +275,15 @@ namespace Stock_Management_System
                 SelectButtonClear(btnInventory);
                 SelectButtonClear(btnBills);
                 SelectButtonClear(btnInvoice);
-
+                SelectButtonClear(btnCategory);
                 SelectButtonClear(btnSales);
                 
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
 
+                purchace_list purchace_List = new purchace_list();
+                purchace_List.ShowDialog();
 
             }
             catch (Exception ex)
@@ -282,6 +313,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnInvoice);
+                SelectButtonClear(btnCategory);
+
 
 
             }
@@ -312,6 +345,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
+                SelectButtonClear(btnCategory);
+
             }
             catch (Exception ex)
             {
@@ -340,6 +375,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
+                SelectButtonClear(btnCategory);
+
             }
             catch (Exception ex)
             {
@@ -368,6 +405,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
+                SelectButtonClear(btnCategory);
+
             }
             catch (Exception ex)
             {
@@ -401,6 +440,28 @@ namespace Stock_Management_System
             purchace_list purchace_List = new purchace_list();
             purchace_List.ShowDialog();
 
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCategory_click(object sender, EventArgs e)
+        {
+            try
+            {
+                pressCategorybtn();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)
@@ -449,6 +510,8 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
+                customerDashbord customerdashbord = new customerDashbord();
+                customerdashbord.ShowDialog();
                 txtmainSection.Text = "Customer";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
                 SelectButton(btnCustomers);
@@ -460,6 +523,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSales);
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnSupReturn);
+                SelectButtonClear(btnCategory);
+
             }
             catch (Exception ex)
             {
@@ -489,6 +554,11 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSales);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnSupReturn);
+                SelectButtonClear(btnCategory);
+
+
+                suppliersDashbord suppliersDashbord = new suppliersDashbord();
+                suppliersDashbord.ShowDialog();
             }
             catch (Exception ex)
             {

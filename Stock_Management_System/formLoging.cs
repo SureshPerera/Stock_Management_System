@@ -67,6 +67,8 @@ namespace Stock_Management_System
 
                         this.Hide();
                         form1.ShowDialog();
+                        form1.pnlUser.Visible = false;
+                        form1.lblAdmin.Text = "User";
 
                     }
                     else if (userName == "user123")
@@ -74,18 +76,29 @@ namespace Stock_Management_System
                         this.Hide();
                         form1.Show();
                         form1.btnImgAddUsers.Enabled = false;
+                        form1.pnladmin.Visible = false;
+                        form1.pnlUser.Location = new Point(932, 7);
+                       
                     }
                     else if (userName == "suresh123")
                     {
                         this.Hide();
                         form1.Show();
                         form1.btnImgAddUsers.Enabled=false;
+                        form1.picBoxAdmin.Visible = false;
+                        form1.lblAdmin.Visible = false;
+                        form1.picBoxUser.Location = new Point(897, 9);
+                        form1.lblUser.Location = new Point(954, 20);
                     }
                     else if (userName == "anuki123")
                     {
                         this.Hide();
                         form1.Show();
                         form1.btnImgAddUsers.Enabled = false;
+                        form1.picBoxAdmin.Enabled = false;
+                        form1.lblAdmin.Visible = false;
+                        form1.picBoxUser.Location = new Point(897, 9);
+                        form1.lblUser.Location = new Point(954, 20);
                     }
 
                 }

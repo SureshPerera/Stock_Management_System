@@ -52,6 +52,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewCustomer.Designer.cs">
+      <DependentUpon>addNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewSuppliers.Designer.cs">
+      <DependentUpon>AddNewSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categoryDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoryDashbord.Designer.cs">
+      <DependentUpon>categoryDashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerDashbord.Designer.cs">
+      <DependentUpon>customerDashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,10 +100,21 @@
     <Compile Include="inventry.Designer.cs">
       <DependentUpon>inventry.cs</DependentUpon>
     </Compile>
+    <Compile Include="inventryDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventryDashbord.Designer.cs">
+      <DependentUpon>inventryDashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventry_Management_SystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Inventry_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventry_Management_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventry_Management_SystemDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="page1.cs">
       <SubType>Form</SubType>
@@ -95,12 +136,33 @@
     <Compile Include="purchace_list.Designer.cs">
       <DependentUpon>purchace_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="suppliersDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suppliersDashbord.Designer.cs">
+      <DependentUpon>suppliersDashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSingUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserSingUp.Designer.cs">
       <DependentUpon>UserSingUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addNewCustomer.resx">
+      <DependentUpon>addNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewSuppliers.resx">
+      <DependentUpon>AddNewSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categoryDashbord.resx">
+      <DependentUpon>categoryDashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerDashbord.resx">
+      <DependentUpon>customerDashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="inventry.resx">
       <DependentUpon>inventry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventryDashbord.resx">
+      <DependentUpon>inventryDashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="page1.resx">
       <DependentUpon>page1.cs</DependentUpon>
@@ -129,6 +194,9 @@
     <EmbeddedResource Include="purchace_list.resx">
       <DependentUpon>purchace_list.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="suppliersDashbord.resx">
+      <DependentUpon>suppliersDashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserSingUp.resx">
       <DependentUpon>UserSingUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +210,17 @@
     </None>
     <None Include="Inventry_Management_SystemDataSet.xss">
       <DependentUpon>Inventry_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Inventry_Management_SystemDataSet1.xsc">
+      <DependentUpon>Inventry_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Inventry_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Inventry_Management_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Inventry_Management_SystemDataSet1.xss">
+      <DependentUpon>Inventry_Management_SystemDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -315,6 +394,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Shopping Cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddSupplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Categorycolour.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

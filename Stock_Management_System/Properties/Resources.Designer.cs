@@ -123,6 +123,26 @@ namespace Stock_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddSupplier {
+            get {
+                object obj = ResourceManager.GetObject("AddSupplier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap admin_color {
+            get {
+                object obj = ResourceManager.GetObject("admin color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap App_Symbol {
             get {
                 object obj = ResourceManager.GetObject("App_Symbol", resourceCulture);
@@ -156,6 +176,26 @@ namespace Stock_Management_System.Properties {
         internal static System.Drawing.Bitmap Card_Payment_greeen {
             get {
                 object obj = ResourceManager.GetObject("Card_Payment_greeen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category {
+            get {
+                object obj = ResourceManager.GetObject("Category", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Categorycolour {
+            get {
+                object obj = ResourceManager.GetObject("Categorycolour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +316,36 @@ namespace Stock_Management_System.Properties {
         internal static System.Drawing.Bitmap Low_Price {
             get {
                 object obj = ResourceManager.GetObject("Low_Price", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Male_User {
+            get {
+                object obj = ResourceManager.GetObject("Male User", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notification {
+            get {
+                object obj = ResourceManager.GetObject("Notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notification_green {
+            get {
+                object obj = ResourceManager.GetObject("Notification green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

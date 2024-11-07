@@ -42,6 +42,10 @@
             this.btnSupReturn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlUser = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnladmin = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblAdmin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtmainSection = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -96,8 +100,9 @@
             this.txtSuppliers = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTotalCustomer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlmain = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnImgPurchaseOrder = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox15 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -111,6 +116,9 @@
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureboxMainSection = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picBoxAdmin = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnImgAddUsers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -124,10 +132,13 @@
             this.imgbtnInvoice = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnSupReturn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnPurchase = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnCategoryImg = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnInventory = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnDashbord = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.pnlUser.SuspendLayout();
+            this.pnladmin.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.pnlsaleOverview.SuspendLayout();
             this.pnlpurchasOverview.SuspendLayout();
@@ -148,6 +159,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxMainSection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -164,7 +177,7 @@
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(10, 143);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1193, 12);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
@@ -173,30 +186,31 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.Controls.Add(this.btnSuppliers);
-            this.guna2Panel1.Controls.Add(this.btnCustomers);
             this.guna2Panel1.Controls.Add(this.btnPurchase);
             this.guna2Panel1.Controls.Add(this.btnSales);
+            this.guna2Panel1.Controls.Add(this.btnCustomers);
             this.guna2Panel1.Controls.Add(this.btnBills);
+            this.guna2Panel1.Controls.Add(this.btnCategory);
             this.guna2Panel1.Controls.Add(this.btnInventory);
             this.guna2Panel1.Controls.Add(this.btnInvoice);
             this.guna2Panel1.Controls.Add(this.btnDashbord);
             this.guna2Panel1.Controls.Add(this.btnSupReturn);
-            this.guna2Panel1.Controls.Add(this.imgbtnSuppliers);
-            this.guna2Panel1.Controls.Add(this.guna2ImageButton10);
-            this.guna2Panel1.Controls.Add(this.imgbtnCustomers);
             this.guna2Panel1.Controls.Add(this.imgbtnBills);
             this.guna2Panel1.Controls.Add(this.imgbtnSales);
+            this.guna2Panel1.Controls.Add(this.imgbtnSuppliers);
             this.guna2Panel1.Controls.Add(this.imgbtnInvoice);
             this.guna2Panel1.Controls.Add(this.imgbtnSupReturn);
+            this.guna2Panel1.Controls.Add(this.guna2ImageButton10);
             this.guna2Panel1.Controls.Add(this.imgbtnPurchase);
+            this.guna2Panel1.Controls.Add(this.btnCategoryImg);
+            this.guna2Panel1.Controls.Add(this.imgbtnCustomers);
             this.guna2Panel1.Controls.Add(this.imgbtnInventory);
             this.guna2Panel1.Controls.Add(this.imgbtnDashbord);
-            this.guna2Panel1.Location = new System.Drawing.Point(-5, 194);
+            this.guna2Panel1.Location = new System.Drawing.Point(-5, 124);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(248, 785);
+            this.guna2Panel1.Size = new System.Drawing.Size(248, 855);
             this.guna2Panel1.TabIndex = 4;
             // 
             // btnSuppliers
@@ -215,7 +229,7 @@
             this.btnSuppliers.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnSuppliers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSuppliers.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSuppliers.Location = new System.Drawing.Point(94, 559);
+            this.btnSuppliers.Location = new System.Drawing.Point(92, 293);
             this.btnSuppliers.Name = "btnSuppliers";
             this.btnSuppliers.Size = new System.Drawing.Size(115, 31);
             this.btnSuppliers.TabIndex = 6;
@@ -239,7 +253,7 @@
             this.btnCustomers.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnCustomers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCustomers.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnCustomers.Location = new System.Drawing.Point(94, 501);
+            this.btnCustomers.Location = new System.Drawing.Point(92, 235);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(115, 31);
             this.btnCustomers.TabIndex = 6;
@@ -263,7 +277,7 @@
             this.btnPurchase.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnPurchase.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnPurchase.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnPurchase.Location = new System.Drawing.Point(94, 150);
+            this.btnPurchase.Location = new System.Drawing.Point(92, 371);
             this.btnPurchase.Name = "btnPurchase";
             this.btnPurchase.Size = new System.Drawing.Size(115, 31);
             this.btnPurchase.TabIndex = 6;
@@ -287,7 +301,7 @@
             this.btnSales.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnSales.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSales.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSales.Location = new System.Drawing.Point(94, 368);
+            this.btnSales.Location = new System.Drawing.Point(92, 589);
             this.btnSales.Name = "btnSales";
             this.btnSales.Size = new System.Drawing.Size(115, 31);
             this.btnSales.TabIndex = 6;
@@ -311,7 +325,7 @@
             this.btnBills.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnBills.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnBills.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnBills.Location = new System.Drawing.Point(94, 435);
+            this.btnBills.Location = new System.Drawing.Point(92, 656);
             this.btnBills.Name = "btnBills";
             this.btnBills.Size = new System.Drawing.Size(115, 31);
             this.btnBills.TabIndex = 6;
@@ -330,13 +344,13 @@
             this.btnInventory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnInventory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnInventory.FillColor = System.Drawing.Color.Transparent;
-            this.btnInventory.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.Font = new System.Drawing.Font("Futura Bk BT", 12F);
             this.btnInventory.ForeColor = System.Drawing.Color.Black;
             this.btnInventory.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.btnInventory.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnInventory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnInventory.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnInventory.Location = new System.Drawing.Point(94, 82);
+            this.btnInventory.Location = new System.Drawing.Point(92, 163);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(115, 31);
             this.btnInventory.TabIndex = 6;
@@ -360,7 +374,7 @@
             this.btnInvoice.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnInvoice.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnInvoice.Location = new System.Drawing.Point(94, 299);
+            this.btnInvoice.Location = new System.Drawing.Point(92, 520);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(115, 31);
             this.btnInvoice.TabIndex = 6;
@@ -384,7 +398,7 @@
             this.btnDashbord.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnDashbord.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnDashbord.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnDashbord.Location = new System.Drawing.Point(94, 23);
+            this.btnDashbord.Location = new System.Drawing.Point(92, 22);
             this.btnDashbord.Name = "btnDashbord";
             this.btnDashbord.Size = new System.Drawing.Size(115, 31);
             this.btnDashbord.TabIndex = 6;
@@ -408,9 +422,9 @@
             this.btnSupReturn.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnSupReturn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSupReturn.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSupReturn.Location = new System.Drawing.Point(82, 231);
+            this.btnSupReturn.Location = new System.Drawing.Point(80, 452);
             this.btnSupReturn.Name = "btnSupReturn";
-            this.btnSupReturn.Size = new System.Drawing.Size(138, 31);
+            this.btnSupReturn.Size = new System.Drawing.Size(127, 31);
             this.btnSupReturn.TabIndex = 6;
             this.btnSupReturn.Text = "Suppliers Return";
             this.btnSupReturn.UseTransparentBackground = true;
@@ -419,27 +433,73 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(77, 62);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(186, 58);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(82, 46);
             this.guna2HtmlLabel1.TabIndex = 5;
-            this.guna2HtmlLabel1.Text = "Inventry";
+            this.guna2HtmlLabel1.Text = "Toys \r\n\r\n";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.guna2Panel2.Controls.Add(this.pnlUser);
+            this.guna2Panel2.Controls.Add(this.pnladmin);
+            this.guna2Panel2.Controls.Add(this.guna2ImageButton2);
             this.guna2Panel2.Controls.Add(this.btnImgAddUsers);
             this.guna2Panel2.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Controls.Add(this.btnimgSerach);
             this.guna2Panel2.Controls.Add(this.txtSearch);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel2.Location = new System.Drawing.Point(298, -1);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1232, 65);
             this.guna2Panel2.TabIndex = 8;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            // 
+            // pnlUser
+            // 
+            this.pnlUser.Controls.Add(this.picBoxUser);
+            this.pnlUser.Controls.Add(this.lblUser);
+            this.pnlUser.Location = new System.Drawing.Point(890, 10);
+            this.pnlUser.Name = "pnlUser";
+            this.pnlUser.Size = new System.Drawing.Size(134, 53);
+            this.pnlUser.TabIndex = 18;
+            // 
+            // lblUser
+            // 
+            this.lblUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblUser.Font = new System.Drawing.Font("Futura Bk BT", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblUser.Location = new System.Drawing.Point(60, 17);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(53, 29);
+            this.lblUser.TabIndex = 2;
+            this.lblUser.Text = "User";
+            // 
+            // pnladmin
+            // 
+            this.pnladmin.Controls.Add(this.picBoxAdmin);
+            this.pnladmin.Controls.Add(this.lblAdmin);
+            this.pnladmin.Location = new System.Drawing.Point(735, 12);
+            this.pnladmin.Name = "pnladmin";
+            this.pnladmin.Size = new System.Drawing.Size(149, 53);
+            this.pnladmin.TabIndex = 18;
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdmin.Font = new System.Drawing.Font("Futura Bk BT", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblAdmin.Location = new System.Drawing.Point(60, 14);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(74, 29);
+            this.lblAdmin.TabIndex = 2;
+            this.lblAdmin.Text = "Admin";
             // 
             // txtSearch
             // 
@@ -1039,11 +1099,49 @@
             // 
             this.pnlmain.BackColor = System.Drawing.Color.White;
             this.pnlmain.Controls.Add(this.btnImgPurchaseOrder);
-            this.pnlmain.Controls.Add(this.btnaddnewItem);
             this.pnlmain.Location = new System.Drawing.Point(509, 66);
             this.pnlmain.Name = "pnlmain";
             this.pnlmain.Size = new System.Drawing.Size(974, 76);
             this.pnlmain.TabIndex = 14;
+            // 
+            // guna2HtmlLabel22
+            // 
+            this.guna2HtmlLabel22.AutoSize = false;
+            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Futura-Bold", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.DarkOrange;
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(33, 3);
+            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(210, 61);
+            this.guna2HtmlLabel22.TabIndex = 5;
+            this.guna2HtmlLabel22.Text = "ABC PVT";
+            this.guna2HtmlLabel22.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // btnCategory
+            // 
+            this.btnCategory.BackColor = System.Drawing.Color.Transparent;
+            this.btnCategory.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnCategory.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCategory.FillColor = System.Drawing.Color.Transparent;
+            this.btnCategory.Font = new System.Drawing.Font("Futura Bk BT", 12F);
+            this.btnCategory.ForeColor = System.Drawing.Color.Black;
+            this.btnCategory.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCategory.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnCategory.Location = new System.Drawing.Point(92, 90);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(115, 31);
+            this.btnCategory.TabIndex = 6;
+            this.btnCategory.Text = "Category";
+            this.btnCategory.UseTransparentBackground = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_click);
             // 
             // btnImgPurchaseOrder
             // 
@@ -1055,33 +1153,13 @@
             this.btnImgPurchaseOrder.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgPurchaseOrder.ImageRotate = 0F;
             this.btnImgPurchaseOrder.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnImgPurchaseOrder.Location = new System.Drawing.Point(82, 5);
+            this.btnImgPurchaseOrder.Location = new System.Drawing.Point(3, 5);
             this.btnImgPurchaseOrder.Name = "btnImgPurchaseOrder";
             this.btnImgPurchaseOrder.PressedState.Image = global::Stock_Management_System.Properties.Resources.Shopping_Cart;
             this.btnImgPurchaseOrder.PressedState.ImageSize = new System.Drawing.Size(57, 57);
             this.btnImgPurchaseOrder.Size = new System.Drawing.Size(64, 54);
-            this.btnImgPurchaseOrder.TabIndex = 14;
+            this.btnImgPurchaseOrder.TabIndex = 16;
             this.btnImgPurchaseOrder.UseTransparentBackground = true;
-            this.btnImgPurchaseOrder.Click += new System.EventHandler(this.btnImgPurchaseOrder_click);
-            // 
-            // btnaddnewItem
-            // 
-            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnaddnewItem.ImageRotate = 0F;
-            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnewItem.Location = new System.Drawing.Point(16, 14);
-            this.btnaddnewItem.Name = "btnaddnewItem";
-            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.Size = new System.Drawing.Size(77, 39);
-            this.btnaddnewItem.TabIndex = 13;
-            this.btnaddnewItem.UseTransparentBackground = true;
-            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_click);
             // 
             // guna2PictureBox15
             // 
@@ -1252,6 +1330,52 @@
             this.pictureboxMainSection.TabStop = false;
             this.pictureboxMainSection.UseTransparentBackground = true;
             // 
+            // picBoxUser
+            // 
+            this.picBoxUser.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxUser.Image = global::Stock_Management_System.Properties.Resources.Male_User;
+            this.picBoxUser.ImageRotate = 0F;
+            this.picBoxUser.Location = new System.Drawing.Point(3, 4);
+            this.picBoxUser.Name = "picBoxUser";
+            this.picBoxUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBoxUser.Size = new System.Drawing.Size(51, 47);
+            this.picBoxUser.TabIndex = 17;
+            this.picBoxUser.TabStop = false;
+            this.picBoxUser.UseTransparentBackground = true;
+            this.picBoxUser.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // picBoxAdmin
+            // 
+            this.picBoxAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxAdmin.Image = global::Stock_Management_System.Properties.Resources.admin_color;
+            this.picBoxAdmin.ImageRotate = 0F;
+            this.picBoxAdmin.Location = new System.Drawing.Point(3, 3);
+            this.picBoxAdmin.Name = "picBoxAdmin";
+            this.picBoxAdmin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBoxAdmin.Size = new System.Drawing.Size(51, 47);
+            this.picBoxAdmin.TabIndex = 17;
+            this.picBoxAdmin.TabStop = false;
+            this.picBoxAdmin.UseTransparentBackground = true;
+            this.picBoxAdmin.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.Image = global::Stock_Management_System.Properties.Resources.Notification_green;
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.Image = global::Stock_Management_System.Properties.Resources.Notification;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1023, 10);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = global::Stock_Management_System.Properties.Resources.Notification_green;
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton2.TabIndex = 16;
+            this.guna2ImageButton2.UseTransparentBackground = true;
+            // 
             // btnImgAddUsers
             // 
             this.btnImgAddUsers.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -1261,7 +1385,7 @@
             this.btnImgAddUsers.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgAddUsers.ImageRotate = 0F;
             this.btnImgAddUsers.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnImgAddUsers.Location = new System.Drawing.Point(1084, 8);
+            this.btnImgAddUsers.Location = new System.Drawing.Point(1079, 10);
             this.btnImgAddUsers.Name = "btnImgAddUsers";
             this.btnImgAddUsers.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_User_Male_green;
             this.btnImgAddUsers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1279,7 +1403,7 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1154, 9);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1140, 12);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(37, 37);
@@ -1321,16 +1445,19 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.guna2PictureBox1.BorderRadius = 20;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(240, 7);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(173, 51);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(70, 67);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 6;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // imgbtnSuppliers
             // 
@@ -1342,7 +1469,7 @@
             this.imgbtnSuppliers.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnSuppliers.ImageRotate = 0F;
             this.imgbtnSuppliers.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnSuppliers.Location = new System.Drawing.Point(22, 547);
+            this.imgbtnSuppliers.Location = new System.Drawing.Point(20, 281);
             this.imgbtnSuppliers.Name = "imgbtnSuppliers";
             this.imgbtnSuppliers.PressedState.Image = global::Stock_Management_System.Properties.Resources.Supplier_green;
             this.imgbtnSuppliers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1361,7 +1488,7 @@
             this.guna2ImageButton10.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton10.ImageRotate = 0F;
             this.guna2ImageButton10.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton10.Location = new System.Drawing.Point(22, 547);
+            this.guna2ImageButton10.Location = new System.Drawing.Point(20, 281);
             this.guna2ImageButton10.Name = "guna2ImageButton10";
             this.guna2ImageButton10.PressedState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
             this.guna2ImageButton10.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1379,7 +1506,7 @@
             this.imgbtnCustomers.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnCustomers.ImageRotate = 0F;
             this.imgbtnCustomers.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnCustomers.Location = new System.Drawing.Point(22, 479);
+            this.imgbtnCustomers.Location = new System.Drawing.Point(20, 213);
             this.imgbtnCustomers.Name = "imgbtnCustomers";
             this.imgbtnCustomers.PressedState.Image = global::Stock_Management_System.Properties.Resources.customers_green;
             this.imgbtnCustomers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1398,7 +1525,7 @@
             this.imgbtnBills.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnBills.ImageRotate = 0F;
             this.imgbtnBills.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnBills.Location = new System.Drawing.Point(22, 420);
+            this.imgbtnBills.Location = new System.Drawing.Point(20, 641);
             this.imgbtnBills.Name = "imgbtnBills";
             this.imgbtnBills.PressedState.Image = global::Stock_Management_System.Properties.Resources.bill_greeen;
             this.imgbtnBills.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1417,7 +1544,7 @@
             this.imgbtnSales.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnSales.ImageRotate = 0F;
             this.imgbtnSales.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnSales.Location = new System.Drawing.Point(22, 346);
+            this.imgbtnSales.Location = new System.Drawing.Point(20, 567);
             this.imgbtnSales.Name = "imgbtnSales";
             this.imgbtnSales.PressedState.Image = global::Stock_Management_System.Properties.Resources.Total_Sales_green;
             this.imgbtnSales.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1436,7 +1563,7 @@
             this.imgbtnInvoice.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnInvoice.ImageRotate = 0F;
             this.imgbtnInvoice.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnInvoice.Location = new System.Drawing.Point(22, 287);
+            this.imgbtnInvoice.Location = new System.Drawing.Point(20, 508);
             this.imgbtnInvoice.Name = "imgbtnInvoice";
             this.imgbtnInvoice.PressedState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
             this.imgbtnInvoice.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1455,7 +1582,7 @@
             this.imgbtnSupReturn.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnSupReturn.ImageRotate = 0F;
             this.imgbtnSupReturn.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnSupReturn.Location = new System.Drawing.Point(22, 209);
+            this.imgbtnSupReturn.Location = new System.Drawing.Point(20, 430);
             this.imgbtnSupReturn.Name = "imgbtnSupReturn";
             this.imgbtnSupReturn.PressedState.Image = global::Stock_Management_System.Properties.Resources.suppliar_return_greeen;
             this.imgbtnSupReturn.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1474,7 +1601,7 @@
             this.imgbtnPurchase.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnPurchase.ImageRotate = 0F;
             this.imgbtnPurchase.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnPurchase.Location = new System.Drawing.Point(22, 150);
+            this.imgbtnPurchase.Location = new System.Drawing.Point(20, 371);
             this.imgbtnPurchase.Name = "imgbtnPurchase";
             this.imgbtnPurchase.PressedState.Image = global::Stock_Management_System.Properties.Resources.Card_Payment_greeen;
             this.imgbtnPurchase.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1482,6 +1609,25 @@
             this.imgbtnPurchase.TabIndex = 2;
             this.imgbtnPurchase.UseTransparentBackground = true;
             this.imgbtnPurchase.Click += new System.EventHandler(this.imgbtnPurchase_Click);
+            // 
+            // btnCategoryImg
+            // 
+            this.btnCategoryImg.BackColor = System.Drawing.Color.Transparent;
+            this.btnCategoryImg.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnCategoryImg.HoverState.Image = global::Stock_Management_System.Properties.Resources.Category;
+            this.btnCategoryImg.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnCategoryImg.Image = global::Stock_Management_System.Properties.Resources.Category;
+            this.btnCategoryImg.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnCategoryImg.ImageRotate = 0F;
+            this.btnCategoryImg.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnCategoryImg.Location = new System.Drawing.Point(16, 82);
+            this.btnCategoryImg.Name = "btnCategoryImg";
+            this.btnCategoryImg.PressedState.Image = global::Stock_Management_System.Properties.Resources.Category;
+            this.btnCategoryImg.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnCategoryImg.Size = new System.Drawing.Size(56, 53);
+            this.btnCategoryImg.TabIndex = 1;
+            this.btnCategoryImg.UseTransparentBackground = true;
+            this.btnCategoryImg.Click += new System.EventHandler(this.btnCategory_click);
             // 
             // imgbtnInventory
             // 
@@ -1493,7 +1639,7 @@
             this.imgbtnInventory.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnInventory.ImageRotate = 0F;
             this.imgbtnInventory.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnInventory.Location = new System.Drawing.Point(18, 72);
+            this.imgbtnInventory.Location = new System.Drawing.Point(16, 153);
             this.imgbtnInventory.Name = "imgbtnInventory";
             this.imgbtnInventory.PressedState.Image = global::Stock_Management_System.Properties.Resources.Trolley_green;
             this.imgbtnInventory.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1512,7 +1658,7 @@
             this.imgbtnDashbord.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgbtnDashbord.ImageRotate = 0F;
             this.imgbtnDashbord.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnDashbord.Location = new System.Drawing.Point(20, 14);
+            this.imgbtnDashbord.Location = new System.Drawing.Point(20, 13);
             this.imgbtnDashbord.Name = "imgbtnDashbord";
             this.imgbtnDashbord.PressedState.Image = global::Stock_Management_System.Properties.Resources.dashbord_green;
             this.imgbtnDashbord.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -1536,9 +1682,9 @@
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.guna2HtmlLabel22);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2ControlBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -1551,6 +1697,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            this.pnlUser.ResumeLayout(false);
+            this.pnlUser.PerformLayout();
+            this.pnladmin.ResumeLayout(false);
+            this.pnladmin.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.pnlsaleOverview.ResumeLayout(false);
@@ -1577,6 +1727,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxMainSection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1679,9 +1831,18 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel txtPurchaseCost;
         public Guna.UI2.WinForms.Guna2Button btnInventory;
         public Guna.UI2.WinForms.Guna2ImageButton btnImgAddUsers;
-        private Guna.UI2.WinForms.Guna2ImageButton btnaddnewItem;
         private Guna.UI2.WinForms.Guna2Panel pnlmain;
         private Guna.UI2.WinForms.Guna2ImageButton btnImgPurchaseOrder;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox picBoxUser;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox picBoxAdmin;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lblUser;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lblAdmin;
+        public Guna.UI2.WinForms.Guna2Panel pnladmin;
+        public Guna.UI2.WinForms.Guna2Panel pnlUser;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
+        public Guna.UI2.WinForms.Guna2Button btnCategory;
+        private Guna.UI2.WinForms.Guna2ImageButton btnCategoryImg;
     }
 }
 
