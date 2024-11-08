@@ -11,28 +11,31 @@ using System.Windows.Forms;
 
 namespace Stock_Management_System
 {
-    public partial class customerDashbord : Form
+    public partial class addNewStaff : Form
     {
         string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
-        public customerDashbord()
+
+        public addNewStaff()
         {
             InitializeComponent();
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
-            addNewCustomer addnew = new addNewCustomer();
-            addnew.ShowDialog();
+
         }
 
-        private void btnaddnewItem_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
-            inventry inventory = new inventry();
-            inventory.ShowDialog();
+            
         }
 
-        private void customerDashbordload_click(object sender, EventArgs e)
+        private void addNewStaff_Load(object sender, EventArgs e)
+        {
+            showStaffTable();
+        }
+        public void showStaffTable()
         {
             try
             {
@@ -41,19 +44,19 @@ namespace Stock_Management_System
                 using (sqlCon)
                 {
                     sqlCon.Open();
-                    SqlCommand cmd = new SqlCommand("addCustomer", sqlCon);
+                    SqlCommand cmd = new SqlCommand("addStaff", sqlCon);
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM customerDetails";
+                    cmd.CommandText = "SELECT * FROM staffDetails";
                     cmd.ExecuteNonQuery();
                     DataTable dataTable = new DataTable();
 
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                     dataAdapter.Fill(dataTable);
-                    dgvCustomerDetails.DataSource = dataTable;
+                    dgvAddNewStaff.DataSource = dataTable;
                     sqlCon.Close();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

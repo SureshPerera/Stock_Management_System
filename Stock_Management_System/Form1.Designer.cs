@@ -32,14 +32,15 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSuppliers = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCustomers = new Guna.UI2.WinForms.Guna2Button();
             this.btnPurchase = new Guna.UI2.WinForms.Guna2Button();
             this.btnSales = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCustomers = new Guna.UI2.WinForms.Guna2Button();
             this.btnBills = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.btnInvoice = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashbord = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSupReturn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlUser = new Guna.UI2.WinForms.Guna2Panel();
@@ -101,7 +102,6 @@
             this.txtTotalCustomer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlmain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnImgPurchaseOrder = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox15 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -124,15 +124,15 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.imgbtnSuppliers = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton10 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.imgbtnCustomers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnBills = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnSales = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.imgbtnSuppliers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnInvoice = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnSupReturn = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton10 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnPurchase = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnCategoryImg = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.imgbtnCustomers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnInventory = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgbtnDashbord = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
@@ -196,7 +196,7 @@
             this.guna2Panel1.Controls.Add(this.btnInventory);
             this.guna2Panel1.Controls.Add(this.btnInvoice);
             this.guna2Panel1.Controls.Add(this.btnDashbord);
-            this.guna2Panel1.Controls.Add(this.btnSupReturn);
+            this.guna2Panel1.Controls.Add(this.btnStaff);
             this.guna2Panel1.Controls.Add(this.imgbtnBills);
             this.guna2Panel1.Controls.Add(this.imgbtnSales);
             this.guna2Panel1.Controls.Add(this.imgbtnSuppliers);
@@ -236,30 +236,6 @@
             this.btnSuppliers.Text = "Suppliers";
             this.btnSuppliers.UseTransparentBackground = true;
             this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
-            // 
-            // btnCustomers
-            // 
-            this.btnCustomers.BackColor = System.Drawing.Color.Transparent;
-            this.btnCustomers.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCustomers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.btnCustomers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCustomers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCustomers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCustomers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCustomers.FillColor = System.Drawing.Color.Transparent;
-            this.btnCustomers.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomers.ForeColor = System.Drawing.Color.Black;
-            this.btnCustomers.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCustomers.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnCustomers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCustomers.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnCustomers.Location = new System.Drawing.Point(92, 235);
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(115, 31);
-            this.btnCustomers.TabIndex = 6;
-            this.btnCustomers.Text = "Customers";
-            this.btnCustomers.UseTransparentBackground = true;
-            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // btnPurchase
             // 
@@ -309,6 +285,30 @@
             this.btnSales.UseTransparentBackground = true;
             this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
+            // btnCustomers
+            // 
+            this.btnCustomers.BackColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnCustomers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCustomers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCustomers.FillColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.ForeColor = System.Drawing.Color.Black;
+            this.btnCustomers.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnCustomers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCustomers.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnCustomers.Location = new System.Drawing.Point(92, 235);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(115, 31);
+            this.btnCustomers.TabIndex = 6;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseTransparentBackground = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            // 
             // btnBills
             // 
             this.btnBills.BackColor = System.Drawing.Color.Transparent;
@@ -329,9 +329,34 @@
             this.btnBills.Name = "btnBills";
             this.btnBills.Size = new System.Drawing.Size(115, 31);
             this.btnBills.TabIndex = 6;
-            this.btnBills.Text = "Bills";
+            this.btnBills.Text = "Bill";
             this.btnBills.UseTransparentBackground = true;
             this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
+            // 
+            // btnCategory
+            // 
+            this.btnCategory.BackColor = System.Drawing.Color.Transparent;
+            this.btnCategory.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnCategory.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCategory.FillColor = System.Drawing.Color.Transparent;
+            this.btnCategory.Font = new System.Drawing.Font("Futura Bk BT", 12F);
+            this.btnCategory.ForeColor = System.Drawing.Color.Black;
+            this.btnCategory.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnCategory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCategory.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnCategory.Location = new System.Drawing.Point(92, 90);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(115, 31);
+            this.btnCategory.TabIndex = 6;
+            this.btnCategory.Text = "Category";
+            this.btnCategory.UseTransparentBackground = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_click);
             // 
             // btnInventory
             // 
@@ -406,29 +431,29 @@
             this.btnDashbord.UseTransparentBackground = true;
             this.btnDashbord.Click += new System.EventHandler(this.btnDashbord_Click);
             // 
-            // btnSupReturn
+            // btnStaff
             // 
-            this.btnSupReturn.BackColor = System.Drawing.Color.Transparent;
-            this.btnSupReturn.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSupReturn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.btnSupReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSupReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSupReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSupReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSupReturn.FillColor = System.Drawing.Color.Transparent;
-            this.btnSupReturn.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupReturn.ForeColor = System.Drawing.Color.Black;
-            this.btnSupReturn.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSupReturn.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnSupReturn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnSupReturn.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSupReturn.Location = new System.Drawing.Point(80, 452);
-            this.btnSupReturn.Name = "btnSupReturn";
-            this.btnSupReturn.Size = new System.Drawing.Size(127, 31);
-            this.btnSupReturn.TabIndex = 6;
-            this.btnSupReturn.Text = "Suppliers Return";
-            this.btnSupReturn.UseTransparentBackground = true;
-            this.btnSupReturn.Click += new System.EventHandler(this.btnSupReturn_Click);
+            this.btnStaff.BackColor = System.Drawing.Color.Transparent;
+            this.btnStaff.BorderColor = System.Drawing.Color.Transparent;
+            this.btnStaff.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStaff.FillColor = System.Drawing.Color.Transparent;
+            this.btnStaff.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.ForeColor = System.Drawing.Color.Black;
+            this.btnStaff.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnStaff.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnStaff.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnStaff.Location = new System.Drawing.Point(80, 452);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(127, 31);
+            this.btnStaff.TabIndex = 6;
+            this.btnStaff.Text = "Staff";
+            this.btnStaff.UseTransparentBackground = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnSupReturn_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -1118,31 +1143,6 @@
             this.guna2HtmlLabel22.Text = "ABC PVT";
             this.guna2HtmlLabel22.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
-            // btnCategory
-            // 
-            this.btnCategory.BackColor = System.Drawing.Color.Transparent;
-            this.btnCategory.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCategory.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.btnCategory.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCategory.FillColor = System.Drawing.Color.Transparent;
-            this.btnCategory.Font = new System.Drawing.Font("Futura Bk BT", 12F);
-            this.btnCategory.ForeColor = System.Drawing.Color.Black;
-            this.btnCategory.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCategory.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnCategory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCategory.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnCategory.Location = new System.Drawing.Point(92, 90);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Size = new System.Drawing.Size(115, 31);
-            this.btnCategory.TabIndex = 6;
-            this.btnCategory.Text = "Category";
-            this.btnCategory.UseTransparentBackground = true;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_click);
-            // 
             // btnImgPurchaseOrder
             // 
             this.btnImgPurchaseOrder.BackColor = System.Drawing.Color.Transparent;
@@ -1459,62 +1459,6 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // imgbtnSuppliers
-            // 
-            this.imgbtnSuppliers.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnSuppliers.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgbtnSuppliers.HoverState.Image = global::Stock_Management_System.Properties.Resources.Supplier_green;
-            this.imgbtnSuppliers.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.imgbtnSuppliers.Image = global::Stock_Management_System.Properties.Resources.Supplier;
-            this.imgbtnSuppliers.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgbtnSuppliers.ImageRotate = 0F;
-            this.imgbtnSuppliers.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnSuppliers.Location = new System.Drawing.Point(20, 281);
-            this.imgbtnSuppliers.Name = "imgbtnSuppliers";
-            this.imgbtnSuppliers.PressedState.Image = global::Stock_Management_System.Properties.Resources.Supplier_green;
-            this.imgbtnSuppliers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.imgbtnSuppliers.Size = new System.Drawing.Size(48, 53);
-            this.imgbtnSuppliers.TabIndex = 4;
-            this.imgbtnSuppliers.UseTransparentBackground = true;
-            this.imgbtnSuppliers.Click += new System.EventHandler(this.imgbtnSuppliers_Click);
-            // 
-            // guna2ImageButton10
-            // 
-            this.guna2ImageButton10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton10.HoverState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
-            this.guna2ImageButton10.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.guna2ImageButton10.Image = global::Stock_Management_System.Properties.Resources.Invoice;
-            this.guna2ImageButton10.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton10.ImageRotate = 0F;
-            this.guna2ImageButton10.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton10.Location = new System.Drawing.Point(20, 281);
-            this.guna2ImageButton10.Name = "guna2ImageButton10";
-            this.guna2ImageButton10.PressedState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
-            this.guna2ImageButton10.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.guna2ImageButton10.Size = new System.Drawing.Size(48, 53);
-            this.guna2ImageButton10.TabIndex = 4;
-            this.guna2ImageButton10.UseTransparentBackground = true;
-            // 
-            // imgbtnCustomers
-            // 
-            this.imgbtnCustomers.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnCustomers.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgbtnCustomers.HoverState.Image = global::Stock_Management_System.Properties.Resources.customers_green;
-            this.imgbtnCustomers.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.imgbtnCustomers.Image = global::Stock_Management_System.Properties.Resources.customers;
-            this.imgbtnCustomers.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgbtnCustomers.ImageRotate = 0F;
-            this.imgbtnCustomers.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgbtnCustomers.Location = new System.Drawing.Point(20, 213);
-            this.imgbtnCustomers.Name = "imgbtnCustomers";
-            this.imgbtnCustomers.PressedState.Image = global::Stock_Management_System.Properties.Resources.customers_green;
-            this.imgbtnCustomers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.imgbtnCustomers.Size = new System.Drawing.Size(48, 53);
-            this.imgbtnCustomers.TabIndex = 4;
-            this.imgbtnCustomers.UseTransparentBackground = true;
-            this.imgbtnCustomers.Click += new System.EventHandler(this.imgbtnCustomers_Click);
-            // 
             // imgbtnBills
             // 
             this.imgbtnBills.BackColor = System.Drawing.Color.Transparent;
@@ -1552,6 +1496,25 @@
             this.imgbtnSales.TabIndex = 4;
             this.imgbtnSales.UseTransparentBackground = true;
             this.imgbtnSales.Click += new System.EventHandler(this.imgbtnSales_Click);
+            // 
+            // imgbtnSuppliers
+            // 
+            this.imgbtnSuppliers.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnSuppliers.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.imgbtnSuppliers.HoverState.Image = global::Stock_Management_System.Properties.Resources.Supplier_green;
+            this.imgbtnSuppliers.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.imgbtnSuppliers.Image = global::Stock_Management_System.Properties.Resources.Supplier;
+            this.imgbtnSuppliers.ImageOffset = new System.Drawing.Point(0, 0);
+            this.imgbtnSuppliers.ImageRotate = 0F;
+            this.imgbtnSuppliers.ImageSize = new System.Drawing.Size(40, 40);
+            this.imgbtnSuppliers.Location = new System.Drawing.Point(20, 281);
+            this.imgbtnSuppliers.Name = "imgbtnSuppliers";
+            this.imgbtnSuppliers.PressedState.Image = global::Stock_Management_System.Properties.Resources.Supplier_green;
+            this.imgbtnSuppliers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.imgbtnSuppliers.Size = new System.Drawing.Size(48, 53);
+            this.imgbtnSuppliers.TabIndex = 4;
+            this.imgbtnSuppliers.UseTransparentBackground = true;
+            this.imgbtnSuppliers.Click += new System.EventHandler(this.imgbtnSuppliers_Click);
             // 
             // imgbtnInvoice
             // 
@@ -1591,6 +1554,24 @@
             this.imgbtnSupReturn.UseTransparentBackground = true;
             this.imgbtnSupReturn.Click += new System.EventHandler(this.imgbtnSupReturn_Click);
             // 
+            // guna2ImageButton10
+            // 
+            this.guna2ImageButton10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton10.HoverState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
+            this.guna2ImageButton10.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.guna2ImageButton10.Image = global::Stock_Management_System.Properties.Resources.Invoice;
+            this.guna2ImageButton10.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton10.ImageRotate = 0F;
+            this.guna2ImageButton10.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton10.Location = new System.Drawing.Point(20, 281);
+            this.guna2ImageButton10.Name = "guna2ImageButton10";
+            this.guna2ImageButton10.PressedState.Image = global::Stock_Management_System.Properties.Resources.Invoice_green;
+            this.guna2ImageButton10.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.guna2ImageButton10.Size = new System.Drawing.Size(48, 53);
+            this.guna2ImageButton10.TabIndex = 4;
+            this.guna2ImageButton10.UseTransparentBackground = true;
+            // 
             // imgbtnPurchase
             // 
             this.imgbtnPurchase.BackColor = System.Drawing.Color.Transparent;
@@ -1628,6 +1609,25 @@
             this.btnCategoryImg.TabIndex = 1;
             this.btnCategoryImg.UseTransparentBackground = true;
             this.btnCategoryImg.Click += new System.EventHandler(this.btnCategory_click);
+            // 
+            // imgbtnCustomers
+            // 
+            this.imgbtnCustomers.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnCustomers.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.imgbtnCustomers.HoverState.Image = global::Stock_Management_System.Properties.Resources.customers_green;
+            this.imgbtnCustomers.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.imgbtnCustomers.Image = global::Stock_Management_System.Properties.Resources.customers;
+            this.imgbtnCustomers.ImageOffset = new System.Drawing.Point(0, 0);
+            this.imgbtnCustomers.ImageRotate = 0F;
+            this.imgbtnCustomers.ImageSize = new System.Drawing.Size(40, 40);
+            this.imgbtnCustomers.Location = new System.Drawing.Point(20, 213);
+            this.imgbtnCustomers.Name = "imgbtnCustomers";
+            this.imgbtnCustomers.PressedState.Image = global::Stock_Management_System.Properties.Resources.customers_green;
+            this.imgbtnCustomers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.imgbtnCustomers.Size = new System.Drawing.Size(48, 53);
+            this.imgbtnCustomers.TabIndex = 4;
+            this.imgbtnCustomers.UseTransparentBackground = true;
+            this.imgbtnCustomers.Click += new System.EventHandler(this.imgbtnCustomers_Click);
             // 
             // imgbtnInventory
             // 
@@ -1751,7 +1751,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton imgbtnPurchase;
         private Guna.UI2.WinForms.Guna2ImageButton imgbtnInventory;
         private Guna.UI2.WinForms.Guna2ImageButton imgbtnDashbord;
-        private Guna.UI2.WinForms.Guna2Button btnSupReturn;
+        private Guna.UI2.WinForms.Guna2Button btnStaff;
         private Guna.UI2.WinForms.Guna2ImageButton imgbtnSuppliers;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton10;
         private Guna.UI2.WinForms.Guna2ImageButton imgbtnCustomers;

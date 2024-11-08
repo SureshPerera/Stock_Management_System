@@ -64,11 +64,23 @@
     <Compile Include="addNewCustomer.Designer.cs">
       <DependentUpon>addNewCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="addNewStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewStaff.Designer.cs">
+      <DependentUpon>addNewStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewSuppliers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddNewSuppliers.Designer.cs">
       <DependentUpon>AddNewSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="billDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billDashbord.Designer.cs">
+      <DependentUpon>billDashbord.cs</DependentUpon>
     </Compile>
     <Compile Include="categoryDashbord.cs">
       <SubType>Form</SubType>
@@ -116,6 +128,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Inventry_Management_SystemDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="invoiceDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoiceDashbord.Designer.cs">
+      <DependentUpon>invoiceDashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="page1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +154,18 @@
     <Compile Include="purchace_list.Designer.cs">
       <DependentUpon>purchace_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="salesDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesDashbord.Designer.cs">
+      <DependentUpon>salesDashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffDetails.Designer.cs">
+      <DependentUpon>staffDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="suppliersDashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,8 +184,14 @@
     <EmbeddedResource Include="addNewCustomer.resx">
       <DependentUpon>addNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addNewStaff.resx">
+      <DependentUpon>addNewStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewSuppliers.resx">
       <DependentUpon>AddNewSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billDashbord.resx">
+      <DependentUpon>billDashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="categoryDashbord.resx">
       <DependentUpon>categoryDashbord.cs</DependentUpon>
@@ -175,6 +211,9 @@
     <EmbeddedResource Include="inventryDashbord.resx">
       <DependentUpon>inventryDashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="invoiceDashbord.resx">
+      <DependentUpon>invoiceDashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="page1.resx">
       <DependentUpon>page1.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +232,12 @@
     </Compile>
     <EmbeddedResource Include="purchace_list.resx">
       <DependentUpon>purchace_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesDashbord.resx">
+      <DependentUpon>salesDashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffDetails.resx">
+      <DependentUpon>staffDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suppliersDashbord.resx">
       <DependentUpon>suppliersDashbord.cs</DependentUpon>
@@ -415,6 +460,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Categorycolour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

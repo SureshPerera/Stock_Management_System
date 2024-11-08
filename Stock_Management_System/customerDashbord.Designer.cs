@@ -29,28 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customerDashbord));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dgvSupplierDetails = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCustomerDetails = new Guna.UI2.WinForms.Guna2DataGridView();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
-            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cusId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
             this.SuspendLayout();
@@ -67,155 +68,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 20;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderRadius = 15;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(10, 34);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
-            this.guna2ControlBox1.TabIndex = 19;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(624, 12);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(267, 67);
-            this.guna2HtmlLabel1.TabIndex = 18;
-            this.guna2HtmlLabel1.Text = "Customer Details ";
-            // 
-            // dgvSupplierDetails
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSupplierDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplierDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvSupplierDetails.ColumnHeadersHeight = 35;
-            this.dgvSupplierDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvSupplierDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.supId,
-            this.supplier_Name,
-            this.supplier_Firm,
-            this.supplier_Address,
-            this.supplier_Contact});
-            this.dgvSupplierDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplierDetails.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvSupplierDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.Location = new System.Drawing.Point(12, 96);
-            this.dgvSupplierDetails.MultiSelect = false;
-            this.dgvSupplierDetails.Name = "dgvSupplierDetails";
-            this.dgvSupplierDetails.ReadOnly = true;
-            this.dgvSupplierDetails.RowHeadersVisible = false;
-            this.dgvSupplierDetails.RowHeadersWidth = 51;
-            this.dgvSupplierDetails.RowTemplate.Height = 33;
-            this.dgvSupplierDetails.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplierDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvSupplierDetails.Size = new System.Drawing.Size(1549, 909);
-            this.dgvSupplierDetails.TabIndex = 21;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.Height = 35;
-            this.dgvSupplierDetails.ThemeStyle.ReadOnly = true;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.Height = 33;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // supId
-            // 
-            this.supId.DataPropertyName = "supId";
-            this.supId.HeaderText = "Id";
-            this.supId.MinimumWidth = 6;
-            this.supId.Name = "supId";
-            this.supId.ReadOnly = true;
-            this.supId.Visible = false;
-            // 
-            // supplier_Name
-            // 
-            this.supplier_Name.DataPropertyName = "supplier_Name";
-            this.supplier_Name.HeaderText = "Name";
-            this.supplier_Name.MinimumWidth = 6;
-            this.supplier_Name.Name = "supplier_Name";
-            this.supplier_Name.ReadOnly = true;
-            // 
-            // supplier_Firm
-            // 
-            this.supplier_Firm.DataPropertyName = "supplier_Firm";
-            this.supplier_Firm.HeaderText = "Company Name";
-            this.supplier_Firm.MinimumWidth = 6;
-            this.supplier_Firm.Name = "supplier_Firm";
-            this.supplier_Firm.ReadOnly = true;
-            // 
-            // supplier_Address
-            // 
-            this.supplier_Address.DataPropertyName = "supplier_Address";
-            this.supplier_Address.HeaderText = "Address";
-            this.supplier_Address.MinimumWidth = 6;
-            this.supplier_Address.Name = "supplier_Address";
-            this.supplier_Address.ReadOnly = true;
-            // 
-            // supplier_Contact
-            // 
-            this.supplier_Contact.DataPropertyName = "supplier_Contact";
-            this.supplier_Contact.HeaderText = "Contact Num";
-            this.supplier_Contact.MinimumWidth = 6;
-            this.supplier_Contact.Name = "supplier_Contact";
-            this.supplier_Contact.ReadOnly = true;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "item";
-            this.itemBindingSource.DataSource = this.inventry_Management_SystemDataSet;
-            // 
-            // inventry_Management_SystemDataSet
-            // 
-            this.inventry_Management_SystemDataSet.DataSetName = "Inventry_Management_SystemDataSet";
-            this.inventry_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemTableAdapter
-            // 
-            this.itemTableAdapter.ClearBeforeFill = true;
             // 
             // btnAddCustomer
             // 
@@ -254,6 +106,115 @@
             this.btnaddnewItem.TabIndex = 14;
             this.btnaddnewItem.UseTransparentBackground = true;
             this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 15;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(10, 34);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
+            this.guna2ControlBox1.TabIndex = 19;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(624, 12);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(267, 67);
+            this.guna2HtmlLabel1.TabIndex = 18;
+            this.guna2HtmlLabel1.Text = "Customer Details ";
+            // 
+            // dgvCustomerDetails
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvCustomerDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomerDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCustomerDetails.ColumnHeadersHeight = 35;
+            this.dgvCustomerDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvCustomerDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cusId,
+            this.cusName,
+            this.cusAddress,
+            this.cusContact,
+            this.cusEmail,
+            this.cusTin});
+            this.dgvCustomerDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomerDetails.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCustomerDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCustomerDetails.Location = new System.Drawing.Point(12, 96);
+            this.dgvCustomerDetails.MultiSelect = false;
+            this.dgvCustomerDetails.Name = "dgvCustomerDetails";
+            this.dgvCustomerDetails.ReadOnly = true;
+            this.dgvCustomerDetails.RowHeadersVisible = false;
+            this.dgvCustomerDetails.RowHeadersWidth = 51;
+            this.dgvCustomerDetails.RowTemplate.Height = 33;
+            this.dgvCustomerDetails.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomerDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvCustomerDetails.Size = new System.Drawing.Size(1549, 909);
+            this.dgvCustomerDetails.TabIndex = 21;
+            this.dgvCustomerDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCustomerDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCustomerDetails.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCustomerDetails.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCustomerDetails.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCustomerDetails.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCustomerDetails.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvCustomerDetails.ThemeStyle.ReadOnly = true;
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.Height = 33;
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.inventry_Management_SystemDataSet;
+            // 
+            // inventry_Management_SystemDataSet
+            // 
+            this.inventry_Management_SystemDataSet.DataSetName = "Inventry_Management_SystemDataSet";
+            this.inventry_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
             // 
             // btnimgSerach
             // 
@@ -295,6 +256,55 @@
             this.txtSearch.Size = new System.Drawing.Size(404, 47);
             this.txtSearch.TabIndex = 28;
             // 
+            // cusId
+            // 
+            this.cusId.DataPropertyName = "cusId";
+            this.cusId.HeaderText = "Id";
+            this.cusId.MinimumWidth = 6;
+            this.cusId.Name = "cusId";
+            this.cusId.ReadOnly = true;
+            this.cusId.Visible = false;
+            // 
+            // cusName
+            // 
+            this.cusName.DataPropertyName = "cusName";
+            this.cusName.HeaderText = "Name";
+            this.cusName.MinimumWidth = 6;
+            this.cusName.Name = "cusName";
+            this.cusName.ReadOnly = true;
+            // 
+            // cusAddress
+            // 
+            this.cusAddress.DataPropertyName = "cusAddress";
+            this.cusAddress.HeaderText = "Address";
+            this.cusAddress.MinimumWidth = 6;
+            this.cusAddress.Name = "cusAddress";
+            this.cusAddress.ReadOnly = true;
+            // 
+            // cusContact
+            // 
+            this.cusContact.DataPropertyName = "cusContact";
+            this.cusContact.HeaderText = "Contact No";
+            this.cusContact.MinimumWidth = 6;
+            this.cusContact.Name = "cusContact";
+            this.cusContact.ReadOnly = true;
+            // 
+            // cusEmail
+            // 
+            this.cusEmail.DataPropertyName = "cusEmail";
+            this.cusEmail.HeaderText = "Email";
+            this.cusEmail.MinimumWidth = 6;
+            this.cusEmail.Name = "cusEmail";
+            this.cusEmail.ReadOnly = true;
+            // 
+            // cusTin
+            // 
+            this.cusTin.DataPropertyName = "cusTin";
+            this.cusTin.HeaderText = "Tin No";
+            this.cusTin.MinimumWidth = 6;
+            this.cusTin.Name = "cusTin";
+            this.cusTin.ReadOnly = true;
+            // 
             // customerDashbord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -302,7 +312,7 @@
             this.ClientSize = new System.Drawing.Size(1722, 992);
             this.Controls.Add(this.btnimgSerach);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dgvSupplierDetails);
+            this.Controls.Add(this.dgvCustomerDetails);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -311,8 +321,9 @@
             this.Name = "customerDashbord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "customerDashbord";
+            this.Load += new System.EventHandler(this.customerDashbordload_click);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -326,16 +337,17 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnaddnewItem;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvSupplierDetails;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Contact;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCustomerDetails;
         private System.Windows.Forms.BindingSource itemBindingSource;
         private Inventry_Management_SystemDataSet inventry_Management_SystemDataSet;
         private Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter itemTableAdapter;
         private Guna.UI2.WinForms.Guna2ImageButton btnimgSerach;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusContact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusTin;
     }
 }

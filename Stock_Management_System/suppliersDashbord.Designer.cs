@@ -38,12 +38,12 @@
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
             this.btnImgAddSuppliers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
             this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvAddNewCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvSpplierDetails = new Guna.UI2.WinForms.Guna2DataGridView();
             this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSpplierDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -110,10 +110,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 17;
             // 
-            // itemTableAdapter
-            // 
-            this.itemTableAdapter.ClearBeforeFill = true;
-            // 
             // btnImgAddSuppliers
             // 
             this.btnImgAddSuppliers.BackColor = System.Drawing.Color.Transparent;
@@ -151,6 +147,10 @@
             this.btnaddnewItem.TabIndex = 14;
             this.btnaddnewItem.UseTransparentBackground = true;
             this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
             // 
             // btnimgSerach
             // 
@@ -192,22 +192,22 @@
             this.txtSearch.Size = new System.Drawing.Size(404, 47);
             this.txtSearch.TabIndex = 28;
             // 
-            // dgvAddNewCustomer
+            // dgvSpplierDetails
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvAddNewCustomer.BackgroundColor = System.Drawing.Color.Beige;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(239)))), ((int)(((byte)(212)))));
+            this.dgvSpplierDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSpplierDetails.BackgroundColor = System.Drawing.Color.Beige;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAddNewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAddNewCustomer.ColumnHeadersHeight = 18;
-            this.dgvAddNewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvAddNewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSpplierDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSpplierDetails.ColumnHeadersHeight = 18;
+            this.dgvSpplierDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvSpplierDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supId,
             this.supplier_Name,
             this.supplier_Firm,
@@ -216,43 +216,44 @@
             this.email,
             this.tinNo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(244)))), ((int)(((byte)(226)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(221)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAddNewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvAddNewCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.Location = new System.Drawing.Point(12, 69);
-            this.dgvAddNewCustomer.Name = "dgvAddNewCustomer";
-            this.dgvAddNewCustomer.ReadOnly = true;
-            this.dgvAddNewCustomer.RowHeadersVisible = false;
-            this.dgvAddNewCustomer.RowHeadersWidth = 51;
-            this.dgvAddNewCustomer.RowTemplate.Height = 24;
-            this.dgvAddNewCustomer.Size = new System.Drawing.Size(1534, 909);
-            this.dgvAddNewCustomer.TabIndex = 30;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.BackColor = System.Drawing.Color.Beige;
-            this.dgvAddNewCustomer.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.Height = 18;
-            this.dgvAddNewCustomer.ThemeStyle.ReadOnly = true;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvSpplierDetails.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvSpplierDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
+            this.dgvSpplierDetails.Location = new System.Drawing.Point(12, 69);
+            this.dgvSpplierDetails.Name = "dgvSpplierDetails";
+            this.dgvSpplierDetails.ReadOnly = true;
+            this.dgvSpplierDetails.RowHeadersVisible = false;
+            this.dgvSpplierDetails.RowHeadersWidth = 51;
+            this.dgvSpplierDetails.RowTemplate.Height = 24;
+            this.dgvSpplierDetails.Size = new System.Drawing.Size(1534, 909);
+            this.dgvSpplierDetails.TabIndex = 30;
+            this.dgvSpplierDetails.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Emerald;
+            this.dgvSpplierDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(239)))), ((int)(((byte)(212)))));
+            this.dgvSpplierDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvSpplierDetails.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvSpplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvSpplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvSpplierDetails.ThemeStyle.BackColor = System.Drawing.Color.Beige;
+            this.dgvSpplierDetails.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvSpplierDetails.ThemeStyle.HeaderStyle.Height = 18;
+            this.dgvSpplierDetails.ThemeStyle.ReadOnly = true;
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(244)))), ((int)(((byte)(226)))));
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(221)))), ((int)(((byte)(160)))));
+            this.dgvSpplierDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // supId
             // 
@@ -314,7 +315,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1722, 992);
-            this.Controls.Add(this.dgvAddNewCustomer);
+            this.Controls.Add(this.dgvSpplierDetails);
             this.Controls.Add(this.btnimgSerach);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.guna2Panel1);
@@ -329,7 +330,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSpplierDetails)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,7 +347,7 @@
         private Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter itemTableAdapter;
         private Guna.UI2.WinForms.Guna2ImageButton btnimgSerach;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvAddNewCustomer;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvSpplierDetails;
         private System.Windows.Forms.DataGridViewTextBoxColumn supId;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;

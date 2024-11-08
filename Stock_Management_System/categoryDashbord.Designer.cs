@@ -33,30 +33,30 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(categoryDashbord));
-            this.dgvSupplierDetails = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvCategoryDashbord = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAddNewCatergory = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
-            this.catId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cat_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cat_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAddNewCatergory = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierDetails)).BeginInit();
+            this.catId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catDiscription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoryDashbord)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvSupplierDetails
+            // dgvCategoryDashbord
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvSupplierDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.dgvCategoryDashbord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvCategoryDashbord.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,14 +64,14 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplierDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvSupplierDetails.ColumnHeadersHeight = 35;
-            this.dgvSupplierDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvSupplierDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCategoryDashbord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvCategoryDashbord.ColumnHeadersHeight = 35;
+            this.dgvCategoryDashbord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvCategoryDashbord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.catId,
-            this.cat_Name,
-            this.cat_Address});
-            this.dgvSupplierDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.catName,
+            this.catDiscription});
+            this.dgvCategoryDashbord.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,40 +79,40 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplierDetails.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvSupplierDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.Location = new System.Drawing.Point(12, 96);
-            this.dgvSupplierDetails.MultiSelect = false;
-            this.dgvSupplierDetails.Name = "dgvSupplierDetails";
-            this.dgvSupplierDetails.ReadOnly = true;
-            this.dgvSupplierDetails.RowHeadersVisible = false;
-            this.dgvSupplierDetails.RowHeadersWidth = 51;
-            this.dgvSupplierDetails.RowTemplate.Height = 33;
-            this.dgvSupplierDetails.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplierDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvSupplierDetails.Size = new System.Drawing.Size(1549, 909);
-            this.dgvSupplierDetails.TabIndex = 25;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvSupplierDetails.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvSupplierDetails.ThemeStyle.HeaderStyle.Height = 35;
-            this.dgvSupplierDetails.ThemeStyle.ReadOnly = true;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.Height = 33;
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvSupplierDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCategoryDashbord.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvCategoryDashbord.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCategoryDashbord.Location = new System.Drawing.Point(12, 96);
+            this.dgvCategoryDashbord.MultiSelect = false;
+            this.dgvCategoryDashbord.Name = "dgvCategoryDashbord";
+            this.dgvCategoryDashbord.ReadOnly = true;
+            this.dgvCategoryDashbord.RowHeadersVisible = false;
+            this.dgvCategoryDashbord.RowHeadersWidth = 51;
+            this.dgvCategoryDashbord.RowTemplate.Height = 33;
+            this.dgvCategoryDashbord.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCategoryDashbord.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvCategoryDashbord.Size = new System.Drawing.Size(1549, 909);
+            this.dgvCategoryDashbord.TabIndex = 25;
+            this.dgvCategoryDashbord.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCategoryDashbord.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCategoryDashbord.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCategoryDashbord.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCategoryDashbord.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCategoryDashbord.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCategoryDashbord.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvCategoryDashbord.ThemeStyle.ReadOnly = true;
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.Height = 33;
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCategoryDashbord.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2Panel1
             // 
@@ -125,6 +125,25 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 24;
+            // 
+            // btnAddNewCatergory
+            // 
+            this.btnAddNewCatergory.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddNewCatergory.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddNewCatergory.HoverState.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
+            this.btnAddNewCatergory.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnAddNewCatergory.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
+            this.btnAddNewCatergory.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddNewCatergory.ImageRotate = 0F;
+            this.btnAddNewCatergory.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnAddNewCatergory.Location = new System.Drawing.Point(3, 3);
+            this.btnAddNewCatergory.Name = "btnAddNewCatergory";
+            this.btnAddNewCatergory.PressedState.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
+            this.btnAddNewCatergory.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnAddNewCatergory.Size = new System.Drawing.Size(64, 51);
+            this.btnAddNewCatergory.TabIndex = 15;
+            this.btnAddNewCatergory.UseTransparentBackground = true;
+            this.btnAddNewCatergory.Click += new System.EventHandler(this.btnAddNewCatergory_Click);
             // 
             // guna2ControlBox1
             // 
@@ -170,49 +189,6 @@
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
-            // catId
-            // 
-            this.catId.DataPropertyName = "catId";
-            this.catId.HeaderText = "Id";
-            this.catId.MinimumWidth = 6;
-            this.catId.Name = "catId";
-            this.catId.ReadOnly = true;
-            // 
-            // cat_Name
-            // 
-            this.cat_Name.DataPropertyName = "cat_Name";
-            this.cat_Name.HeaderText = "Category Name";
-            this.cat_Name.MinimumWidth = 6;
-            this.cat_Name.Name = "cat_Name";
-            this.cat_Name.ReadOnly = true;
-            // 
-            // cat_Address
-            // 
-            this.cat_Address.DataPropertyName = "cat_Address";
-            this.cat_Address.HeaderText = "Discriptions";
-            this.cat_Address.MinimumWidth = 6;
-            this.cat_Address.Name = "cat_Address";
-            this.cat_Address.ReadOnly = true;
-            // 
-            // btnAddNewCatergory
-            // 
-            this.btnAddNewCatergory.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddNewCatergory.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddNewCatergory.HoverState.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
-            this.btnAddNewCatergory.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnAddNewCatergory.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
-            this.btnAddNewCatergory.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnAddNewCatergory.ImageRotate = 0F;
-            this.btnAddNewCatergory.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAddNewCatergory.Location = new System.Drawing.Point(3, 3);
-            this.btnAddNewCatergory.Name = "btnAddNewCatergory";
-            this.btnAddNewCatergory.PressedState.Image = global::Stock_Management_System.Properties.Resources.Categorycolour;
-            this.btnAddNewCatergory.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnAddNewCatergory.Size = new System.Drawing.Size(64, 51);
-            this.btnAddNewCatergory.TabIndex = 15;
-            this.btnAddNewCatergory.UseTransparentBackground = true;
-            this.btnAddNewCatergory.Click += new System.EventHandler(this.btnAddNewCatergory_Click);
-            // 
             // txtSearch
             // 
             this.txtSearch.AutoRoundedCorners = true;
@@ -253,6 +229,30 @@
             this.btnimgSerach.TabIndex = 27;
             this.btnimgSerach.UseTransparentBackground = true;
             // 
+            // catId
+            // 
+            this.catId.DataPropertyName = "catId";
+            this.catId.HeaderText = "Id";
+            this.catId.MinimumWidth = 6;
+            this.catId.Name = "catId";
+            this.catId.ReadOnly = true;
+            // 
+            // catName
+            // 
+            this.catName.DataPropertyName = "catName";
+            this.catName.HeaderText = "Category Name";
+            this.catName.MinimumWidth = 6;
+            this.catName.Name = "catName";
+            this.catName.ReadOnly = true;
+            // 
+            // catDiscription
+            // 
+            this.catDiscription.DataPropertyName = "catDiscription";
+            this.catDiscription.HeaderText = "Discriptions";
+            this.catDiscription.MinimumWidth = 6;
+            this.catDiscription.Name = "catDiscription";
+            this.catDiscription.ReadOnly = true;
+            // 
             // categoryDashbord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,7 +260,7 @@
             this.ClientSize = new System.Drawing.Size(1704, 945);
             this.Controls.Add(this.btnimgSerach);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dgvSupplierDetails);
+            this.Controls.Add(this.dgvCategoryDashbord);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -269,7 +269,8 @@
             this.Name = "categoryDashbord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "categoryDashbord";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierDetails)).EndInit();
+            this.Load += new System.EventHandler(this.categoryDashbordLoad_Click);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoryDashbord)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).EndInit();
@@ -279,7 +280,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView dgvSupplierDetails;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCategoryDashbord;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
@@ -287,10 +288,10 @@
         private Inventry_Management_SystemDataSet inventry_Management_SystemDataSet;
         private Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter itemTableAdapter;
         private Guna.UI2.WinForms.Guna2ImageButton btnAddNewCatergory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn catId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cat_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cat_Address;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ImageButton btnimgSerach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catDiscription;
     }
 }

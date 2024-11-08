@@ -24,20 +24,20 @@ namespace Stock_Management_System
 
         private void btnControlBox1_click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSingup_Click(object sender, EventArgs e)
         {
             try
             {
-                
+
 
                 fname = txtFirstName.Text;
                 lname = txtLastName.Text;
                 email = txtEmail.Text;
                 userName = txtUsername.Text;
-                password = txtPassword.Text;      
+                password = txtPassword.Text;
                 conPassword = txtPasswordCon.Text;
 
                 if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(conPassword))
@@ -79,15 +79,16 @@ namespace Stock_Management_System
                         }
                     }
 
-                
-               
-                    
-                }
-                
-               
 
-               
-            }catch(Exception ex)
+
+
+                }
+
+
+
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -95,7 +96,7 @@ namespace Stock_Management_System
             {
                 Form1 form1 = new Form1();
                 form1.FormClosed += (s, args) => this.Close();
-                
+
             }
         }
 
@@ -108,8 +109,6 @@ namespace Stock_Management_System
         {
             txtFirstName.Select();
 
-
-            
         }
 
         private void lblTeamOfUse_Hover(object sender, EventArgs e)
@@ -123,7 +122,7 @@ namespace Stock_Management_System
             label6.ForeColor = Color.Blue;
             label6.Font = new Font(label6.Font.FontFamily, 8, FontStyle.Bold);
         }
-        
+
         void Clear()
         {
             txtFirstName.Text = txtLastName.Text = txtPassword.Text = txtUsername.Text = txtEmail.Text = txtPasswordCon.Text = "";

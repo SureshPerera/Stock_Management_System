@@ -28,6 +28,7 @@ namespace Stock_Management_System
         }
         void showSupplierDetails()
         {
+            
         SqlConnection sqlCon = new SqlConnection(connectionString);
             using (sqlCon)
             {
@@ -38,7 +39,7 @@ namespace Stock_Management_System
                 DataTable dt = new DataTable(); 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
-                dgvSupplierDetails.DataSource = dt;
+                dgvSpplierDetails.DataSource = dt;
                 sqlCon.Close();
             }
         }
