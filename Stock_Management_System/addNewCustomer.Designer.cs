@@ -28,235 +28,291 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvAddNewCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtSupCon = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSupAddess = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSupCom = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSupName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvAddNewCus = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cusId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cusTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCusContact = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCusAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCusEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCusName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnResetCus = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdateCus = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteCus = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddCus = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCusTin = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cusId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cusAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cusContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cusTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCus)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvAddNewCustomer
+            // dgvAddNewCus
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvAddNewCustomer.BackgroundColor = System.Drawing.Color.Beige;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAddNewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvAddNewCustomer.ColumnHeadersHeight = 18;
-            this.dgvAddNewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvAddNewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAddNewCus.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAddNewCus.BackgroundColor = System.Drawing.Color.Beige;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAddNewCus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvAddNewCus.ColumnHeadersHeight = 30;
+            this.dgvAddNewCus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvAddNewCus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cusId,
             this.cusName,
             this.cusAddress,
             this.cusContact,
+            this.cusEmail,
             this.cusTin});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAddNewCustomer.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvAddNewCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.Location = new System.Drawing.Point(468, 37);
-            this.dgvAddNewCustomer.Name = "dgvAddNewCustomer";
-            this.dgvAddNewCustomer.ReadOnly = true;
-            this.dgvAddNewCustomer.RowHeadersVisible = false;
-            this.dgvAddNewCustomer.RowHeadersWidth = 51;
-            this.dgvAddNewCustomer.RowTemplate.Height = 24;
-            this.dgvAddNewCustomer.Size = new System.Drawing.Size(771, 404);
-            this.dgvAddNewCustomer.TabIndex = 41;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCustomer.ThemeStyle.BackColor = System.Drawing.Color.Beige;
-            this.dgvAddNewCustomer.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvAddNewCustomer.ThemeStyle.HeaderStyle.Height = 18;
-            this.dgvAddNewCustomer.ThemeStyle.ReadOnly = true;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAddNewCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAddNewCus.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvAddNewCus.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvAddNewCus.Location = new System.Drawing.Point(468, 37);
+            this.dgvAddNewCus.Name = "dgvAddNewCus";
+            this.dgvAddNewCus.ReadOnly = true;
+            this.dgvAddNewCus.RowHeadersVisible = false;
+            this.dgvAddNewCus.RowHeadersWidth = 51;
+            this.dgvAddNewCus.RowTemplate.Height = 24;
+            this.dgvAddNewCus.Size = new System.Drawing.Size(771, 404);
+            this.dgvAddNewCus.TabIndex = 41;
+            this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvAddNewCus.ThemeStyle.BackColor = System.Drawing.Color.Beige;
+            this.dgvAddNewCus.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvAddNewCus.ThemeStyle.HeaderStyle.Height = 30;
+            this.dgvAddNewCus.ThemeStyle.ReadOnly = true;
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvAddNewCus.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvAddNewCus.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_click);
             // 
-            // txtSupCon
+            // cusId
             // 
-            this.txtSupCon.AutoRoundedCorners = true;
-            this.txtSupCon.BorderRadius = 14;
-            this.txtSupCon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupCon.DefaultText = "";
-            this.txtSupCon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupCon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupCon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupCon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCon.Location = new System.Drawing.Point(117, 232);
-            this.txtSupCon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupCon.Name = "txtSupCon";
-            this.txtSupCon.PasswordChar = '\0';
-            this.txtSupCon.PlaceholderText = "07********";
-            this.txtSupCon.SelectedText = "";
-            this.txtSupCon.Size = new System.Drawing.Size(338, 31);
-            this.txtSupCon.TabIndex = 37;
+            this.cusId.DataPropertyName = "cusId";
+            this.cusId.HeaderText = "Id";
+            this.cusId.MinimumWidth = 6;
+            this.cusId.Name = "cusId";
+            this.cusId.ReadOnly = true;
+            this.cusId.Visible = false;
             // 
-            // txtSupAddess
+            // cusName
             // 
-            this.txtSupAddess.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupAddess.DefaultText = "";
-            this.txtSupAddess.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupAddess.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupAddess.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupAddess.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupAddess.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupAddess.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupAddess.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupAddess.Location = new System.Drawing.Point(117, 118);
-            this.txtSupAddess.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupAddess.Name = "txtSupAddess";
-            this.txtSupAddess.PasswordChar = '\0';
-            this.txtSupAddess.PlaceholderText = "No370,BRoad,Colombo7";
-            this.txtSupAddess.SelectedText = "";
-            this.txtSupAddess.Size = new System.Drawing.Size(338, 93);
-            this.txtSupAddess.TabIndex = 38;
+            this.cusName.DataPropertyName = "cusName";
+            this.cusName.HeaderText = "Name";
+            this.cusName.MinimumWidth = 6;
+            this.cusName.Name = "cusName";
+            this.cusName.ReadOnly = true;
             // 
-            // txtSupCom
+            // cusAddress
             // 
-            this.txtSupCom.AutoRoundedCorners = true;
-            this.txtSupCom.BorderRadius = 14;
-            this.txtSupCom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupCom.DefaultText = "";
-            this.txtSupCom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupCom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupCom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupCom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCom.Location = new System.Drawing.Point(117, 271);
-            this.txtSupCom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupCom.Name = "txtSupCom";
-            this.txtSupCom.PasswordChar = '\0';
-            this.txtSupCom.PlaceholderText = "abc@gmail.com";
-            this.txtSupCom.SelectedText = "";
-            this.txtSupCom.Size = new System.Drawing.Size(338, 31);
-            this.txtSupCom.TabIndex = 39;
+            this.cusAddress.DataPropertyName = "cusAddress";
+            this.cusAddress.HeaderText = "Address";
+            this.cusAddress.MinimumWidth = 6;
+            this.cusAddress.Name = "cusAddress";
+            this.cusAddress.ReadOnly = true;
             // 
-            // txtSupName
+            // cusContact
             // 
-            this.txtSupName.AutoRoundedCorners = true;
-            this.txtSupName.BorderRadius = 14;
-            this.txtSupName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupName.DefaultText = "";
-            this.txtSupName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupName.Location = new System.Drawing.Point(117, 79);
-            this.txtSupName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupName.Name = "txtSupName";
-            this.txtSupName.PasswordChar = '\0';
-            this.txtSupName.PlaceholderText = "Abc";
-            this.txtSupName.SelectedText = "";
-            this.txtSupName.Size = new System.Drawing.Size(338, 31);
-            this.txtSupName.TabIndex = 40;
+            this.cusContact.DataPropertyName = "cusContact";
+            this.cusContact.HeaderText = "Contact No";
+            this.cusContact.MinimumWidth = 6;
+            this.cusContact.Name = "cusContact";
+            this.cusContact.ReadOnly = true;
             // 
-            // btnReset
+            // cusEmail
             // 
-            this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(11, 401);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(100, 40);
-            this.btnReset.TabIndex = 33;
-            this.btnReset.Text = "Reset";
+            this.cusEmail.DataPropertyName = "cusEmail";
+            this.cusEmail.HeaderText = "Email";
+            this.cusEmail.MinimumWidth = 6;
+            this.cusEmail.Name = "cusEmail";
+            this.cusEmail.ReadOnly = true;
             // 
-            // guna2Button3
+            // cusTin
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(117, 402);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(100, 40);
-            this.guna2Button3.TabIndex = 34;
-            this.guna2Button3.Text = "Update";
+            this.cusTin.DataPropertyName = "cusTin";
+            this.cusTin.HeaderText = "Tin No";
+            this.cusTin.MinimumWidth = 6;
+            this.cusTin.Name = "cusTin";
+            this.cusTin.ReadOnly = true;
             // 
-            // btnDelete
+            // txtCusContact
             // 
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(225, 401);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(102, 40);
-            this.btnDelete.TabIndex = 35;
-            this.btnDelete.Text = "Delete";
+            this.txtCusContact.AutoRoundedCorners = true;
+            this.txtCusContact.BorderRadius = 14;
+            this.txtCusContact.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCusContact.DefaultText = "";
+            this.txtCusContact.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCusContact.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCusContact.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusContact.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusContact.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCusContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusContact.Location = new System.Drawing.Point(117, 232);
+            this.txtCusContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusContact.Name = "txtCusContact";
+            this.txtCusContact.PasswordChar = '\0';
+            this.txtCusContact.PlaceholderText = "07********";
+            this.txtCusContact.SelectedText = "";
+            this.txtCusContact.Size = new System.Drawing.Size(338, 31);
+            this.txtCusContact.TabIndex = 37;
             // 
-            // guna2Button1
+            // txtCusAddress
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(333, 401);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(108, 40);
-            this.guna2Button1.TabIndex = 36;
-            this.guna2Button1.Text = "Add";
+            this.txtCusAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCusAddress.DefaultText = "";
+            this.txtCusAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCusAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCusAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCusAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusAddress.Location = new System.Drawing.Point(117, 118);
+            this.txtCusAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusAddress.Name = "txtCusAddress";
+            this.txtCusAddress.PasswordChar = '\0';
+            this.txtCusAddress.PlaceholderText = "No370,BRoad,Colombo7";
+            this.txtCusAddress.SelectedText = "";
+            this.txtCusAddress.Size = new System.Drawing.Size(338, 93);
+            this.txtCusAddress.TabIndex = 38;
+            // 
+            // txtCusEmail
+            // 
+            this.txtCusEmail.AutoRoundedCorners = true;
+            this.txtCusEmail.BorderRadius = 14;
+            this.txtCusEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCusEmail.DefaultText = "";
+            this.txtCusEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCusEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCusEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCusEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusEmail.Location = new System.Drawing.Point(117, 271);
+            this.txtCusEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusEmail.Name = "txtCusEmail";
+            this.txtCusEmail.PasswordChar = '\0';
+            this.txtCusEmail.PlaceholderText = "abc@gmail.com";
+            this.txtCusEmail.SelectedText = "";
+            this.txtCusEmail.Size = new System.Drawing.Size(338, 31);
+            this.txtCusEmail.TabIndex = 39;
+            // 
+            // txtCusName
+            // 
+            this.txtCusName.AutoRoundedCorners = true;
+            this.txtCusName.BorderRadius = 14;
+            this.txtCusName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCusName.DefaultText = "";
+            this.txtCusName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCusName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCusName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCusName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusName.Location = new System.Drawing.Point(117, 79);
+            this.txtCusName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusName.Name = "txtCusName";
+            this.txtCusName.PasswordChar = '\0';
+            this.txtCusName.PlaceholderText = "Abc";
+            this.txtCusName.SelectedText = "";
+            this.txtCusName.Size = new System.Drawing.Size(338, 31);
+            this.txtCusName.TabIndex = 40;
+            // 
+            // btnResetCus
+            // 
+            this.btnResetCus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnResetCus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnResetCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnResetCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnResetCus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnResetCus.ForeColor = System.Drawing.Color.White;
+            this.btnResetCus.Location = new System.Drawing.Point(11, 401);
+            this.btnResetCus.Name = "btnResetCus";
+            this.btnResetCus.Size = new System.Drawing.Size(100, 40);
+            this.btnResetCus.TabIndex = 33;
+            this.btnResetCus.Text = "Reset";
+            this.btnResetCus.Click += new System.EventHandler(this.btnResetCus_click);
+            // 
+            // btnUpdateCus
+            // 
+            this.btnUpdateCus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateCus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdateCus.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCus.Location = new System.Drawing.Point(117, 402);
+            this.btnUpdateCus.Name = "btnUpdateCus";
+            this.btnUpdateCus.Size = new System.Drawing.Size(100, 40);
+            this.btnUpdateCus.TabIndex = 34;
+            this.btnUpdateCus.Text = "Update";
+            // 
+            // btnDeleteCus
+            // 
+            this.btnDeleteCus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteCus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteCus.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCus.Location = new System.Drawing.Point(225, 401);
+            this.btnDeleteCus.Name = "btnDeleteCus";
+            this.btnDeleteCus.Size = new System.Drawing.Size(102, 40);
+            this.btnDeleteCus.TabIndex = 35;
+            this.btnDeleteCus.Text = "Delete";
+            this.btnDeleteCus.Click += new System.EventHandler(this.btnDeleteCus_click);
+            // 
+            // btnAddCus
+            // 
+            this.btnAddCus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddCus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddCus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddCus.ForeColor = System.Drawing.Color.White;
+            this.btnAddCus.Location = new System.Drawing.Point(333, 401);
+            this.btnAddCus.Name = "btnAddCus";
+            this.btnAddCus.Size = new System.Drawing.Size(108, 40);
+            this.btnAddCus.TabIndex = 36;
+            this.btnAddCus.Text = "Add";
+            this.btnAddCus.Click += new System.EventHandler(this.btnAddCus_click);
             // 
             // guna2HtmlLabel5
             // 
@@ -333,27 +389,27 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
             this.guna2ControlBox1.TabIndex = 27;
             // 
-            // guna2TextBox1
+            // txtCusTin
             // 
-            this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 14;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(117, 310);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "A1212354";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(338, 31);
-            this.guna2TextBox1.TabIndex = 39;
+            this.txtCusTin.AutoRoundedCorners = true;
+            this.txtCusTin.BorderRadius = 14;
+            this.txtCusTin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCusTin.DefaultText = "";
+            this.txtCusTin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCusTin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCusTin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusTin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCusTin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusTin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCusTin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCusTin.Location = new System.Drawing.Point(117, 310);
+            this.txtCusTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusTin.Name = "txtCusTin";
+            this.txtCusTin.PasswordChar = '\0';
+            this.txtCusTin.PlaceholderText = "A1212354";
+            this.txtCusTin.SelectedText = "";
+            this.txtCusTin.Size = new System.Drawing.Size(338, 31);
+            this.txtCusTin.TabIndex = 39;
             // 
             // guna2HtmlLabel6
             // 
@@ -366,62 +422,21 @@
             this.guna2HtmlLabel6.TabIndex = 30;
             this.guna2HtmlLabel6.Text = "Tin No";
             // 
-            // cusId
-            // 
-            this.cusId.DataPropertyName = "cusId";
-            this.cusId.HeaderText = "Id";
-            this.cusId.MinimumWidth = 6;
-            this.cusId.Name = "cusId";
-            this.cusId.ReadOnly = true;
-            this.cusId.Visible = false;
-            // 
-            // cusName
-            // 
-            this.cusName.DataPropertyName = "cusName";
-            this.cusName.HeaderText = "Name";
-            this.cusName.MinimumWidth = 6;
-            this.cusName.Name = "cusName";
-            this.cusName.ReadOnly = true;
-            // 
-            // cusAddress
-            // 
-            this.cusAddress.DataPropertyName = "cusAddress";
-            this.cusAddress.HeaderText = "Address";
-            this.cusAddress.MinimumWidth = 6;
-            this.cusAddress.Name = "cusAddress";
-            this.cusAddress.ReadOnly = true;
-            // 
-            // cusContact
-            // 
-            this.cusContact.DataPropertyName = "cusContact";
-            this.cusContact.HeaderText = "Contact No";
-            this.cusContact.MinimumWidth = 6;
-            this.cusContact.Name = "cusContact";
-            this.cusContact.ReadOnly = true;
-            // 
-            // cusTin
-            // 
-            this.cusTin.DataPropertyName = "cusTin";
-            this.cusTin.HeaderText = "Tin No";
-            this.cusTin.MinimumWidth = 6;
-            this.cusTin.Name = "cusTin";
-            this.cusTin.ReadOnly = true;
-            // 
             // addNewCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 453);
-            this.Controls.Add(this.dgvAddNewCustomer);
-            this.Controls.Add(this.txtSupCon);
-            this.Controls.Add(this.txtSupAddess);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.txtSupCom);
-            this.Controls.Add(this.txtSupName);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.dgvAddNewCus);
+            this.Controls.Add(this.txtCusContact);
+            this.Controls.Add(this.txtCusAddress);
+            this.Controls.Add(this.txtCusTin);
+            this.Controls.Add(this.txtCusEmail);
+            this.Controls.Add(this.txtCusName);
+            this.Controls.Add(this.btnResetCus);
+            this.Controls.Add(this.btnUpdateCus);
+            this.Controls.Add(this.btnDeleteCus);
+            this.Controls.Add(this.btnAddCus);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel6);
@@ -435,34 +450,35 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addNewCustomer";
             this.Load += new System.EventHandler(this.addNewCustomer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCus)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView dgvAddNewCustomer;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupCon;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupAddess;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupCom;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupName;
-        private Guna.UI2.WinForms.Guna2Button btnReset;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvAddNewCus;
+        private Guna.UI2.WinForms.Guna2TextBox txtCusContact;
+        private Guna.UI2.WinForms.Guna2TextBox txtCusAddress;
+        private Guna.UI2.WinForms.Guna2TextBox txtCusEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtCusName;
+        private Guna.UI2.WinForms.Guna2Button btnResetCus;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateCus;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteCus;
+        private Guna.UI2.WinForms.Guna2Button btnAddCus;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtCusTin;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusId;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusName;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusContact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusTin;
     }
 }

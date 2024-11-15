@@ -29,18 +29,40 @@ namespace Stock_Management_System
         {
             Clear();
             showSqlInventryTable();
-           
+            BindComboBoxData();
         }
         
+        void BindComboBoxData()
+        {
+            SqlConnection sqlCon = new SqlConnection(sqlConnection);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("addCategory", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT catName FROM Categories";
+                cmd.ExecuteNonQuery();
+                DataTable dataTable = new DataTable();
+
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                btnComboboxSelectCategory.DataSource = dataTable;
+                dataAdapter.Fill(dataTable);
+                btnComboboxSelectCategory.DisplayMember = "catName";
+
+                sqlCon.Close();
+            }
+        }
         void showSqlInventryTable()
         {
-            dataGridView1.DataSource = null;
+           
 
             SqlConnection sqlCon = new SqlConnection(sqlConnection);
             using (sqlCon)
             {
                 sqlCon.Open();
                 SqlCommand selectcmd = new SqlCommand("SELECT * FROM item", sqlCon);
+                
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(selectcmd);
                 da.Fill(dt);
@@ -91,16 +113,9 @@ namespace Stock_Management_System
                     cmd.Parameters.AddWithValue("@Item_Discription", txtItemDiscription.Text);
                     cmd.Parameters.AddWithValue("@Item_Cost", txtCost.Text);
                     cmd.Parameters.AddWithValue("@Item_Selling_Price", txtSellingPrice.Text);
+                    cmd.Parameters.AddWithValue("@catName",btnComboboxSelectCategory.Text);
 
-                    //int i = cmd.ExecuteNonQuery();
-                    //if (i != 0)
-                    //{
-                    //    MessageBox.Show("New Item Added");
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Error");
-                    //}
+
                     DataTable dt = new DataTable();
 
 
@@ -113,7 +128,7 @@ namespace Stock_Management_System
                 Clear();
             }
             
-            //showSqlInventryTable();
+           
         }
 
         void Clear()
@@ -123,15 +138,21 @@ namespace Stock_Management_System
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            DeleteInventory();
+            showSqlInventryTable();
+        }
+
+        void DeleteInventory()
+        {
             using (SqlConnection sqlCon = new SqlConnection(sqlConnection))
             {
                 sqlCon.Open();
-                string quary = "DELETE FROM item WHERE Item_Id ='" + id+"'";
-                SqlCommand cmd = new SqlCommand(quary,sqlCon);
+                string quary = "DELETE FROM item WHERE Item_Id ='" + id + "'";
+                SqlCommand cmd = new SqlCommand(quary, sqlCon);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Item delete suscessfully");
+                MessageBox.Show("Customer delete suscessfully");
                 sqlCon.Close();
-                showSqlInventryTable();
+
             }
         }
 
@@ -144,6 +165,7 @@ namespace Stock_Management_System
 
         private void btnComboboxSelectCategory_Click(object sender, EventArgs e)
         {
+
             
         }
     }

@@ -145,7 +145,7 @@ namespace Stock_Management_System
         void pressDashbordbtn()
         {
             
-                txtmainSection.Text = "Dashbord";
+                txtmainSection.Text = "Main Dashbord";
                 pictureboxMainSection.Image = imgbtnDashbord.Image;
                 pnlsaleOverview.Show();
                 pnlpurchasOverview.Show();
@@ -166,6 +166,7 @@ namespace Stock_Management_System
 
                 //sale overview
                 txtTotalSale.Text = totalSale.ToString("Rs" + "250000");
+             
                 txtSaleCost.Text = saleCost.ToString("Rs" + "100000");
                 txtRevenue.Text = revenue.ToString("Rs" + "500000");
                 txtProfit.Text = profit.ToString("Rs" + "200000");
@@ -187,6 +188,7 @@ namespace Stock_Management_System
                 txtTotalCustomer.Text = totalCustomer.ToString("1.8K");
                 txtSuppliers.Text = totalSupplier.ToString("30");
 
+                
                 inventry.Hide();
         }
 
@@ -225,7 +227,7 @@ namespace Stock_Management_System
                 //btnImgAddUsers.Show();
                 //btnImgAddUsers.Location = new Point(16, 14);
 
-                txtmainSection.Text = "Inventory";
+                txtmainSection.Text = "Inventory Dashbord";
                 pictureboxMainSection.Image = imgbtnInventory.Image;
                 SelectButton(btnInventory);
                 SelectButtonClear(btnDashbord);
@@ -236,6 +238,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnInvoice);
+                SelectButtonClear(btnCategory);
                 
                 inventryDashbord inventryDashbord = new inventryDashbord();
                 inventryDashbord.ShowDialog();
@@ -254,7 +257,7 @@ namespace Stock_Management_System
             pnlInventorySummary.Hide();
             btnImgPurchaseOrder.Hide();
 
-            txtmainSection.Text = "Item Category";
+            txtmainSection.Text = "Item Category Dashbord";
             pictureboxMainSection.Image =  btnCategoryImg.Image;
             SelectButton(btnCategory);
             SelectButtonClear(btnInventory);
@@ -286,7 +289,7 @@ namespace Stock_Management_System
                 //btnImgPurchaseOrder.Show();
                 //btnImgPurchaseOrder.Location = new Point(16, 14);
 
-                txtmainSection.Text = "Purchase";
+                txtmainSection.Text = "Purchase Dashbord";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
                 SelectButton(btnPurchase);
                 SelectButtonClear(btnDashbord);
@@ -320,7 +323,7 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
-                txtmainSection.Text = "Supplies Returns";
+                txtmainSection.Text = "Staff Dashbord";
                 pictureboxMainSection.Image = imgbtnSupReturn.Image;
                 SelectButton(btnStaff);
                 SelectButtonClear(btnDashbord);
@@ -353,7 +356,7 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
-                txtmainSection.Text = "Invoice";
+                txtmainSection.Text = "Invoice Dashbord";
                 pictureboxMainSection.Image = imgbtnInvoice.Image;
                 SelectButton(btnInvoice);
                 SelectButtonClear(btnDashbord);
@@ -383,7 +386,7 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
-                txtmainSection.Text = "Sales";
+                txtmainSection.Text = "Sales Dashbord";
                 pictureboxMainSection.Image = imgbtnSales.Image;
                 SelectButton(btnSales);
                 SelectButtonClear(btnDashbord);
@@ -413,7 +416,7 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
-                txtmainSection.Text = "Bills";
+                txtmainSection.Text = "Bills Dashbord";
                 pictureboxMainSection.Image = imgbtnBills.Image;
                 SelectButton(btnBills);
                 SelectButtonClear(btnDashbord);
@@ -483,6 +486,14 @@ namespace Stock_Management_System
             }
         }
 
+        private void picBoxTsale_hover(object sender, EventArgs e)
+        {
+        }
+
+        private void picBoxTsale_enter(object sender, EventArgs e)
+        {
+        }
+
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)
         {
 
@@ -528,14 +539,13 @@ namespace Stock_Management_System
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
+                
 
-                customerDashbord customerdashbord = new customerDashbord();
-                customerdashbord.ShowDialog();
-                txtmainSection.Text = "Customer";
+                txtmainSection.Text = "Customer Dashbord";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
                 SelectButton(btnCustomers);
-                SelectButtonClear(btnDashbord);
                 SelectButtonClear(btnInventory);
+                SelectButtonClear(btnDashbord);
                 SelectButtonClear(btnBills);
                 SelectButtonClear(btnInvoice);
                 SelectButtonClear(btnPurchase);
@@ -543,6 +553,9 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+
+                customerDashbord customerdashbord = new customerDashbord();
+                customerdashbord.ShowDialog();
 
             }
             catch (Exception ex)
@@ -562,7 +575,7 @@ namespace Stock_Management_System
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
 
-                txtmainSection.Text = "Suppliers";
+                txtmainSection.Text = "Suppliers Dashbord";
                 pictureboxMainSection.Image = imgbtnPurchase.Image;
                 SelectButton(btnSuppliers);
                 SelectButtonClear(btnDashbord);

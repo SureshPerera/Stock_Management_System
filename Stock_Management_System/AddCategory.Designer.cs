@@ -31,13 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtSupAddess = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSupCom = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSupName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCatDiscription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCatName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCatId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnClearCat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdateCat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteCat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnaddCat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,125 +50,128 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddNewCatogory)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtSupAddess
+            // txtCatDiscription
             // 
-            this.txtSupAddess.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupAddess.DefaultText = "";
-            this.txtSupAddess.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupAddess.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupAddess.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupAddess.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupAddess.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupAddess.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupAddess.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupAddess.Location = new System.Drawing.Point(115, 167);
-            this.txtSupAddess.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupAddess.Name = "txtSupAddess";
-            this.txtSupAddess.PasswordChar = '\0';
-            this.txtSupAddess.PlaceholderText = "Spriners..";
-            this.txtSupAddess.SelectedText = "";
-            this.txtSupAddess.Size = new System.Drawing.Size(337, 93);
-            this.txtSupAddess.TabIndex = 42;
+            this.txtCatDiscription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCatDiscription.DefaultText = "";
+            this.txtCatDiscription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCatDiscription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCatDiscription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatDiscription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatDiscription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatDiscription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCatDiscription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatDiscription.Location = new System.Drawing.Point(115, 167);
+            this.txtCatDiscription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCatDiscription.Name = "txtCatDiscription";
+            this.txtCatDiscription.PasswordChar = '\0';
+            this.txtCatDiscription.PlaceholderText = "Spriners..";
+            this.txtCatDiscription.SelectedText = "";
+            this.txtCatDiscription.Size = new System.Drawing.Size(337, 93);
+            this.txtCatDiscription.TabIndex = 42;
             // 
-            // txtSupCom
+            // txtCatName
             // 
-            this.txtSupCom.AutoRoundedCorners = true;
-            this.txtSupCom.BorderRadius = 14;
-            this.txtSupCom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupCom.DefaultText = "";
-            this.txtSupCom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupCom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupCom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupCom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupCom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupCom.Location = new System.Drawing.Point(115, 128);
-            this.txtSupCom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupCom.Name = "txtSupCom";
-            this.txtSupCom.PasswordChar = '\0';
-            this.txtSupCom.PlaceholderText = "Teen toys";
-            this.txtSupCom.SelectedText = "";
-            this.txtSupCom.Size = new System.Drawing.Size(337, 31);
-            this.txtSupCom.TabIndex = 43;
+            this.txtCatName.AutoRoundedCorners = true;
+            this.txtCatName.BorderRadius = 14;
+            this.txtCatName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCatName.DefaultText = "";
+            this.txtCatName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCatName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCatName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCatName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatName.Location = new System.Drawing.Point(115, 128);
+            this.txtCatName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCatName.Name = "txtCatName";
+            this.txtCatName.PasswordChar = '\0';
+            this.txtCatName.PlaceholderText = "Teen toys";
+            this.txtCatName.SelectedText = "";
+            this.txtCatName.Size = new System.Drawing.Size(337, 31);
+            this.txtCatName.TabIndex = 43;
             // 
-            // txtSupName
+            // txtCatId
             // 
-            this.txtSupName.AutoRoundedCorners = true;
-            this.txtSupName.BorderRadius = 14;
-            this.txtSupName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSupName.DefaultText = "";
-            this.txtSupName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSupName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSupName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSupName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSupName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSupName.Location = new System.Drawing.Point(115, 89);
-            this.txtSupName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSupName.Name = "txtSupName";
-            this.txtSupName.PasswordChar = '\0';
-            this.txtSupName.PlaceholderText = "A123";
-            this.txtSupName.SelectedText = "";
-            this.txtSupName.Size = new System.Drawing.Size(338, 31);
-            this.txtSupName.TabIndex = 44;
+            this.txtCatId.AutoRoundedCorners = true;
+            this.txtCatId.BorderRadius = 14;
+            this.txtCatId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCatId.DefaultText = "";
+            this.txtCatId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCatId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCatId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCatId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCatId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCatId.Location = new System.Drawing.Point(115, 89);
+            this.txtCatId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCatId.Name = "txtCatId";
+            this.txtCatId.PasswordChar = '\0';
+            this.txtCatId.PlaceholderText = "A123";
+            this.txtCatId.SelectedText = "";
+            this.txtCatId.Size = new System.Drawing.Size(338, 31);
+            this.txtCatId.TabIndex = 44;
             // 
-            // btnReset
+            // btnClearCat
             // 
-            this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(23, 400);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(100, 40);
-            this.btnReset.TabIndex = 35;
-            this.btnReset.Text = "Reset";
+            this.btnClearCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClearCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClearCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClearCat.ForeColor = System.Drawing.Color.White;
+            this.btnClearCat.Location = new System.Drawing.Point(23, 400);
+            this.btnClearCat.Name = "btnClearCat";
+            this.btnClearCat.Size = new System.Drawing.Size(100, 40);
+            this.btnClearCat.TabIndex = 35;
+            this.btnClearCat.Text = "Clear";
+            this.btnClearCat.Click += new System.EventHandler(this.btnClearCat_click);
             // 
-            // guna2Button3
+            // btnUpdateCat
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(129, 401);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(100, 40);
-            this.guna2Button3.TabIndex = 36;
-            this.guna2Button3.Text = "Update";
+            this.btnUpdateCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdateCat.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCat.Location = new System.Drawing.Point(129, 401);
+            this.btnUpdateCat.Name = "btnUpdateCat";
+            this.btnUpdateCat.Size = new System.Drawing.Size(100, 40);
+            this.btnUpdateCat.TabIndex = 36;
+            this.btnUpdateCat.Text = "Update";
             // 
-            // btnDelete
+            // btnDeleteCat
             // 
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(237, 400);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(102, 40);
-            this.btnDelete.TabIndex = 37;
-            this.btnDelete.Text = "Delete";
+            this.btnDeleteCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteCat.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCat.Location = new System.Drawing.Point(237, 400);
+            this.btnDeleteCat.Name = "btnDeleteCat";
+            this.btnDeleteCat.Size = new System.Drawing.Size(102, 40);
+            this.btnDeleteCat.TabIndex = 37;
+            this.btnDeleteCat.Text = "Delete";
+            this.btnDeleteCat.Click += new System.EventHandler(this.btnDeleteCat_click);
             // 
-            // guna2Button1
+            // btnaddCat
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(345, 400);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(108, 40);
-            this.guna2Button1.TabIndex = 38;
-            this.guna2Button1.Text = "Add";
+            this.btnaddCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnaddCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnaddCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnaddCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnaddCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnaddCat.ForeColor = System.Drawing.Color.White;
+            this.btnaddCat.Location = new System.Drawing.Point(345, 400);
+            this.btnaddCat.Name = "btnaddCat";
+            this.btnaddCat.Size = new System.Drawing.Size(108, 40);
+            this.btnaddCat.TabIndex = 38;
+            this.btnaddCat.Text = "Add";
+            this.btnaddCat.Click += new System.EventHandler(this.btnaddCat_click);
             // 
             // guna2HtmlLabel4
             // 
@@ -294,6 +297,7 @@
             this.dgvAddNewCatogory.ThemeStyle.RowsStyle.Height = 33;
             this.dgvAddNewCatogory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAddNewCatogory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvAddNewCatogory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViwe_CellClick);
             // 
             // catId
             // 
@@ -328,13 +332,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvAddNewCatogory);
-            this.Controls.Add(this.txtSupAddess);
-            this.Controls.Add(this.txtSupCom);
-            this.Controls.Add(this.txtSupName);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.txtCatDiscription);
+            this.Controls.Add(this.txtCatName);
+            this.Controls.Add(this.txtCatId);
+            this.Controls.Add(this.btnClearCat);
+            this.Controls.Add(this.btnUpdateCat);
+            this.Controls.Add(this.btnDeleteCat);
+            this.Controls.Add(this.btnaddCat);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -352,13 +356,13 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtSupAddess;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupCom;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupName;
-        private Guna.UI2.WinForms.Guna2Button btnReset;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox txtCatDiscription;
+        private Guna.UI2.WinForms.Guna2TextBox txtCatName;
+        private Guna.UI2.WinForms.Guna2TextBox txtCatId;
+        private Guna.UI2.WinForms.Guna2Button btnClearCat;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateCat;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteCat;
+        private Guna.UI2.WinForms.Guna2Button btnaddCat;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

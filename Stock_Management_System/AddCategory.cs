@@ -14,6 +14,7 @@ namespace Stock_Management_System
     public partial class AddCategory : Form
     {
         string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        int id;
 
         public AddCategory()
         {
@@ -50,6 +51,92 @@ namespace Stock_Management_System
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnaddCat_click(object sender, EventArgs e)
+        {
+            addNew();
+            clear();
+        }
+        
+
+        void addNew()
+        {
+            SqlConnection sqlCon1 = new SqlConnection(connectionString);
+            if (string.IsNullOrWhiteSpace(txtCatId.Text) || string.IsNullOrWhiteSpace(txtCatName.Text) || string.IsNullOrWhiteSpace(txtCatDiscription.Text))
+            {
+                MessageBox.Show("Please fill in all required fields before submitting.", "Validating Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                MessageBox.Show("Add New Category Successfully");
+                using (sqlCon1)
+                {
+                    sqlCon1.Open();
+                    SqlCommand cmd = new SqlCommand("addCategory", sqlCon1);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@catId", txtCatId.Text);
+                    cmd.Parameters.AddWithValue("@catName", txtCatName.Text);
+                    cmd.Parameters.AddWithValue("@catDiscription", txtCatDiscription.Text);
+                   
+
+                    //int i = cmd.ExecuteNonQuery();
+                    //if (i != 0)
+                    //{
+                    //    MessageBox.Show("New Item Added");
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Error");
+                    //}
+                    DataTable dt = new DataTable();
+
+
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    showcategoryTable();
+                    sqlCon1.Close();
+                }
+                
+            }
+        }
+
+        void clear()
+        {
+            txtCatId.Text = txtCatName.Text = txtCatDiscription.Text = "";
+        }
+
+        private void btnDeleteCat_click(object sender, EventArgs e)
+        {
+            deleteCat();
+            showcategoryTable();
+        }
+
+        void deleteCat()
+        {
+            using(SqlConnection sqlCon = new SqlConnection(connectionString))
+            {
+                sqlCon.Open();
+                string quary = "DELETE FROM Categories WHERE catId ='" + id + "'";
+                SqlCommand cmd = new SqlCommand(quary, sqlCon);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Item delete suscessfully");
+                sqlCon.Close();
+                
+            }
+        }
+
+        private void gridViwe_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dgvAddNewCatogory.Rows[e.RowIndex];
+            id = Convert.ToInt32(row.Cells[0].Value);
+        }
+
+        private void btnClearCat_click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }
