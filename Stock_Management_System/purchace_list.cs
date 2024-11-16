@@ -81,7 +81,7 @@ namespace Stock_Management_System
                 sqlcon.Open();
                 SqlCommand cmd = sqlcon.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT * FROM item WHERE Item_Discription = '" + Product_discriptions + "' and Item_Selling_price = '" + unit_price + "'";
+                cmd.CommandText = "SELECT * FROM item WHERE Item_Discription = '" + Item_Discription + "' and Item_Selling_price = '" + Item_Cost + "'";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -117,6 +117,7 @@ namespace Stock_Management_System
             // TODO: This line of code loads data into the 'inventry_Management_SystemDataSet.item' table. You can move, or remove it, as needed.
             this.itemTableAdapter.Fill(this.inventry_Management_SystemDataSet.item);
             BindComboboxVender();
+            dgvPurchaseList.CellValueChanged += DgvCellValueChange_Click;
 
 
         }
@@ -129,7 +130,7 @@ namespace Stock_Management_System
                 sqlCon.Open();
                 SqlCommand cmd = new SqlCommand("supplierDetailsAdd", sqlCon);
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT supplier_Name FROM supplierDetails";
+                cmd.CommandText = "SELECT supplier_Firm FROM supplierDetails";
                 cmd.ExecuteNonQuery();
                 DataTable dataTable = new DataTable();
 
@@ -137,7 +138,7 @@ namespace Stock_Management_System
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 comboBoxVender.DataSource = dataTable;
                 dataAdapter.Fill(dataTable);
-                comboBoxVender.DisplayMember = "supplier_Name";
+                comboBoxVender.DisplayMember = "supplier_Firm";
 
                 sqlCon.Close();
             }
@@ -171,5 +172,75 @@ namespace Stock_Management_System
         {
 
         }
+
+        private void DgvCellValueChange_Click(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+           
+            // Check if the event is triggered by the ComboBox column
+            if (dgvPurchaseList.Columns[e.ColumnIndex] is DataGridViewComboBoxColumn && e.RowIndex >= 0)
+            {
+                string selectedProduct = dgvPurchaseList.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+                // Fetch product details from the database
+               
+                string query = "SELECT Item_Discription, Item_Cost FROM item WHERE Item_Name = @Item_Name";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@Item_Name", selectedProduct);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Update other columns in the same row
+                            dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Discription"].Value = reader["Item_Discription"].ToString();
+                            dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value = reader["Item_Cost"].ToString();
+                        }
+                    }
+                }
+
+
+                // Check if the updated column is Quantity
+                if (dgvPurchaseList.Columns[e.ColumnIndex].Name == "product_Qty" && e.RowIndex >= 0)
+                {
+                    // Get the value of Quantity and Unit Price
+                    if (dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value != null &&
+                        dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value != null)
+                    {
+                        try
+                        {
+                            var quantityCell = dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"];
+                            var unitPriceCell = dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"];
+
+                            int quantity = Convert.ToInt32(dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value);
+                            decimal unitPrice = Convert.ToDecimal(dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value);
+
+                            // Calculate Total Price
+                            decimal totalPrice = quantity * unitPrice;
+
+                            // Update Total Price cell
+                            dgvPurchaseList.Rows[e.RowIndex].Cells["total_price"].Value = totalPrice;
+
+
+                            Console.WriteLine($"Quantity: {quantity}, UnitPrice: {unitPrice}");
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Invalid input for Quantity. Please enter a numeric value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+
+
+            
+        }
+        
     }
 }

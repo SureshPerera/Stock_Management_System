@@ -19,9 +19,9 @@ namespace Stock_Management_System
             //Application.Run(new Form1());
             //Application.Run(new formLoging());
            //Application.Run(new inventry());
-            //Application.Run(new purchace_list());
+            Application.Run(new purchace_list());
             //Application.Run(new inventryDashbord());
-            Application.Run(new suppliersDashbord());
+            //Application.Run(new suppliersDashbord());
             //Application.Run(new AddNewSuppliers());
             //Application.Run(new customerDashbord());
             //Application.Run(new AddCategory());
