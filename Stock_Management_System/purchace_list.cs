@@ -205,42 +205,46 @@ namespace Stock_Management_System
                 }
 
 
-                // Check if the updated column is Quantity
-                if (dgvPurchaseList.Columns[e.ColumnIndex].Name == "product_Qty" && e.RowIndex >= 0)
-                {
-                    // Get the value of Quantity and Unit Price
-                    if (dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value != null &&
-                        dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value != null)
-                    {
-                        try
-                        {
-                            var quantityCell = dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"];
-                            var unitPriceCell = dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"];
-
-                            int quantity = Convert.ToInt32(dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value);
-                            decimal unitPrice = Convert.ToDecimal(dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value);
-
-                            // Calculate Total Price
-                            decimal totalPrice = quantity * unitPrice;
-
-                            // Update Total Price cell
-                            dgvPurchaseList.Rows[e.RowIndex].Cells["total_price"].Value = totalPrice;
-
-
-                            Console.WriteLine($"Quantity: {quantity}, UnitPrice: {unitPrice}");
-
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Invalid input for Quantity. Please enter a numeric value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
             }
 
 
             
         }
-        
+
+        private void dgvCellEndEdit_click(object sender, DataGridViewCellEventArgs e)
+        {
+
+            // Check if the updated column is Quantity
+            if (dgvPurchaseList.Columns[e.ColumnIndex].Name == "product_Qty" && e.RowIndex >= 0)
+            {
+                // Get the value of Quantity and Unit Price
+                if (dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value != null &&
+                    dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value != null)
+                {
+                    try
+                    {
+                        var quantityCell = dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"];
+                        var unitPriceCell = dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"];
+
+                        int quantity = Convert.ToInt32(dgvPurchaseList.Rows[e.RowIndex].Cells["product_Qty"].Value);
+                        decimal unitPrice = Convert.ToDecimal(dgvPurchaseList.Rows[e.RowIndex].Cells["Item_Cost"].Value);
+
+                        // Calculate Total Price
+                        decimal totalPrice = quantity * unitPrice;
+
+                        // Update Total Price cell
+                        dgvPurchaseList.Rows[e.RowIndex].Cells["total_price"].Value = totalPrice;
+
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Invalid input for Quantity. Please enter a numeric value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
     }
 }
