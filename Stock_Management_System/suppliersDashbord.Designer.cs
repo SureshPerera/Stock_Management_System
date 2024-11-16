@@ -49,8 +49,8 @@
             this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tinNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -195,12 +195,11 @@
             // dgvSpplierDetails
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(239)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvSpplierDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSpplierDetails.BackgroundColor = System.Drawing.Color.Beige;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -214,11 +213,11 @@
             this.supplier_Firm,
             this.supplier_Address,
             this.supplier_Contact,
-            this.email,
-            this.tinNo});
+            this.supEmail,
+            this.Tin});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(244)))), ((int)(((byte)(226)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(221)))), ((int)(((byte)(160)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -297,19 +296,21 @@
             this.supplier_Contact.Name = "supplier_Contact";
             this.supplier_Contact.ReadOnly = true;
             // 
-            // email
+            // supEmail
             // 
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
+            this.supEmail.DataPropertyName = "supEmail";
+            this.supEmail.HeaderText = "Email";
+            this.supEmail.MinimumWidth = 6;
+            this.supEmail.Name = "supEmail";
+            this.supEmail.ReadOnly = true;
             // 
-            // tinNo
+            // Tin
             // 
-            this.tinNo.HeaderText = "Tin No";
-            this.tinNo.MinimumWidth = 6;
-            this.tinNo.Name = "tinNo";
-            this.tinNo.ReadOnly = true;
+            this.Tin.DataPropertyName = "Tin";
+            this.Tin.HeaderText = "Tin No";
+            this.Tin.MinimumWidth = 6;
+            this.Tin.Name = "Tin";
+            this.Tin.ReadOnly = true;
             // 
             // suppliersDashbord
             // 
@@ -354,7 +355,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Contact;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tinNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tin;
     }
 }

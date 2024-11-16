@@ -28,18 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tinNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSupCon = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupAddess = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,29 +45,36 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSupEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSupTin = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSupCom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSupplier
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSupplier.BackgroundColor = System.Drawing.Color.Beige;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSupplier.ColumnHeadersHeight = 30;
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -83,28 +83,28 @@
             this.supplier_Firm,
             this.supplier_Address,
             this.supplier_Contact,
-            this.email,
-            this.tinNo});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle7;
+            this.supEmail,
+            this.Tin});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSupplier.Location = new System.Drawing.Point(468, 37);
             this.dgvSupplier.Name = "dgvSupplier";
             this.dgvSupplier.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSupplier.RowHeadersVisible = false;
             this.dgvSupplier.RowHeadersWidth = 51;
             this.dgvSupplier.RowTemplate.Height = 24;
@@ -133,61 +133,6 @@
             this.dgvSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_click);
             this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAddNewCustomer_click);
-            // 
-            // supId
-            // 
-            this.supId.DataPropertyName = "supId";
-            this.supId.HeaderText = "Id";
-            this.supId.MinimumWidth = 6;
-            this.supId.Name = "supId";
-            this.supId.ReadOnly = true;
-            this.supId.Visible = false;
-            // 
-            // supplier_Name
-            // 
-            this.supplier_Name.DataPropertyName = "supplier_Name";
-            this.supplier_Name.HeaderText = "Name";
-            this.supplier_Name.MinimumWidth = 6;
-            this.supplier_Name.Name = "supplier_Name";
-            this.supplier_Name.ReadOnly = true;
-            // 
-            // supplier_Firm
-            // 
-            this.supplier_Firm.DataPropertyName = "supplier_Firm";
-            this.supplier_Firm.HeaderText = "Company ";
-            this.supplier_Firm.MinimumWidth = 6;
-            this.supplier_Firm.Name = "supplier_Firm";
-            this.supplier_Firm.ReadOnly = true;
-            // 
-            // supplier_Address
-            // 
-            this.supplier_Address.DataPropertyName = "supplier_Address";
-            this.supplier_Address.HeaderText = "Address";
-            this.supplier_Address.MinimumWidth = 6;
-            this.supplier_Address.Name = "supplier_Address";
-            this.supplier_Address.ReadOnly = true;
-            // 
-            // supplier_Contact
-            // 
-            this.supplier_Contact.DataPropertyName = "supplier_Contact";
-            this.supplier_Contact.HeaderText = "Contact No";
-            this.supplier_Contact.MinimumWidth = 6;
-            this.supplier_Contact.Name = "supplier_Contact";
-            this.supplier_Contact.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // tinNo
-            // 
-            this.tinNo.HeaderText = "Tin No";
-            this.tinNo.MinimumWidth = 6;
-            this.tinNo.Name = "tinNo";
-            this.tinNo.ReadOnly = true;
             // 
             // txtSupCon
             // 
@@ -377,27 +322,27 @@
             this.guna2ControlBox1.TabIndex = 12;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
-            // guna2TextBox1
+            // txtSupEmail
             // 
-            this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 14;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(125, 298);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "abc@gmail.com";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(338, 31);
-            this.guna2TextBox1.TabIndex = 22;
+            this.txtSupEmail.AutoRoundedCorners = true;
+            this.txtSupEmail.BorderRadius = 14;
+            this.txtSupEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSupEmail.DefaultText = "";
+            this.txtSupEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSupEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSupEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSupEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSupEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSupEmail.Location = new System.Drawing.Point(125, 298);
+            this.txtSupEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSupEmail.Name = "txtSupEmail";
+            this.txtSupEmail.PasswordChar = '\0';
+            this.txtSupEmail.PlaceholderText = "abc@gmail.com";
+            this.txtSupEmail.SelectedText = "";
+            this.txtSupEmail.Size = new System.Drawing.Size(338, 31);
+            this.txtSupEmail.TabIndex = 22;
             // 
             // guna2HtmlLabel6
             // 
@@ -410,27 +355,27 @@
             this.guna2HtmlLabel6.TabIndex = 13;
             this.guna2HtmlLabel6.Text = "Email";
             // 
-            // guna2TextBox2
+            // txtSupTin
             // 
-            this.guna2TextBox2.AutoRoundedCorners = true;
-            this.guna2TextBox2.BorderRadius = 14;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(125, 337);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "A124510";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(338, 31);
-            this.guna2TextBox2.TabIndex = 22;
+            this.txtSupTin.AutoRoundedCorners = true;
+            this.txtSupTin.BorderRadius = 14;
+            this.txtSupTin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSupTin.DefaultText = "";
+            this.txtSupTin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSupTin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSupTin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupTin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSupTin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSupTin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSupTin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSupTin.Location = new System.Drawing.Point(125, 337);
+            this.txtSupTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSupTin.Name = "txtSupTin";
+            this.txtSupTin.PasswordChar = '\0';
+            this.txtSupTin.PlaceholderText = "A124510";
+            this.txtSupTin.SelectedText = "";
+            this.txtSupTin.Size = new System.Drawing.Size(338, 31);
+            this.txtSupTin.TabIndex = 22;
             // 
             // guna2HtmlLabel7
             // 
@@ -476,6 +421,63 @@
             this.guna2HtmlLabel3.TabIndex = 15;
             this.guna2HtmlLabel3.Text = "Company";
             // 
+            // supId
+            // 
+            this.supId.DataPropertyName = "supId";
+            this.supId.HeaderText = "Id";
+            this.supId.MinimumWidth = 6;
+            this.supId.Name = "supId";
+            this.supId.ReadOnly = true;
+            this.supId.Visible = false;
+            // 
+            // supplier_Name
+            // 
+            this.supplier_Name.DataPropertyName = "supplier_Name";
+            this.supplier_Name.HeaderText = "Name";
+            this.supplier_Name.MinimumWidth = 6;
+            this.supplier_Name.Name = "supplier_Name";
+            this.supplier_Name.ReadOnly = true;
+            // 
+            // supplier_Firm
+            // 
+            this.supplier_Firm.DataPropertyName = "supplier_Firm";
+            this.supplier_Firm.HeaderText = "Company ";
+            this.supplier_Firm.MinimumWidth = 6;
+            this.supplier_Firm.Name = "supplier_Firm";
+            this.supplier_Firm.ReadOnly = true;
+            // 
+            // supplier_Address
+            // 
+            this.supplier_Address.DataPropertyName = "supplier_Address";
+            this.supplier_Address.HeaderText = "Address";
+            this.supplier_Address.MinimumWidth = 6;
+            this.supplier_Address.Name = "supplier_Address";
+            this.supplier_Address.ReadOnly = true;
+            // 
+            // supplier_Contact
+            // 
+            this.supplier_Contact.DataPropertyName = "supplier_Contact";
+            this.supplier_Contact.HeaderText = "Contact No";
+            this.supplier_Contact.MinimumWidth = 6;
+            this.supplier_Contact.Name = "supplier_Contact";
+            this.supplier_Contact.ReadOnly = true;
+            // 
+            // supEmail
+            // 
+            this.supEmail.DataPropertyName = "supEmail";
+            this.supEmail.HeaderText = "Email";
+            this.supEmail.MinimumWidth = 6;
+            this.supEmail.Name = "supEmail";
+            this.supEmail.ReadOnly = true;
+            // 
+            // Tin
+            // 
+            this.Tin.DataPropertyName = "Tin";
+            this.Tin.HeaderText = "Tin No";
+            this.Tin.MinimumWidth = 6;
+            this.Tin.Name = "Tin";
+            this.Tin.ReadOnly = true;
+            // 
             // AddNewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -483,8 +485,8 @@
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvSupplier);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtSupTin);
+            this.Controls.Add(this.txtSupEmail);
             this.Controls.Add(this.txtSupCon);
             this.Controls.Add(this.txtSupAddess);
             this.Controls.Add(this.txtSupCom);
@@ -526,18 +528,18 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtSupEmail;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSupTin;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2TextBox txtSupCom;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn supId;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Contact;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tinNo;
-        private Guna.UI2.WinForms.Guna2TextBox txtSupCom;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tin;
     }
 }

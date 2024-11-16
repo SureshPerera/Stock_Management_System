@@ -26,8 +26,7 @@ namespace Stock_Management_System
         }
         void showSupplierDetails()
         {
-            try
-            {
+            
                 SqlConnection sqlCon = new SqlConnection(connectionString);
                 
                     using (sqlCon)
@@ -43,14 +42,7 @@ namespace Stock_Management_System
                         dgvSupplier.DataSource = dt;
                         sqlCon.Close();
                     }
-                
-                
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+           
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -75,11 +67,22 @@ namespace Stock_Management_System
                     {
                         sqlCon.Open();
                         SqlCommand cmd = new SqlCommand("supplierDetailsAdd", sqlCon);
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "INSERT INTO supplierDetails VALUES('" + txtSupName.Text + "','" + txtSupCom.Text + "','" + txtSupAddess.Text + "','" + txtSupCon.Text + "')";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@supEmail", txtSupEmail.Text);
+                        cmd.Parameters.AddWithValue("@Tin", txtSupTin.Text);
+                        cmd.Parameters.AddWithValue("@supplier_Name", txtSupName.Text);
+                        cmd.Parameters.AddWithValue("@supplier_Firm", txtSupCom.Text);
+                        cmd.Parameters.AddWithValue("@supplier_Address", txtSupAddess.Text);
+                        cmd.Parameters.AddWithValue("@supplier_Contact", txtSupCon.Text);
+
+
                         DataTable dt = new DataTable();
+
+
+
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         da.Fill(dt);
+                        showSupplierDetails();
                         sqlCon.Close();
                     }
                 }
@@ -149,7 +152,7 @@ namespace Stock_Management_System
 
         void Clear()
         {
-            txtSupAddess.Text = txtSupCom.Text = txtSupCon.Text = txtSupName.Text = ""; 
+            txtSupAddess.Text = txtSupCom.Text = txtSupCon.Text = txtSupName.Text = txtSupTin.Text = txtSupEmail.Text = ""; 
         }
     }
 }
