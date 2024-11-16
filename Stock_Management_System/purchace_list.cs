@@ -16,6 +16,7 @@ namespace Stock_Management_System
     public partial class purchace_list : Form
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
+        string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         public purchace_list()
         {
             InitializeComponent();
@@ -115,9 +116,32 @@ namespace Stock_Management_System
             this.supplierDetailsTableAdapter.Fill(this.inventry_Management_SystemDataSet1.supplierDetails);
             // TODO: This line of code loads data into the 'inventry_Management_SystemDataSet.item' table. You can move, or remove it, as needed.
             this.itemTableAdapter.Fill(this.inventry_Management_SystemDataSet.item);
+            BindComboboxVender();
+
 
         }
 
+        void BindComboboxVender()
+        {
+            SqlConnection sqlCon = new SqlConnection(connectionString);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("supplierDetailsAdd", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT supplier_Name FROM supplierDetails";
+                cmd.ExecuteNonQuery();
+                DataTable dataTable = new DataTable();
+
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                comboBoxVender.DataSource = dataTable;
+                dataAdapter.Fill(dataTable);
+                comboBoxVender.DisplayMember = "supplier_Name";
+
+                sqlCon.Close();
+            }
+        }
         private void btnaddnewItem_Click(object sender, EventArgs e)
         {
             inventry inventry = new inventry();
