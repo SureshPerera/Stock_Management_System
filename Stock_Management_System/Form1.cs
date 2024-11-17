@@ -60,7 +60,7 @@ namespace Stock_Management_System
             
             btnBills.Enabled = false;
             btnSales.Enabled = false;
-            btnInvoice.Enabled = false;
+            
             
            btnDashbord_Click(sender, e);
            btnDashbord.Select();
@@ -368,6 +368,9 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+
+                InvoiceCreate invoiceCreate = new InvoiceCreate();
+                invoiceCreate.ShowDialog();
 
             }
             catch (Exception ex)
