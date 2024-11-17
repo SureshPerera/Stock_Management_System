@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvPurchaseList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.product_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product_name = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -47,12 +47,10 @@
             this.inventry_Management_SystemDataSet1 = new Stock_Management_System.Inventry_Management_SystemDataSet1();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.purchDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.expirDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.comboxPurchacetype = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -77,6 +75,9 @@
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtPoNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPurchaseList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
@@ -86,17 +87,17 @@
             // 
             // dgvPurchaseList
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.dgvPurchaseList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPurchaseList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.dgvPurchaseList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPurchaseList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvPurchaseList.ColumnHeadersHeight = 30;
             this.dgvPurchaseList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvPurchaseList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -107,27 +108,27 @@
             this.Item_Cost,
             this.total_price});
             this.dgvPurchaseList.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPurchaseList.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPurchaseList.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPurchaseList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgvPurchaseList.GridColor = System.Drawing.Color.Silver;
             this.dgvPurchaseList.Location = new System.Drawing.Point(21, 211);
             this.dgvPurchaseList.Margin = new System.Windows.Forms.Padding(0);
             this.dgvPurchaseList.Name = "dgvPurchaseList";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPurchaseList.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPurchaseList.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvPurchaseList.RowHeadersVisible = false;
             this.dgvPurchaseList.RowHeadersWidth = 51;
             this.dgvPurchaseList.RowTemplate.Height = 24;
@@ -161,8 +162,8 @@
             // 
             // product_Id
             // 
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.product_Id.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.product_Id.DefaultCellStyle = dataGridViewCellStyle8;
             this.product_Id.HeaderText = "product_Id";
             this.product_Id.MinimumWidth = 6;
             this.product_Id.Name = "product_Id";
@@ -254,38 +255,24 @@
             this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(968, 809);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 1;
-            this.guna2Button3.Text = "Delete";
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1160, 100);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1160, 117);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(126, 22);
             this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "Expiry_date";
+            this.guna2HtmlLabel1.Text = "PO #";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1160, 59);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1160, 76);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(151, 22);
@@ -297,7 +284,7 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(1161, 149);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(1161, 166);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(150, 22);
@@ -316,7 +303,7 @@
             this.purchDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.purchDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.purchDate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.purchDate.Location = new System.Drawing.Point(1320, 50);
+            this.purchDate.Location = new System.Drawing.Point(1320, 67);
             this.purchDate.Margin = new System.Windows.Forms.Padding(0);
             this.purchDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.purchDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -325,26 +312,6 @@
             this.purchDate.TabIndex = 3;
             this.purchDate.UseTransparentBackground = true;
             this.purchDate.Value = new System.DateTime(2024, 9, 9, 1, 8, 53, 804);
-            // 
-            // expirDate
-            // 
-            this.expirDate.AutoRoundedCorners = true;
-            this.expirDate.BackColor = System.Drawing.Color.Transparent;
-            this.expirDate.BorderRadius = 17;
-            this.expirDate.Checked = true;
-            this.expirDate.CustomFormat = "dd/mm/yyyy";
-            this.expirDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.expirDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.expirDate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.expirDate.Location = new System.Drawing.Point(1320, 92);
-            this.expirDate.Margin = new System.Windows.Forms.Padding(0);
-            this.expirDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.expirDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.expirDate.Name = "expirDate";
-            this.expirDate.Size = new System.Drawing.Size(200, 36);
-            this.expirDate.TabIndex = 3;
-            this.expirDate.UseTransparentBackground = true;
-            this.expirDate.Value = new System.DateTime(2024, 9, 9, 0, 58, 34, 431);
             // 
             // comboxPurchacetype
             // 
@@ -361,7 +328,7 @@
             this.comboxPurchacetype.Items.AddRange(new object[] {
             "Cash",
             "Card"});
-            this.comboxPurchacetype.Location = new System.Drawing.Point(1320, 141);
+            this.comboxPurchacetype.Location = new System.Drawing.Point(1320, 158);
             this.comboxPurchacetype.Margin = new System.Windows.Forms.Padding(0);
             this.comboxPurchacetype.Name = "comboxPurchacetype";
             this.comboxPurchacetype.Size = new System.Drawing.Size(200, 36);
@@ -389,11 +356,11 @@
             // 
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Coral;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(731, 9);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(301, 31);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(301, 55);
             this.guna2HtmlLabel4.TabIndex = 2;
             this.guna2HtmlLabel4.Text = "Purchase Order";
             this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
@@ -412,7 +379,7 @@
             this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnaddnewItem.ImageRotate = 0F;
             this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnewItem.Location = new System.Drawing.Point(9, 52);
+            this.btnaddnewItem.Location = new System.Drawing.Point(23, 52);
             this.btnaddnewItem.Name = "btnaddnewItem";
             this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
             this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -426,7 +393,7 @@
             this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(15, 99);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(29, 99);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(50, 37);
@@ -443,7 +410,7 @@
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(129, 38);
             this.guna2HtmlLabel6.TabIndex = 15;
-            this.guna2HtmlLabel6.Text = "Total Price";
+            this.guna2HtmlLabel6.Text = "Sub Total";
             // 
             // guna2HtmlLabel7
             // 
@@ -548,7 +515,7 @@
             this.guna2HtmlLabel14.AutoSize = false;
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(778, 149);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(806, 75);
             this.guna2HtmlLabel14.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(92, 22);
@@ -568,7 +535,7 @@
             this.comboBoxVender.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBoxVender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboBoxVender.ItemHeight = 30;
-            this.comboBoxVender.Location = new System.Drawing.Point(870, 141);
+            this.comboBoxVender.Location = new System.Drawing.Point(898, 67);
             this.comboBoxVender.Margin = new System.Windows.Forms.Padding(0);
             this.comboBoxVender.Name = "comboBoxVender";
             this.comboBoxVender.Size = new System.Drawing.Size(200, 36);
@@ -585,7 +552,7 @@
             this.btnImgAddSuppliers.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgAddSuppliers.ImageRotate = 0F;
             this.btnImgAddSuppliers.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnImgAddSuppliers.Location = new System.Drawing.Point(74, 52);
+            this.btnImgAddSuppliers.Location = new System.Drawing.Point(88, 52);
             this.btnImgAddSuppliers.Name = "btnImgAddSuppliers";
             this.btnImgAddSuppliers.PressedState.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
             this.btnImgAddSuppliers.PressedState.ImageSize = new System.Drawing.Size(57, 57);
@@ -599,7 +566,7 @@
             this.guna2HtmlLabel15.AutoSize = false;
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(74, 100);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(88, 100);
             this.guna2HtmlLabel15.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             this.guna2HtmlLabel15.Size = new System.Drawing.Size(62, 37);
@@ -657,25 +624,84 @@
             this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
             this.btnRefresh.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnRefresh.HoverState.Image = global::Stock_Management_System.Properties.Resources.Sync;
-            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnRefresh.Image = global::Stock_Management_System.Properties.Resources.Sync;
             this.btnRefresh.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnRefresh.ImageRotate = 0F;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnRefresh.Location = new System.Drawing.Point(1468, 9);
+            this.btnRefresh.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRefresh.Location = new System.Drawing.Point(1467, 9);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.PressedState.Image = global::Stock_Management_System.Properties.Resources.Sync;
-            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnRefresh.Size = new System.Drawing.Size(40, 31);
+            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Size = new System.Drawing.Size(44, 39);
             this.btnRefresh.TabIndex = 17;
             this.btnRefresh.UseTransparentBackground = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_click);
+            // 
+            // txtPoNumber
+            // 
+            this.txtPoNumber.AutoRoundedCorners = true;
+            this.txtPoNumber.BorderRadius = 16;
+            this.txtPoNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPoNumber.DefaultText = "";
+            this.txtPoNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPoNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPoNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPoNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPoNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPoNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPoNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPoNumber.Location = new System.Drawing.Point(1320, 116);
+            this.txtPoNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPoNumber.Name = "txtPoNumber";
+            this.txtPoNumber.PasswordChar = '\0';
+            this.txtPoNumber.PlaceholderText = "123";
+            this.txtPoNumber.SelectedText = "";
+            this.txtPoNumber.Size = new System.Drawing.Size(200, 35);
+            this.txtPoNumber.TabIndex = 18;
+            // 
+            // guna2HtmlLabel16
+            // 
+            this.guna2HtmlLabel16.AutoSize = false;
+            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(806, 124);
+            this.guna2HtmlLabel16.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
+            this.guna2HtmlLabel16.Size = new System.Drawing.Size(101, 22);
+            this.guna2HtmlLabel16.TabIndex = 2;
+            this.guna2HtmlLabel16.Text = "Deliver To";
+            this.guna2HtmlLabel16.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.AutoRoundedCorners = true;
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 17;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Location 1",
+            "Location 2",
+            "Location 3"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(898, 116);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox1.TabIndex = 4;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBoxVender_SelectedIndexChanged);
             // 
             // purchace_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1655, 992);
+            this.Controls.Add(this.txtPoNumber);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnImgAddSuppliers);
             this.Controls.Add(this.comboxTax);
@@ -692,10 +718,11 @@
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.btnaddnewItem);
             this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.comboBoxVender);
             this.Controls.Add(this.comboxPurchacetype);
-            this.Controls.Add(this.expirDate);
             this.Controls.Add(this.purchDate);
+            this.Controls.Add(this.guna2HtmlLabel16);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel14);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -703,7 +730,6 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvPurchaseList);
@@ -727,12 +753,10 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvPurchaseList;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnReset;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2DateTimePicker purchDate;
-        private Guna.UI2.WinForms.Guna2DateTimePicker expirDate;
         private Guna.UI2.WinForms.Guna2ComboBox comboxPurchacetype;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
@@ -767,5 +791,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
+        private Guna.UI2.WinForms.Guna2TextBox txtPoNumber;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
