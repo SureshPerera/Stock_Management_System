@@ -317,6 +317,28 @@ namespace Stock_Management_System
         private void btnRefresh_click(object sender, EventArgs e)
         {
             UpdateComboBoxData();
+            UpdateComboxVender();
+
+
+        }
+
+        void UpdateComboxVender()
+        {
+            string query = "SELECT supplier_Firm FROM supplierDetails"; // Adjust as needed
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                comboBoxVender.DataSource = dataTable;
+                // Bind the DataGridViewComboBoxColumn
+
+
+                comboBoxVender.DisplayMember = "supplier_Firm";
+                comboBoxVender.ValueMember = "supplier_Firm";
+            }
         }
         private void UpdateComboBoxData()
         {
@@ -337,7 +359,10 @@ namespace Stock_Management_System
             }
         }
 
-
-
+        private void btnImgAddSuppliers_Click(object sender, EventArgs e)
+        {
+            AddNewSuppliers addNewSuppliers = new AddNewSuppliers();
+            addNewSuppliers.ShowDialog();
+        }
     }
 }
