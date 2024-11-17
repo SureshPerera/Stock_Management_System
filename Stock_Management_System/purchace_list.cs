@@ -34,7 +34,7 @@ namespace Stock_Management_System
         private void dgvPurchaseList_cellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //fill_itemDiscription();
-            
+
         }
 
         //public void fillPopulateProductComboBox()
@@ -93,19 +93,19 @@ namespace Stock_Management_System
         }
         public void GetSupplierName()
         {
-                using (sqlcon)
-                {
-                    sqlcon.Open();
-                    SqlCommand cmd = sqlcon.CreateCommand();
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM supplierDetails WHERE supplier_Name = '" + comboBoxVender + "'";
-                    cmd.ExecuteNonQuery();
-                    DataTable dt = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    sqlcon.Close();
-                }
-            
+            using (sqlcon)
+            {
+                sqlcon.Open();
+                SqlCommand cmd = sqlcon.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM supplierDetails WHERE supplier_Name = '" + comboBoxVender + "'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                sqlcon.Close();
+            }
+
         }
         public class Product
         {
@@ -179,14 +179,14 @@ namespace Stock_Management_System
         {
 
 
-           
+
             // Check if the event is triggered by the ComboBox column
             if (dgvPurchaseList.Columns[e.ColumnIndex] is DataGridViewComboBoxColumn && e.RowIndex >= 0)
             {
                 string selectedProduct = dgvPurchaseList.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
 
                 // Fetch product details from the database
-               
+
                 string query = "SELECT Item_Discription, Item_Cost FROM item WHERE Item_Name = @Item_Name";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -209,7 +209,7 @@ namespace Stock_Management_System
 
             }
 
-           
+
 
 
         }
@@ -225,7 +225,7 @@ namespace Stock_Management_System
                 }
             }
 
-            txtTotalPrice.Text = totalSum.ToString(); 
+            txtTotalPrice.Text = totalSum.ToString();
         }
         private void dgvCellEndEdit_click(object sender, DataGridViewCellEventArgs e)
         {
@@ -253,7 +253,7 @@ namespace Stock_Management_System
 
 
                         CalculateTotalPriceSum();
-                        
+
 
                     }
                     catch (Exception ex)
@@ -268,12 +268,12 @@ namespace Stock_Management_System
         {
             decimal GetVat = 0;
 
-            if(decimal.TryParse(comboxTax.Text,out GetVat))
+            if (decimal.TryParse(comboxTax.Text, out GetVat))
             {
                 GetVat += GetVat;
             }
 
-            SetVat = totalSum * GetVat/100;
+            SetVat = totalSum * GetVat / 100;
 
             txtTax.Text = SetVat.ToString();
         }
@@ -286,14 +286,11 @@ namespace Stock_Management_System
 
             txtTotalPriceWithTax.Text = finalTotalPrice.ToString();
         }
-        void ComBoxAddValues()
-        {
-            
-        }
+
 
         private void txtChange_click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void comboxTax_SelectedIndexChanged(object sender, EventArgs e)
@@ -301,5 +298,46 @@ namespace Stock_Management_System
             CalculateVat();
             TotalPriceWithTax();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetAll();
+        }
+
+        void ResetAll()
+        {
+            dgvPurchaseList.Rows.Clear();
+            comboBoxVender.SelectedIndex = -1;
+
+            comboxPurchacetype.SelectedIndex = 0;
+            comboxTax.SelectedIndex = 0;
+            txtTax.Text = txtTotalPrice.Text = txtTotalPriceWithTax.Text = "";
+        }
+
+        private void btnRefresh_click(object sender, EventArgs e)
+        {
+            UpdateComboBoxData();
+        }
+        private void UpdateComboBoxData()
+        {
+           
+            string query = "SELECT Item_Name FROM item"; // Adjust as needed
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                // Bind the DataGridViewComboBoxColumn
+                DataGridViewComboBoxColumn comboBoxColumn = (DataGridViewComboBoxColumn)dgvPurchaseList.Columns["Product_name"]; // Adjust the column name
+                comboBoxColumn.DataSource = dataTable;
+                comboBoxColumn.DisplayMember = "Item_Name";
+                comboBoxColumn.ValueMember = "Item_Name";
+            }
+        }
+
+
+
     }
 }

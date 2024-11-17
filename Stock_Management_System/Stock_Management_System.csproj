@@ -464,5 +464,8 @@
   <ItemGroup>
     <None Include="Resources\Add User.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sync.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
