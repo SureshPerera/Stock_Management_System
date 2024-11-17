@@ -17,6 +17,8 @@ namespace Stock_Management_System
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
         string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        decimal totalSum = 0;
+        decimal SetVat = 0;
         public purchace_list()
         {
             InitializeComponent();
@@ -207,10 +209,24 @@ namespace Stock_Management_System
 
             }
 
+           
 
-            
+
         }
 
+        void CalculateTotalPriceSum()
+        {
+            foreach (DataGridViewRow row in dgvPurchaseList.Rows)
+            {
+                if (row.Cells["total_price"].Value != null &&
+                    decimal.TryParse(row.Cells["total_price"].Value.ToString(), out decimal cellValue))
+                {
+                    totalSum += cellValue;
+                }
+            }
+
+            txtTotalPrice.Text = totalSum.ToString(); 
+        }
         private void dgvCellEndEdit_click(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -236,7 +252,8 @@ namespace Stock_Management_System
                         dgvPurchaseList.Rows[e.RowIndex].Cells["total_price"].Value = totalPrice;
 
 
-
+                        CalculateTotalPriceSum();
+                        
 
                     }
                     catch (Exception ex)
@@ -245,6 +262,44 @@ namespace Stock_Management_System
                     }
                 }
             }
+        }
+
+        void CalculateVat()
+        {
+            decimal GetVat = 0;
+
+            if(decimal.TryParse(comboxTax.Text,out GetVat))
+            {
+                GetVat += GetVat;
+            }
+
+            SetVat = totalSum * GetVat/100;
+
+            txtTax.Text = SetVat.ToString();
+        }
+
+        void TotalPriceWithTax()
+        {
+            decimal finalTotalPrice = 0;
+
+            finalTotalPrice = totalSum + SetVat;
+
+            txtTotalPriceWithTax.Text = finalTotalPrice.ToString();
+        }
+        void ComBoxAddValues()
+        {
+            
+        }
+
+        private void txtChange_click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void comboxTax_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateVat();
+            TotalPriceWithTax();
         }
     }
 }
