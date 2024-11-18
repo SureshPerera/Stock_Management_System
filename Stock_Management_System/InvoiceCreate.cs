@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Stock_Management_System
 {
@@ -257,6 +259,136 @@ namespace Stock_Management_System
             comboxBillTo.SelectedIndex = -1;
             dgvSaleInvoice.Rows.Clear();
             
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            createHTML();
+        }
+
+        void createHTML()
+        {
+            string htmlCss = @"
+<style>
+              html{
+    padding: 0;
+    margin: 0;
+}
+
+.contacin1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacin2{
+    height: 40rem;
+    width: 40rem;
+    border: 2px solid black;
+    background-color: beige;
+
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.detals{
+    font-size: 18px;
+    margin-left: 25rem;
+}
+
+.final{
+    font-size: 18px;
+    margin-left: 25rem;  
+    margin-top: 16rem;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 2rem;
+    grid-row: inherit;
+    grid-column: auto;
+}  
+
+   </style>         
+            ";
+
+
+            string htmlContent = $@"
+<html>
+<head>
+{htmlCss}
+</head>
+<body>
+        <div class=""contain1"">
+            <div class=""contacin2"">
+                <h2>Sale Invoice</h2>
+                <br>
+                <div class=""detals"">
+                    <label for="""">Bill TO : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label>
+                <br>
+                <label for="""">Invoice Number: </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label>
+                <br>
+                <label for="""">Invoice Date: </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label>
+                <br>
+                <label for="""">Payoment Type: </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label>
+                <br>
+                <label for="""">Job Details: </label>  <label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label>  
+
+                </div>
+                
+                <br>
+                <table>
+                    <tr>
+                        <td> Product Name </td>
+                        <td> Product Discription </td>
+                        <td> Product Qty </td>
+                        <td> Unit Price </td>
+                        <td> Total Price </td>
+                    </tr>
+                   
+                    
+                </table>
+                <br>
+                <div class=""final"">
+                <label for="""">Tax : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> 10%</label> 
+                <br>
+                <label for="""">Discount : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> 10%</label> 
+                <br>
+                    <label for="""">SubTotal : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label> 
+                    <br>
+                    <label for="""">Tax : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label> 
+                    <br>
+                    <label for="""">Discount : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label> 
+                    <br>
+                    <label for="""">Total Price : </label><label style=""color: darkblue; font-weight: bold;"" for=""""> Suresh</label> 
+                    <br>
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
+
+";
+
+            string filePath = Path.Combine(Environment.CurrentDirectory, "Invoice1.html");
+            File.WriteAllText(filePath, htmlContent);
+
+            var process = new System.Diagnostics.Process
+            {
+                StartInfo = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "Invoice1.html",
+                    UseShellExecute = true
+                }
+            };
+            process.Start();
         }
     }
 }
