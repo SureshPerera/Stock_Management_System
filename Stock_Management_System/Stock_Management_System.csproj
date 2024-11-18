@@ -140,6 +140,9 @@
     <Compile Include="invoiceDashbord.Designer.cs">
       <DependentUpon>invoiceDashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="invoivePrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="page1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Stock_Management_System
 {
-    public partial class InvoiceCreate : Form
+    public partial class InvoiceCreate : Form 
     {
         string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         double totalSum = 0;
@@ -117,7 +117,7 @@ namespace Stock_Management_System
 
                 // Fetch product details from the database
 
-                string query = "SELECT Item_Discription, Item_Cost FROM item WHERE Item_Name = @Item_Name";
+                string query = "SELECT Item_Discription, Item_Selling_Price FROM item WHERE Item_Name = @Item_Name";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -131,7 +131,7 @@ namespace Stock_Management_System
                         {
                             // Update other columns in the same row
                             dgvSaleInvoice.Rows[e.RowIndex].Cells["Item_Discription"].Value = reader["Item_Discription"].ToString();
-                            dgvSaleInvoice.Rows[e.RowIndex].Cells["Item_Cost"].Value = reader["Item_Cost"].ToString();
+                            dgvSaleInvoice.Rows[e.RowIndex].Cells["Item_Cost"].Value = reader["Item_Selling_Price"].ToString();
                         }
                     }
                 }
@@ -241,6 +241,22 @@ namespace Stock_Management_System
                 comboBoxColumn.DisplayMember = "Item_Name";
                 comboBoxColumn.ValueMember = "Item_Name";
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            invoivePrinter invoivePrinter = new invoivePrinter();
+
+            invoivePrinter.AskAndPrintInvoice();
+        }
+
+        void Clear()
+        {
+            txtDiscountGet.Text = txtDiscountShow.Text = txtInvoNo.Text = txtJobDetails.Text = txtTaxShow.Text = txtTotalPrice.Text = txtTotalPriceWithTax.Text = txtVat.Text = "";
+            comboPayType.SelectedIndex = -1;
+            comboxBillTo.SelectedIndex = -1;
+            dgvSaleInvoice.Rows.Clear();
+            
         }
     }
 }
