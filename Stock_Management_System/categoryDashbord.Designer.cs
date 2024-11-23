@@ -29,11 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(categoryDashbord));
             this.dgvCategoryDashbord = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.catId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catDiscription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddNewCatergory = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -43,9 +47,6 @@
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.catId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catDiscription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoryDashbord)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
@@ -54,39 +55,49 @@
             // 
             // dgvCategoryDashbord
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvCategoryDashbord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCategoryDashbord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCategoryDashbord.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCategoryDashbord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvCategoryDashbord.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCategoryDashbord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCategoryDashbord.ColumnHeadersHeight = 45;
             this.dgvCategoryDashbord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCategoryDashbord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.catId,
             this.catName,
             this.catDiscription});
             this.dgvCategoryDashbord.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCategoryDashbord.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCategoryDashbord.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCategoryDashbord.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCategoryDashbord.Location = new System.Drawing.Point(12, 96);
             this.dgvCategoryDashbord.MultiSelect = false;
             this.dgvCategoryDashbord.Name = "dgvCategoryDashbord";
             this.dgvCategoryDashbord.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCategoryDashbord.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCategoryDashbord.RowHeadersVisible = false;
             this.dgvCategoryDashbord.RowHeadersWidth = 51;
+            this.dgvCategoryDashbord.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCategoryDashbord.RowTemplate.Height = 33;
             this.dgvCategoryDashbord.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCategoryDashbord.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -104,7 +115,7 @@
             this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvCategoryDashbord.ThemeStyle.HeaderStyle.Height = 45;
             this.dgvCategoryDashbord.ThemeStyle.ReadOnly = true;
             this.dgvCategoryDashbord.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCategoryDashbord.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -113,6 +124,30 @@
             this.dgvCategoryDashbord.ThemeStyle.RowsStyle.Height = 33;
             this.dgvCategoryDashbord.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCategoryDashbord.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // catId
+            // 
+            this.catId.DataPropertyName = "catId";
+            this.catId.HeaderText = "Id";
+            this.catId.MinimumWidth = 6;
+            this.catId.Name = "catId";
+            this.catId.ReadOnly = true;
+            // 
+            // catName
+            // 
+            this.catName.DataPropertyName = "catName";
+            this.catName.HeaderText = "Category Name";
+            this.catName.MinimumWidth = 6;
+            this.catName.Name = "catName";
+            this.catName.ReadOnly = true;
+            // 
+            // catDiscription
+            // 
+            this.catDiscription.DataPropertyName = "catDiscription";
+            this.catDiscription.HeaderText = "Discriptions";
+            this.catDiscription.MinimumWidth = 6;
+            this.catDiscription.Name = "catDiscription";
+            this.catDiscription.ReadOnly = true;
             // 
             // guna2Panel1
             // 
@@ -228,30 +263,6 @@
             this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
             this.btnimgSerach.TabIndex = 27;
             this.btnimgSerach.UseTransparentBackground = true;
-            // 
-            // catId
-            // 
-            this.catId.DataPropertyName = "catId";
-            this.catId.HeaderText = "Id";
-            this.catId.MinimumWidth = 6;
-            this.catId.Name = "catId";
-            this.catId.ReadOnly = true;
-            // 
-            // catName
-            // 
-            this.catName.DataPropertyName = "catName";
-            this.catName.HeaderText = "Category Name";
-            this.catName.MinimumWidth = 6;
-            this.catName.Name = "catName";
-            this.catName.ReadOnly = true;
-            // 
-            // catDiscription
-            // 
-            this.catDiscription.DataPropertyName = "catDiscription";
-            this.catDiscription.HeaderText = "Discriptions";
-            this.catDiscription.MinimumWidth = 6;
-            this.catDiscription.Name = "catDiscription";
-            this.catDiscription.ReadOnly = true;
             // 
             // categoryDashbord
             // 

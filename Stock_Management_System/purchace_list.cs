@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -121,6 +122,11 @@ namespace Stock_Management_System
             BindComboboxVender();
             dgvPurchaseList.CellValueChanged += DgvCellValueChange_Click;
 
+          
+            
+           
+           
+           
 
         }
 
@@ -309,9 +315,12 @@ namespace Stock_Management_System
             dgvPurchaseList.Rows.Clear();
             comboBoxVender.SelectedIndex = -1;
 
-            comboxPurchacetype.SelectedIndex = 0;
+            comboxPurchacetype.SelectedIndex = -1;
             comboxTax.SelectedIndex = 0;
-            txtTax.Text = txtTotalPrice.Text = txtTotalPriceWithTax.Text = "";
+            
+            txtPoNumber.Text = txtTax.Text = txtTotalPrice.Text = txtTotalPriceWithTax.Text = "";
+            comBoxDeliver.SelectedIndex = -1;
+
         }
 
         private void btnRefresh_click(object sender, EventArgs e)
@@ -363,6 +372,170 @@ namespace Stock_Management_System
         {
             AddNewSuppliers addNewSuppliers = new AddNewSuppliers();
             addNewSuppliers.ShowDialog();
+        }
+
+        public void AskAndPrintInvoice()
+        {
+            DialogResult result = MessageBox.Show("Do you want to print the Purchase Order Invoice?", "Print Invoice", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Printed Invoice Successfully");
+
+                createHTML();
+
+            }
+            else if (result == DialogResult.No)
+            {
+                MessageBox.Show("Successfully Saved Invoice");
+            }
+
+        }
+
+        void createHTML()
+        {
+            string htmlCss = @"
+            <style>
+                          html{
+                padding: 0;
+                margin: 0;
+            }
+
+            .contacin1{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .contacin2{
+                height: 40rem;
+                width: 40rem;
+                border: 2px solid black;
+                background-color: beige;
+
+            }
+            h2{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+
+            }
+
+            
+            .detals{
+                font-size: 18px;
+                margin-left: 1rem;
+            }
+
+            .final{
+                font-size: 18px;
+                margin-left: 25rem;  
+                margin-top: 16rem;
+            }
+
+            table{
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%;
+                height: 2rem;
+                grid-row: inherit;
+                grid-column: auto;
+            }  
+
+               </style>         
+                        "
+            ;
+
+
+            string htmlContent = $@"
+                <html>
+                <head>
+                {htmlCss}
+                </head>
+                <body>
+                        <div class=""contain1"">
+                            <div class=""contacin2"">
+                                <h2>ABC PVT LTD PURCHASE INVOICE</h2>
+                                <br>
+                                <div class=""detals"">
+                                    <label for="""">Vender </label><label style=""color: darkblue; font-weight: bold; margin-left: 4rem;"" for="""">: {comboBoxVender.Text}</label>
+                                <br>
+                                <label for="""">PO Number</label><label style=""color: darkblue; font-weight: bold; margin-left: 2rem"" for="""">: {txtPoNumber.Text}</label>
+                                <br>
+                                <label for="""">Purchase Date</label><label style=""color: darkblue; font-weight: bold; margin-left:1rem"" for="""">: {purchDate.Value}</label>
+                                <br>
+                                <label for="""">Payoment Type</label><label style=""color: darkblue; font-weight: bold;margin-left: 10px"" for="""">: {comboxPurchacetype.Text}</label>
+                                <br>
+                                <label for="""">Deliver TO</label>  <label style=""color: darkblue; font-weight: bold;margin-left: 2.3rem"" for="""">: {comBoxDeliver.Text}</label>  
+
+                                </div>
+                
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td> Product Name </td>
+                                        <td> Product Discription </td>
+                                        <td> Product Qty </td>
+                                        <td> Unit Price </td>
+                                        <td> Total Price </td>
+                                    </tr>
+                   
+                    
+                                </table>
+                                <br>
+                               <div class=""final"">
+                                <label style=""margin-left: -24rem;"" for="""">Tax  </label><label style=""color: darkblue; font-weight: bold; margin-left: 3.2rem"" for="""">: {comboxTax.Text}%</label> 
+                                <br>
+                               
+                                    <label for="""">SubTotal  </label><label style=""color: darkblue; font-weight: bold;margin-left: 12px"" for="""">: {txtTotalPrice.Text}</label> 
+                                    <br>
+                                    <label for="""">Tax  </label><label style=""color: darkblue; font-weight: bold;margin-left: 3.1rem"" for="""">: {txtTax.Text}</label> 
+                                    <br>
+                                    
+                                    <label for="""">Total Price </label><label style=""color: darkblue; font-weight: bold; margin-left: -0.1rem"" for="""">: {txtTotalPriceWithTax.Text}</label> 
+                                    <br>
+                                </div>
+
+                            </div>
+                        </div>
+                </body>
+                </html>
+
+                ";
+
+            string filePath = Path.Combine(Environment.CurrentDirectory, "invoiceHTML.html");
+            File.WriteAllText(filePath, htmlContent);
+
+            var process = new System.Diagnostics.Process
+            {
+                StartInfo = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "invoiceHTML.html",
+                    UseShellExecute = true
+                }
+            };
+            process.Start();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if(txtPoNumber.Text == "" && comboBoxVender.Text == "" && comBoxDeliver.Text == "" && comboxPurchacetype.Text == "" && txtTax.Text == "" && purchDate.Text == "")
+            {
+                MessageBox.Show("Please Fill Relavent Filds!");
+            }
+            else
+            {
+                AskAndPrintInvoice();
+            }
+
+           
+
+
+        }
+
+        private void txtTotalPriceWithTax_TextChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }

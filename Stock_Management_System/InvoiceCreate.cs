@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ZXing;
 
 namespace Stock_Management_System
 {
@@ -248,7 +248,16 @@ namespace Stock_Management_System
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            AskAndPrintInvoice();
+
+            if (txtInvoNo.Text == "" && txtDiscountGet.Text == "" && txtVat.Text == "" && comboPayType.Text == "" && comboxBillTo.Text == "" && invoDate.Text == "")
+            {
+                MessageBox.Show("Please Fill Relavent Filds!");
+            }
+            else
+            {
+
+             AskAndPrintInvoice();
+            }
         }
 
         void Clear()
@@ -272,7 +281,7 @@ namespace Stock_Management_System
             if (result == DialogResult.Yes)
             {
                 MessageBox.Show("Printed Invoice Successfully");
-                
+
                 createHTML();
 
             }
@@ -411,5 +420,27 @@ namespace Stock_Management_System
         }
 
 
+
+        //add bar code reader
+        private void DecodeBarcodeFromImage(string imagePath)
+        {
+            var barcodeReader = new BarcodeReader();
+            var barcodeBitmap = (Bitmap)Image.FromFile(imagePath);
+            var result = barcodeReader.Decode(barcodeBitmap);
+
+            if (result != null)
+            {
+                MessageBox.Show($"Barcode: {result.Text}");
+            }
+            else
+            {
+                MessageBox.Show("No barcode found.");
+            }
+        }
+
+        private void txtJobDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

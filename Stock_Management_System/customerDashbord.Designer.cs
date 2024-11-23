@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customerDashbord));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -39,17 +40,17 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvCustomerDetails = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
-            this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cusId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
+            this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
@@ -140,17 +141,18 @@
             // dgvCustomerDetails
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCustomerDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCustomerDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCustomerDetails.ColumnHeadersHeight = 35;
+            this.dgvCustomerDetails.ColumnHeadersHeight = 45;
             this.dgvCustomerDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCustomerDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cusId,
@@ -162,7 +164,7 @@
             this.dgvCustomerDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -173,8 +175,17 @@
             this.dgvCustomerDetails.MultiSelect = false;
             this.dgvCustomerDetails.Name = "dgvCustomerDetails";
             this.dgvCustomerDetails.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCustomerDetails.RowHeadersVisible = false;
             this.dgvCustomerDetails.RowHeadersWidth = 51;
+            this.dgvCustomerDetails.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCustomerDetails.RowTemplate.Height = 33;
             this.dgvCustomerDetails.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCustomerDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -192,7 +203,7 @@
             this.dgvCustomerDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCustomerDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvCustomerDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvCustomerDetails.ThemeStyle.HeaderStyle.Height = 45;
             this.dgvCustomerDetails.ThemeStyle.ReadOnly = true;
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -201,6 +212,55 @@
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.Height = 33;
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // cusId
+            // 
+            this.cusId.DataPropertyName = "cusId";
+            this.cusId.HeaderText = "Id";
+            this.cusId.MinimumWidth = 6;
+            this.cusId.Name = "cusId";
+            this.cusId.ReadOnly = true;
+            this.cusId.Visible = false;
+            // 
+            // cusName
+            // 
+            this.cusName.DataPropertyName = "cusName";
+            this.cusName.HeaderText = "Name";
+            this.cusName.MinimumWidth = 6;
+            this.cusName.Name = "cusName";
+            this.cusName.ReadOnly = true;
+            // 
+            // cusAddress
+            // 
+            this.cusAddress.DataPropertyName = "cusAddress";
+            this.cusAddress.HeaderText = "Address";
+            this.cusAddress.MinimumWidth = 6;
+            this.cusAddress.Name = "cusAddress";
+            this.cusAddress.ReadOnly = true;
+            // 
+            // cusContact
+            // 
+            this.cusContact.DataPropertyName = "cusContact";
+            this.cusContact.HeaderText = "Contact No";
+            this.cusContact.MinimumWidth = 6;
+            this.cusContact.Name = "cusContact";
+            this.cusContact.ReadOnly = true;
+            // 
+            // cusEmail
+            // 
+            this.cusEmail.DataPropertyName = "cusEmail";
+            this.cusEmail.HeaderText = "Email";
+            this.cusEmail.MinimumWidth = 6;
+            this.cusEmail.Name = "cusEmail";
+            this.cusEmail.ReadOnly = true;
+            // 
+            // cusTin
+            // 
+            this.cusTin.DataPropertyName = "cusTin";
+            this.cusTin.HeaderText = "Tin No";
+            this.cusTin.MinimumWidth = 6;
+            this.cusTin.Name = "cusTin";
+            this.cusTin.ReadOnly = true;
             // 
             // itemBindingSource
             // 
@@ -255,55 +315,6 @@
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(404, 47);
             this.txtSearch.TabIndex = 28;
-            // 
-            // cusId
-            // 
-            this.cusId.DataPropertyName = "cusId";
-            this.cusId.HeaderText = "Id";
-            this.cusId.MinimumWidth = 6;
-            this.cusId.Name = "cusId";
-            this.cusId.ReadOnly = true;
-            this.cusId.Visible = false;
-            // 
-            // cusName
-            // 
-            this.cusName.DataPropertyName = "cusName";
-            this.cusName.HeaderText = "Name";
-            this.cusName.MinimumWidth = 6;
-            this.cusName.Name = "cusName";
-            this.cusName.ReadOnly = true;
-            // 
-            // cusAddress
-            // 
-            this.cusAddress.DataPropertyName = "cusAddress";
-            this.cusAddress.HeaderText = "Address";
-            this.cusAddress.MinimumWidth = 6;
-            this.cusAddress.Name = "cusAddress";
-            this.cusAddress.ReadOnly = true;
-            // 
-            // cusContact
-            // 
-            this.cusContact.DataPropertyName = "cusContact";
-            this.cusContact.HeaderText = "Contact No";
-            this.cusContact.MinimumWidth = 6;
-            this.cusContact.Name = "cusContact";
-            this.cusContact.ReadOnly = true;
-            // 
-            // cusEmail
-            // 
-            this.cusEmail.DataPropertyName = "cusEmail";
-            this.cusEmail.HeaderText = "Email";
-            this.cusEmail.MinimumWidth = 6;
-            this.cusEmail.Name = "cusEmail";
-            this.cusEmail.ReadOnly = true;
-            // 
-            // cusTin
-            // 
-            this.cusTin.DataPropertyName = "cusTin";
-            this.cusTin.HeaderText = "Tin No";
-            this.cusTin.MinimumWidth = 6;
-            this.cusTin.Name = "cusTin";
-            this.cusTin.ReadOnly = true;
             // 
             // customerDashbord
             // 

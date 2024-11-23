@@ -672,6 +672,7 @@
             this.txtJobDetails.SelectedText = "";
             this.txtJobDetails.Size = new System.Drawing.Size(375, 73);
             this.txtJobDetails.TabIndex = 50;
+            this.txtJobDetails.Enter += new System.EventHandler(this.txtJobDetails_Enter);
             // 
             // txtDiscountGet
             // 

@@ -29,18 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(staffDetails));
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
             this.dgvStaffDetails = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.cusId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,8 +46,11 @@
             this.stAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventry_Management_SystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffDetails)).BeginInit();
@@ -94,18 +95,19 @@
             // 
             // dgvStaffDetails
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvStaffDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvStaffDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStaffDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStaffDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvStaffDetails.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStaffDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvStaffDetails.ColumnHeadersHeight = 45;
             this.dgvStaffDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvStaffDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cusId,
@@ -116,21 +118,30 @@
             this.stContact,
             this.stEmail});
             this.dgvStaffDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStaffDetails.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStaffDetails.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStaffDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvStaffDetails.Location = new System.Drawing.Point(12, 97);
             this.dgvStaffDetails.MultiSelect = false;
             this.dgvStaffDetails.Name = "dgvStaffDetails";
             this.dgvStaffDetails.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStaffDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvStaffDetails.RowHeadersVisible = false;
             this.dgvStaffDetails.RowHeadersWidth = 51;
+            this.dgvStaffDetails.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvStaffDetails.RowTemplate.Height = 33;
             this.dgvStaffDetails.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvStaffDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -148,7 +159,7 @@
             this.dgvStaffDetails.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvStaffDetails.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvStaffDetails.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvStaffDetails.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvStaffDetails.ThemeStyle.HeaderStyle.Height = 45;
             this.dgvStaffDetails.ThemeStyle.ReadOnly = true;
             this.dgvStaffDetails.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvStaffDetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -157,49 +168,6 @@
             this.dgvStaffDetails.ThemeStyle.RowsStyle.Height = 33;
             this.dgvStaffDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvStaffDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.BorderRadius = 15;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(10, 10);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
-            this.guna2ControlBox1.TabIndex = 31;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(624, 13);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(267, 67);
-            this.guna2HtmlLabel1.TabIndex = 30;
-            this.guna2HtmlLabel1.Text = "Staff Details";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.AutoRoundedCorners = true;
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Panel1.BorderRadius = 27;
-            this.guna2Panel1.Controls.Add(this.btnAddCustomer);
-            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel1.Location = new System.Drawing.Point(75, 13);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
-            this.guna2Panel1.TabIndex = 32;
             // 
             // cusId
             // 
@@ -258,23 +226,48 @@
             this.stEmail.Name = "stEmail";
             this.stEmail.ReadOnly = true;
             // 
-            // btnimgSerach
+            // guna2ControlBox1
             // 
-            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
-            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
-            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnimgSerach.ImageRotate = 0F;
-            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnimgSerach.Location = new System.Drawing.Point(1434, 23);
-            this.btnimgSerach.Name = "btnimgSerach";
-            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
-            this.btnimgSerach.TabIndex = 35;
-            this.btnimgSerach.UseTransparentBackground = true;
+            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 15;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.MediumBlue;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(10, 10);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
+            this.guna2ControlBox1.TabIndex = 31;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(624, 13);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(267, 67);
+            this.guna2HtmlLabel1.TabIndex = 30;
+            this.guna2HtmlLabel1.Text = "Staff Details";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.AutoRoundedCorners = true;
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.guna2Panel1.BorderRadius = 27;
+            this.guna2Panel1.Controls.Add(this.btnAddCustomer);
+            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel1.Location = new System.Drawing.Point(75, 13);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
+            this.guna2Panel1.TabIndex = 32;
             // 
             // btnAddCustomer
             // 
@@ -294,6 +287,24 @@
             this.btnAddCustomer.TabIndex = 15;
             this.btnAddCustomer.UseTransparentBackground = true;
             this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
+            // btnimgSerach
+            // 
+            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
+            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
+            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnimgSerach.ImageRotate = 0F;
+            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnimgSerach.Location = new System.Drawing.Point(1434, 23);
+            this.btnimgSerach.Name = "btnimgSerach";
+            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
+            this.btnimgSerach.TabIndex = 35;
+            this.btnimgSerach.UseTransparentBackground = true;
             // 
             // staffDetails
             // 
