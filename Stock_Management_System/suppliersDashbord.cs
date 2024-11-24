@@ -29,7 +29,7 @@ namespace Stock_Management_System
         void showSupplierDetails()
         {
             
-        SqlConnection sqlCon = new SqlConnection(connectionString);
+            SqlConnection sqlCon = new SqlConnection(connectionString);
             using (sqlCon)
             {
                 sqlCon.Open();

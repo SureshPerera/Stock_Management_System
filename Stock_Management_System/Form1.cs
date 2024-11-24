@@ -75,27 +75,124 @@ namespace Stock_Management_System
 
             //no of item update 
 
-            string noOfItemquary = "SELECT SUM(CAST(Item_Code AS DECIMAL(10,2))) AS total FROM item WHERE ISNUMERIC(Item_Code) = 1";
-            using (SqlConnection sqlCon = new SqlConnection(connectionString))
-            {
-                sqlCon.Open();
-                SqlCommand cmd = new SqlCommand(noOfItemquary, sqlCon);
-                object result = cmd.ExecuteNonQuery();
+            updateTotalCustomer();
+            updateTotalSupplier();
+            updateQuntityInHand();
+            updateItemGroups();
 
-              
-                if (result != DBNull.Value)
-                {
-                    decimal TotalNumOfItem = Convert.ToDecimal(result);
-                    txtNoOfItems.Text = TotalNumOfItem.ToString();              
-                }
-                else
-                {
-                    txtNoOfItems.Text = "0";
-                }
-            }
             pressDashbordbtn();
             selectloging();
         }
+
+        void updateTotalCustomer()
+        {
+            SqlConnection sqlCon = new SqlConnection(connectionString);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("addCustomer", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT COUNT(*) AS cusId FROM customerDetails";
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                var result =  cmd.ExecuteScalar();
+                
+                if(result != null)
+                {
+                    txtTotalCustomer.Text = $"{result.ToString()}";
+                }
+                else
+                {
+                    txtTotalCustomer.Text = $"0";
+                
+                }
+                sqlCon.Close();
+            }
+        }
+
+        void updateTotalSupplier()
+        {
+            SqlConnection sqlCon = new SqlConnection(connectionString);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("supplierDetailsAdd", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT COUNT(*) AS supId FROM supplierDetails";
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                var result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    txtSuppliers.Text = $"{result.ToString()}";
+                }
+                else
+                {
+                    txtSuppliers.Text = $"0";
+
+                }
+                sqlCon.Close();
+            }
+        }
+
+        void updateQuntityInHand()
+        {
+            SqlConnection sqlCon = new SqlConnection(connectionString);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("addNewItem", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT COUNT(*) AS Item_Id FROM item";
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                var result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    txtQuantityInHand.Text = $"{result.ToString()}";
+                }
+                else
+                {
+                    txtQuantityInHand.Text = $"0";
+
+                }
+                sqlCon.Close();
+            }
+        }
+
+
+        void updateItemGroups()
+        {
+            SqlConnection sqlCon = new SqlConnection(connectionString);
+            using (sqlCon)
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand("addCategory", sqlCon);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT COUNT(*) AS catId FROM Categories";
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                var result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    txtItemGroup.Text = $"{result.ToString()}";
+                }
+                else
+                {
+                    txtItemGroup.Text = $"0";
+
+                }
+                sqlCon.Close();
+            }
+        }
+
 
         void selectloging()
         {
@@ -165,28 +262,21 @@ namespace Stock_Management_System
                 pnlmain.Hide();
 
                 //sale overview
-                txtTotalSale.Text = totalSale.ToString("Rs" + "250000");
+               
              
-                txtSaleCost.Text = saleCost.ToString("Rs" + "100000");
-                txtRevenue.Text = revenue.ToString("Rs" + "500000");
-                txtProfit.Text = profit.ToString("Rs" + "200000");
+               
                 //purchase overview
-                txtNOPurchase.Text = noOfPurchase.ToString("200");
-                txtCancelOrder.Text = canselOrder.ToString("20");
-                txtPurchaseCost.Text = purchaseCost.ToString("Rs" + "20000");
-                txtReturn.Text = returns.ToString("12");
+              
                 //inventoty summury
-                txtQuantityInHand.Text = quntityInHand.ToString("470");
-                txtWillbereceived.Text = willBeRecived.ToString("120");
+              
 
                 //product details
-                txtLowStockItems.Text = lowStockItems.ToString("20");
-                txtItemGroup.Text = itemGroup.ToString("15");
+               
                 //txtNoOfItems.Text = noOfItem.ToString();
 
                 //No Of Users
-                txtTotalCustomer.Text = totalCustomer.ToString("1.8K");
-                txtSuppliers.Text = totalSupplier.ToString("30");
+               
+               
 
                 
                 inventry.Hide();
@@ -497,6 +587,15 @@ namespace Stock_Management_System
         {
         }
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            updateItemGroups();
+            updateQuntityInHand();
+            updateTotalCustomer();
+            updateTotalSupplier();
+        }
+
+       
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)
         {
 

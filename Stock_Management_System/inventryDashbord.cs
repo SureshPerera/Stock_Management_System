@@ -72,5 +72,10 @@ namespace Stock_Management_System
         {
 
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            showInventryTable();
+        }
     }
 }

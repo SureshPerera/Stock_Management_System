@@ -135,6 +135,7 @@
             this.btnImgPurchaseOrder = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.pnlUser.SuspendLayout();
@@ -1668,12 +1669,32 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRefresh.HoverState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnRefresh.ImageRotate = 0F;
+            this.btnRefresh.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRefresh.Location = new System.Drawing.Point(1486, 86);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Size = new System.Drawing.Size(44, 39);
+            this.btnRefresh.TabIndex = 18;
+            this.btnRefresh.UseTransparentBackground = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1534, 1055);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pnlmain);
             this.Controls.Add(this.pnlNoOfUsers);
             this.Controls.Add(this.pnlProductDetailes);
@@ -1844,6 +1865,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         public Guna.UI2.WinForms.Guna2Button btnCategory;
         private Guna.UI2.WinForms.Guna2ImageButton btnCategoryImg;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
     }
 }
 
