@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inventryDashbord));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvInterntrydetails = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -43,12 +43,12 @@
             this.Item_Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Selling_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInterntrydetails)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,17 +68,17 @@
             // dgvInterntrydetails
             // 
             this.dgvInterntrydetails.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvInterntrydetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInterntrydetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvInterntrydetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInterntrydetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvInterntrydetails.ColumnHeadersHeight = 45;
             this.dgvInterntrydetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvInterntrydetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -89,26 +89,26 @@
             this.category,
             this.Item_Cost,
             this.Item_Selling_Price});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInterntrydetails.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInterntrydetails.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInterntrydetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvInterntrydetails.Location = new System.Drawing.Point(12, 69);
             this.dgvInterntrydetails.Name = "dgvInterntrydetails";
             this.dgvInterntrydetails.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInterntrydetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInterntrydetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvInterntrydetails.RowHeadersVisible = false;
             this.dgvInterntrydetails.RowHeadersWidth = 51;
             this.dgvInterntrydetails.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,25 +212,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 35);
             this.guna2ControlBox1.TabIndex = 15;
             // 
-            // btnaddnewItem
-            // 
-            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnaddnewItem.ImageRotate = 0F;
-            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
-            this.btnaddnewItem.Name = "btnaddnewItem";
-            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
-            this.btnaddnewItem.TabIndex = 14;
-            this.btnaddnewItem.UseTransparentBackground = true;
-            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.AutoRoundedCorners = true;
@@ -243,25 +224,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 16;
-            // 
-            // btnimgSerach
-            // 
-            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
-            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
-            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnimgSerach.ImageRotate = 0F;
-            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnimgSerach.Location = new System.Drawing.Point(1365, 13);
-            this.btnimgSerach.Name = "btnimgSerach";
-            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
-            this.btnimgSerach.TabIndex = 29;
-            this.btnimgSerach.UseTransparentBackground = true;
-            this.btnimgSerach.Click += new System.EventHandler(this.btnimgSerach_Click);
             // 
             // txtSearch
             // 
@@ -285,25 +247,6 @@
             this.txtSearch.Size = new System.Drawing.Size(404, 47);
             this.txtSearch.TabIndex = 28;
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.guna2ImageButton1.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 2);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(77, 53);
-            this.guna2ImageButton1.TabIndex = 14;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.btnaddnewItem_Click);
-            // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
@@ -322,6 +265,63 @@
             this.btnRefresh.TabIndex = 30;
             this.btnRefresh.UseTransparentBackground = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnimgSerach
+            // 
+            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
+            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
+            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnimgSerach.ImageRotate = 0F;
+            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnimgSerach.Location = new System.Drawing.Point(1365, 13);
+            this.btnimgSerach.Name = "btnimgSerach";
+            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
+            this.btnimgSerach.TabIndex = 29;
+            this.btnimgSerach.UseTransparentBackground = true;
+            this.btnimgSerach.Click += new System.EventHandler(this.btnimgSerach_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.guna2ImageButton1.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 2);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(77, 53);
+            this.guna2ImageButton1.TabIndex = 14;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.btnInventoryAddItems_click);
+            // 
+            // btnaddnewItem
+            // 
+            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnaddnewItem.ImageRotate = 0F;
+            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
+            this.btnaddnewItem.Name = "btnaddnewItem";
+            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
+            this.btnaddnewItem.TabIndex = 14;
+            this.btnaddnewItem.UseTransparentBackground = true;
+            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
             // 
             // inventryDashbord
             // 

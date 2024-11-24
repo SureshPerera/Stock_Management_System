@@ -77,5 +77,11 @@ namespace Stock_Management_System
         {
             showInventryTable();
         }
+
+        private void btnInventoryAddItems_click(object sender, EventArgs e)
+        {
+            InventoryItemsAdd inventoryItemsAdd = new InventoryItemsAdd();
+            inventoryItemsAdd.ShowDialog();
+        }
     }
 }

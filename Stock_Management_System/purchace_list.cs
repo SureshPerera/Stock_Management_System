@@ -24,7 +24,7 @@ namespace Stock_Management_System
         {
             InitializeComponent();
             GetSupplierName();
-            Console.WriteLine("asdasda");
+           
         }
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)

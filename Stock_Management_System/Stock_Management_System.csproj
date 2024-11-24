@@ -112,6 +112,12 @@
     <Compile Include="formLoging.Designer.cs">
       <DependentUpon>formLoging.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryItemsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryItemsAdd.Designer.cs">
+      <DependentUpon>InventoryItemsAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="inventry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLoging.resx">
       <DependentUpon>formLoging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryItemsAdd.resx">
+      <DependentUpon>InventoryItemsAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inventry.resx">
       <DependentUpon>inventry.cs</DependentUpon>
@@ -484,6 +493,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Shopping Cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

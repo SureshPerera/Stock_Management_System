@@ -18,7 +18,7 @@ namespace Stock_Management_System
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             //Application.Run(new formLoging());
-           //Application.Run(new inventry());
+            //Application.Run(new inventry());
             //Application.Run(new purchace_list());
             //Application.Run(new inventryDashbord());
             //Application.Run(new suppliersDashbord());
@@ -28,6 +28,7 @@ namespace Stock_Management_System
             //Application.Run(new addNewCustomer());
             //Application.Run(new addNewStaff());
             //Application.Run(new InvoiceCreate());
+            //Application.Run(new InventoryItemsAdd());
         }
     }
 }
