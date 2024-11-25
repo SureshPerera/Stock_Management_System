@@ -80,7 +80,7 @@ namespace Stock_Management_System
                 // Fetch product details from the database
 
                 string query = "SELECT Item_Discription, Item_Cost FROM item WHERE Item_Name = @Item_Name";
-
+                int enteredQty = 0;
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlCommand command = new SqlCommand(query, connection);
@@ -100,6 +100,7 @@ namespace Stock_Management_System
 
 
             }
+            
 
         }
 
@@ -261,5 +262,8 @@ namespace Stock_Management_System
                 MessageBox.Show("Succsfully Added Inventory");
             }
         }
+
+       
+
     }
 }
