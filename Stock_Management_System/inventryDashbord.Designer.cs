@@ -32,23 +32,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inventryDashbord));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvInterntrydetails = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Item_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item_Selling_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.itemQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInterntrydetails)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -86,9 +88,10 @@
             this.Item_Code,
             this.Item_Name,
             this.Item_Discription,
-            this.category,
+            this.catName,
             this.Item_Cost,
-            this.Item_Selling_Price});
+            this.Item_Selling_Price,
+            this.itemQty});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,6 +102,7 @@
             this.dgvInterntrydetails.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInterntrydetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvInterntrydetails.Location = new System.Drawing.Point(12, 69);
+            this.dgvInterntrydetails.Margin = new System.Windows.Forms.Padding(0);
             this.dgvInterntrydetails.Name = "dgvInterntrydetails";
             this.dgvInterntrydetails.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -111,11 +115,14 @@
             this.dgvInterntrydetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvInterntrydetails.RowHeadersVisible = false;
             this.dgvInterntrydetails.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvInterntrydetails.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvInterntrydetails.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvInterntrydetails.RowTemplate.Height = 24;
+            this.dgvInterntrydetails.RowTemplate.Height = 34;
             this.dgvInterntrydetails.RowTemplate.ReadOnly = true;
-            this.dgvInterntrydetails.Size = new System.Drawing.Size(1534, 909);
+            this.dgvInterntrydetails.Size = new System.Drawing.Size(1534, 1055);
             this.dgvInterntrydetails.TabIndex = 1;
+            this.dgvInterntrydetails.TabStop = false;
             this.dgvInterntrydetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvInterntrydetails.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvInterntrydetails.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -134,65 +141,9 @@
             this.dgvInterntrydetails.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvInterntrydetails.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvInterntrydetails.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvInterntrydetails.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvInterntrydetails.ThemeStyle.RowsStyle.Height = 34;
             this.dgvInterntrydetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvInterntrydetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // Item_id
-            // 
-            this.Item_id.DataPropertyName = "Item_Id";
-            this.Item_id.HeaderText = "Id";
-            this.Item_id.MinimumWidth = 6;
-            this.Item_id.Name = "Item_id";
-            this.Item_id.ReadOnly = true;
-            this.Item_id.Visible = false;
-            // 
-            // Item_Code
-            // 
-            this.Item_Code.DataPropertyName = "Item_Code";
-            this.Item_Code.HeaderText = "Code";
-            this.Item_Code.MinimumWidth = 6;
-            this.Item_Code.Name = "Item_Code";
-            this.Item_Code.ReadOnly = true;
-            // 
-            // Item_Name
-            // 
-            this.Item_Name.DataPropertyName = "Item_Name";
-            this.Item_Name.HeaderText = "Name";
-            this.Item_Name.MinimumWidth = 6;
-            this.Item_Name.Name = "Item_Name";
-            this.Item_Name.ReadOnly = true;
-            // 
-            // Item_Discription
-            // 
-            this.Item_Discription.DataPropertyName = "Item_Discription";
-            this.Item_Discription.HeaderText = "Discription";
-            this.Item_Discription.MinimumWidth = 6;
-            this.Item_Discription.Name = "Item_Discription";
-            this.Item_Discription.ReadOnly = true;
-            // 
-            // category
-            // 
-            this.category.HeaderText = "Category";
-            this.category.MinimumWidth = 6;
-            this.category.Name = "category";
-            this.category.ReadOnly = true;
-            // 
-            // Item_Cost
-            // 
-            this.Item_Cost.DataPropertyName = "Item_Cost";
-            this.Item_Cost.HeaderText = "Cost";
-            this.Item_Cost.MinimumWidth = 6;
-            this.Item_Cost.Name = "Item_Cost";
-            this.Item_Cost.ReadOnly = true;
-            // 
-            // Item_Selling_Price
-            // 
-            this.Item_Selling_Price.DataPropertyName = "Item_Selling_Price";
-            this.Item_Selling_Price.HeaderText = "Selling Price";
-            this.Item_Selling_Price.MinimumWidth = 6;
-            this.Item_Selling_Price.Name = "Item_Selling_Price";
-            this.Item_Selling_Price.ReadOnly = true;
             // 
             // guna2ControlBox1
             // 
@@ -224,6 +175,44 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 16;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.guna2ImageButton1.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 2);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(77, 53);
+            this.guna2ImageButton1.TabIndex = 14;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.btnInventoryAddItems_click);
+            // 
+            // btnaddnewItem
+            // 
+            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnaddnewItem.ImageRotate = 0F;
+            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
+            this.btnaddnewItem.Name = "btnaddnewItem";
+            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
+            this.btnaddnewItem.TabIndex = 14;
+            this.btnaddnewItem.UseTransparentBackground = true;
+            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
             // 
             // txtSearch
             // 
@@ -285,43 +274,70 @@
             this.btnimgSerach.UseTransparentBackground = true;
             this.btnimgSerach.Click += new System.EventHandler(this.btnimgSerach_Click);
             // 
-            // guna2ImageButton1
+            // Item_id
             // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.guna2ImageButton1.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 2);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Shopping_Cart;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(77, 53);
-            this.guna2ImageButton1.TabIndex = 14;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.btnInventoryAddItems_click);
+            this.Item_id.DataPropertyName = "Item_Id";
+            this.Item_id.HeaderText = "Id";
+            this.Item_id.MinimumWidth = 6;
+            this.Item_id.Name = "Item_id";
+            this.Item_id.ReadOnly = true;
+            this.Item_id.Visible = false;
             // 
-            // btnaddnewItem
+            // Item_Code
             // 
-            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnaddnewItem.ImageRotate = 0F;
-            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
-            this.btnaddnewItem.Name = "btnaddnewItem";
-            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
-            this.btnaddnewItem.TabIndex = 14;
-            this.btnaddnewItem.UseTransparentBackground = true;
-            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
+            this.Item_Code.DataPropertyName = "Item_Code";
+            this.Item_Code.HeaderText = "Code";
+            this.Item_Code.MinimumWidth = 6;
+            this.Item_Code.Name = "Item_Code";
+            this.Item_Code.ReadOnly = true;
+            // 
+            // Item_Name
+            // 
+            this.Item_Name.DataPropertyName = "Item_Name";
+            this.Item_Name.HeaderText = "Name";
+            this.Item_Name.MinimumWidth = 6;
+            this.Item_Name.Name = "Item_Name";
+            this.Item_Name.ReadOnly = true;
+            // 
+            // Item_Discription
+            // 
+            this.Item_Discription.DataPropertyName = "Item_Discription";
+            this.Item_Discription.HeaderText = "Discription";
+            this.Item_Discription.MinimumWidth = 6;
+            this.Item_Discription.Name = "Item_Discription";
+            this.Item_Discription.ReadOnly = true;
+            // 
+            // catName
+            // 
+            this.catName.DataPropertyName = "catName";
+            this.catName.HeaderText = "Category";
+            this.catName.MinimumWidth = 6;
+            this.catName.Name = "catName";
+            this.catName.ReadOnly = true;
+            // 
+            // Item_Cost
+            // 
+            this.Item_Cost.DataPropertyName = "Item_Cost";
+            this.Item_Cost.HeaderText = "Cost";
+            this.Item_Cost.MinimumWidth = 6;
+            this.Item_Cost.Name = "Item_Cost";
+            this.Item_Cost.ReadOnly = true;
+            // 
+            // Item_Selling_Price
+            // 
+            this.Item_Selling_Price.DataPropertyName = "Item_Selling_Price";
+            this.Item_Selling_Price.HeaderText = "Selling Price";
+            this.Item_Selling_Price.MinimumWidth = 6;
+            this.Item_Selling_Price.Name = "Item_Selling_Price";
+            this.Item_Selling_Price.ReadOnly = true;
+            // 
+            // itemQty
+            // 
+            this.itemQty.DataPropertyName = "itemQty";
+            this.itemQty.HeaderText = "Stock";
+            this.itemQty.MinimumWidth = 6;
+            this.itemQty.Name = "itemQty";
+            this.itemQty.ReadOnly = true;
             // 
             // inventryDashbord
             // 
@@ -356,16 +372,17 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnaddnewItem;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Discription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Cost;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Selling_Price;
         private Guna.UI2.WinForms.Guna2ImageButton btnimgSerach;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Discription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Cost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_Selling_Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemQty;
     }
 }

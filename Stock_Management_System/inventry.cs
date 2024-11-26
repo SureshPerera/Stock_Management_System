@@ -114,6 +114,7 @@ namespace Stock_Management_System
                     cmd.Parameters.AddWithValue("@Item_Cost", txtCost.Text);
                     cmd.Parameters.AddWithValue("@Item_Selling_Price", txtSellingPrice.Text);
                     cmd.Parameters.AddWithValue("@catName",btnComboboxSelectCategory.Text);
+                    cmd.Parameters.AddWithValue("@itemQty",txtStock.Text);
 
 
                     DataTable dt = new DataTable();
@@ -158,9 +159,16 @@ namespace Stock_Management_System
 
         private void gridviewcellclick_Click(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
             id = Convert.ToInt32(row.Cells[0].Value);
 
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
 
         private void btnComboboxSelectCategory_Click(object sender, EventArgs e)

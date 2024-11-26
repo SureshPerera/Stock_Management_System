@@ -249,9 +249,9 @@ namespace Stock_Management_System
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            if (txtInvoNo.Text == "" && txtDiscountGet.Text == "" && txtVat.Text == "" && comboPayType.Text == "" && comboxBillTo.Text == "" && invoDate.Text == "")
+            if (txtInvoNo.Text == "" || txtDiscountGet.Text == "" || txtVat.Text == "" || comboPayType.Text == "" || comboxBillTo.Text == "" || invoDate.Text == "")
             {
-                MessageBox.Show("Please Fill Relavent Filds!");
+                MessageBox.Show("Please Fill Relavent Filds!", "REMENDING!", MessageBoxButtons.OK);
             }
             else
             {

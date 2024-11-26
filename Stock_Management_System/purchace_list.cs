@@ -519,9 +519,10 @@ namespace Stock_Management_System
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if(txtPoNumber.Text == "" && comboBoxVender.Text == "" && comBoxDeliver.Text == "" && comboxPurchacetype.Text == "" && txtTax.Text == "" && purchDate.Text == "")
+            if(txtPoNumber.Text == "" || comboBoxVender.Text == "" || comBoxDeliver.Text == "" || comboxPurchacetype.Text == "" || txtTax.Text == "" || purchDate.Text == "")
             {
-                MessageBox.Show("Please Fill Relavent Filds!");
+                MessageBox.Show("Please Fill Relavent Filds!", "REMENDING!", MessageBoxButtons.OK);
+                
             }
             else
             {

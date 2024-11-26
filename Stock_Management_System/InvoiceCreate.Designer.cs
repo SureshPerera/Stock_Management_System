@@ -366,7 +366,7 @@
             this.dgvSaleInvoice.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvSaleInvoice.RowHeadersVisible = false;
             this.dgvSaleInvoice.RowHeadersWidth = 51;
-            this.dgvSaleInvoice.RowTemplate.Height = 24;
+            this.dgvSaleInvoice.RowTemplate.Height = 34;
             this.dgvSaleInvoice.Size = new System.Drawing.Size(1499, 392);
             this.dgvSaleInvoice.TabIndex = 19;
             this.dgvSaleInvoice.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -387,7 +387,7 @@
             this.dgvSaleInvoice.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvSaleInvoice.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvSaleInvoice.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvSaleInvoice.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvSaleInvoice.ThemeStyle.RowsStyle.Height = 34;
             this.dgvSaleInvoice.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSaleInvoice.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvSaleInvoice.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSaleInvoice_CellEndEdit);

@@ -260,24 +260,6 @@ namespace Stock_Management_System
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnInvoice);
                 pnlmain.Hide();
-
-                //sale overview
-               
-             
-               
-                //purchase overview
-              
-                //inventoty summury
-              
-
-                //product details
-               
-                //txtNoOfItems.Text = noOfItem.ToString();
-
-                //No Of Users
-               
-               
-
                 
                 inventry.Hide();
         }
@@ -305,12 +287,12 @@ namespace Stock_Management_System
         void pressInventrybtn()
         {
           
-                pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
-                pnlNoOfUsers.Hide();
-                pnlProductDetailes.Hide();
-                pnlInventorySummary.Hide();
-                btnImgPurchaseOrder.Hide();
+               //pnlsaleOverview.Hide();
+               //pnlpurchasOverview.Hide();
+               //pnlNoOfUsers.Hide();
+               //pnlProductDetailes.Hide();
+               //pnlInventorySummary.Hide();
+               //btnImgPurchaseOrder.Hide();
                 
                 //pnlmain.Show();
                 //btnImgPurchaseOrder.Hide();
