@@ -67,7 +67,7 @@ namespace Stock_Management_System
             btnDashbord.Focus();
 
             pnlsaleOverview.Visible = false;
-            pnlpurchasOverview.Visible = false;
+            
             pnlInventorySummary.Visible = false;
             pnlNoOfUsers.Visible = false;
             pnlsaleOverview.Visible = false;
@@ -245,7 +245,7 @@ namespace Stock_Management_System
                 txtmainSection.Text = "Main Dashbord";
                 pictureboxMainSection.Image = imgbtnDashbord.Image;
                 pnlsaleOverview.Show();
-                pnlpurchasOverview.Show();
+               
                 pnlNoOfUsers.Show();
                 pnlProductDetailes.Show();
                 pnlInventorySummary.Show();
@@ -323,7 +323,7 @@ namespace Stock_Management_System
         {
 
             pnlsaleOverview.Hide();
-            pnlpurchasOverview.Hide();
+            
             pnlNoOfUsers.Hide();
             pnlProductDetailes.Hide();
             pnlInventorySummary.Hide();
@@ -351,7 +351,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+               
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -390,7 +390,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+              
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -423,7 +423,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+              
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -456,7 +456,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+                
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -486,7 +486,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+             
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -577,7 +577,11 @@ namespace Stock_Management_System
             updateTotalSupplier();
         }
 
-       
+        private void pnlProductDetailes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)
         {
 
@@ -619,7 +623,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+               
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
@@ -654,7 +658,7 @@ namespace Stock_Management_System
             try
             {
                 pnlsaleOverview.Hide();
-                pnlpurchasOverview.Hide();
+                
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();

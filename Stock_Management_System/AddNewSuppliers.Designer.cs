@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSupCon = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupAddess = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,30 +57,23 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSupCom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSupplier
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvSupplier.BackgroundColor = System.Drawing.Color.Beige;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvSupplier.BackgroundColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvSupplier.ColumnHeadersHeight = 30;
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -85,26 +84,26 @@
             this.supplier_Contact,
             this.supEmail,
             this.Tin});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSupplier.Location = new System.Drawing.Point(468, 37);
             this.dgvSupplier.Name = "dgvSupplier";
             this.dgvSupplier.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvSupplier.RowHeadersVisible = false;
             this.dgvSupplier.RowHeadersWidth = 51;
             this.dgvSupplier.RowTemplate.Height = 24;
@@ -115,7 +114,7 @@
             this.dgvSupplier.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvSupplier.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvSupplier.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvSupplier.ThemeStyle.BackColor = System.Drawing.Color.Beige;
+            this.dgvSupplier.ThemeStyle.BackColor = System.Drawing.Color.Azure;
             this.dgvSupplier.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSupplier.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvSupplier.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -133,6 +132,63 @@
             this.dgvSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_click);
             this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAddNewCustomer_click);
+            // 
+            // supId
+            // 
+            this.supId.DataPropertyName = "supId";
+            this.supId.HeaderText = "Id";
+            this.supId.MinimumWidth = 6;
+            this.supId.Name = "supId";
+            this.supId.ReadOnly = true;
+            this.supId.Visible = false;
+            // 
+            // supplier_Name
+            // 
+            this.supplier_Name.DataPropertyName = "supplier_Name";
+            this.supplier_Name.HeaderText = "Name";
+            this.supplier_Name.MinimumWidth = 6;
+            this.supplier_Name.Name = "supplier_Name";
+            this.supplier_Name.ReadOnly = true;
+            // 
+            // supplier_Firm
+            // 
+            this.supplier_Firm.DataPropertyName = "supplier_Firm";
+            this.supplier_Firm.HeaderText = "Company ";
+            this.supplier_Firm.MinimumWidth = 6;
+            this.supplier_Firm.Name = "supplier_Firm";
+            this.supplier_Firm.ReadOnly = true;
+            // 
+            // supplier_Address
+            // 
+            this.supplier_Address.DataPropertyName = "supplier_Address";
+            this.supplier_Address.HeaderText = "Address";
+            this.supplier_Address.MinimumWidth = 6;
+            this.supplier_Address.Name = "supplier_Address";
+            this.supplier_Address.ReadOnly = true;
+            // 
+            // supplier_Contact
+            // 
+            this.supplier_Contact.DataPropertyName = "supplier_Contact";
+            this.supplier_Contact.HeaderText = "Contact No";
+            this.supplier_Contact.MinimumWidth = 6;
+            this.supplier_Contact.Name = "supplier_Contact";
+            this.supplier_Contact.ReadOnly = true;
+            // 
+            // supEmail
+            // 
+            this.supEmail.DataPropertyName = "supEmail";
+            this.supEmail.HeaderText = "Email";
+            this.supEmail.MinimumWidth = 6;
+            this.supEmail.Name = "supEmail";
+            this.supEmail.ReadOnly = true;
+            // 
+            // Tin
+            // 
+            this.Tin.DataPropertyName = "Tin";
+            this.Tin.HeaderText = "Tin No";
+            this.Tin.MinimumWidth = 6;
+            this.Tin.Name = "Tin";
+            this.Tin.ReadOnly = true;
             // 
             // txtSupCon
             // 
@@ -206,27 +262,13 @@
             this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.HoverState.FillColor = System.Drawing.Color.MediumBlue;
             this.btnReset.Location = new System.Drawing.Point(5, 401);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 40);
             this.btnReset.TabIndex = 18;
             this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_click);
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(111, 402);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(100, 40);
-            this.guna2Button3.TabIndex = 19;
-            this.guna2Button3.Text = "Update";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // btnDelete
             // 
@@ -236,7 +278,8 @@
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(219, 401);
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnDelete.Location = new System.Drawing.Point(125, 401);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(102, 40);
             this.btnDelete.TabIndex = 20;
@@ -251,9 +294,10 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(327, 401);
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.guna2Button1.Location = new System.Drawing.Point(259, 401);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(108, 40);
+            this.guna2Button1.Size = new System.Drawing.Size(182, 40);
             this.guna2Button1.TabIndex = 21;
             this.guna2Button1.Text = "Add";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -295,8 +339,8 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(98, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 36);
@@ -421,68 +465,11 @@
             this.guna2HtmlLabel3.TabIndex = 15;
             this.guna2HtmlLabel3.Text = "Company";
             // 
-            // supId
-            // 
-            this.supId.DataPropertyName = "supId";
-            this.supId.HeaderText = "Id";
-            this.supId.MinimumWidth = 6;
-            this.supId.Name = "supId";
-            this.supId.ReadOnly = true;
-            this.supId.Visible = false;
-            // 
-            // supplier_Name
-            // 
-            this.supplier_Name.DataPropertyName = "supplier_Name";
-            this.supplier_Name.HeaderText = "Name";
-            this.supplier_Name.MinimumWidth = 6;
-            this.supplier_Name.Name = "supplier_Name";
-            this.supplier_Name.ReadOnly = true;
-            // 
-            // supplier_Firm
-            // 
-            this.supplier_Firm.DataPropertyName = "supplier_Firm";
-            this.supplier_Firm.HeaderText = "Company ";
-            this.supplier_Firm.MinimumWidth = 6;
-            this.supplier_Firm.Name = "supplier_Firm";
-            this.supplier_Firm.ReadOnly = true;
-            // 
-            // supplier_Address
-            // 
-            this.supplier_Address.DataPropertyName = "supplier_Address";
-            this.supplier_Address.HeaderText = "Address";
-            this.supplier_Address.MinimumWidth = 6;
-            this.supplier_Address.Name = "supplier_Address";
-            this.supplier_Address.ReadOnly = true;
-            // 
-            // supplier_Contact
-            // 
-            this.supplier_Contact.DataPropertyName = "supplier_Contact";
-            this.supplier_Contact.HeaderText = "Contact No";
-            this.supplier_Contact.MinimumWidth = 6;
-            this.supplier_Contact.Name = "supplier_Contact";
-            this.supplier_Contact.ReadOnly = true;
-            // 
-            // supEmail
-            // 
-            this.supEmail.DataPropertyName = "supEmail";
-            this.supEmail.HeaderText = "Email";
-            this.supEmail.MinimumWidth = 6;
-            this.supEmail.Name = "supEmail";
-            this.supEmail.ReadOnly = true;
-            // 
-            // Tin
-            // 
-            this.Tin.DataPropertyName = "Tin";
-            this.Tin.HeaderText = "Tin No";
-            this.Tin.MinimumWidth = 6;
-            this.Tin.Name = "Tin";
-            this.Tin.ReadOnly = true;
-            // 
             // AddNewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvSupplier);
             this.Controls.Add(this.txtSupTin);
@@ -492,7 +479,6 @@
             this.Controls.Add(this.txtSupCom);
             this.Controls.Add(this.txtSupName);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -520,7 +506,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSupAddess;
         private Guna.UI2.WinForms.Guna2TextBox txtSupName;
         private Guna.UI2.WinForms.Guna2Button btnReset;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;

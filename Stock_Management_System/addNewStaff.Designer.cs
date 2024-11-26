@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAddNewStaff = new Guna.UI2.WinForms.Guna2DataGridView();
             this.stId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +45,6 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFname = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnStReset = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnStDelect = new Guna.UI2.WinForms.Guna2Button();
             this.btnStAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -62,18 +61,18 @@
             // 
             // dgvAddNewStaff
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAddNewStaff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvAddNewStaff.BackgroundColor = System.Drawing.Color.Beige;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAddNewStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAddNewStaff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAddNewStaff.BackgroundColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAddNewStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAddNewStaff.ColumnHeadersHeight = 30;
             this.dgvAddNewStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvAddNewStaff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -84,14 +83,14 @@
             this.stAddress,
             this.stContact,
             this.stEmail});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAddNewStaff.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAddNewStaff.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAddNewStaff.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAddNewStaff.Location = new System.Drawing.Point(467, 37);
             this.dgvAddNewStaff.Name = "dgvAddNewStaff";
@@ -106,7 +105,7 @@
             this.dgvAddNewStaff.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvAddNewStaff.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvAddNewStaff.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewStaff.ThemeStyle.BackColor = System.Drawing.Color.Beige;
+            this.dgvAddNewStaff.ThemeStyle.BackColor = System.Drawing.Color.Azure;
             this.dgvAddNewStaff.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAddNewStaff.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvAddNewStaff.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -297,26 +296,13 @@
             this.btnStReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStReset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStReset.ForeColor = System.Drawing.Color.White;
+            this.btnStReset.HoverState.FillColor = System.Drawing.Color.MediumBlue;
             this.btnStReset.Location = new System.Drawing.Point(10, 401);
             this.btnStReset.Name = "btnStReset";
             this.btnStReset.Size = new System.Drawing.Size(100, 40);
             this.btnStReset.TabIndex = 49;
             this.btnStReset.Text = "Reset";
             this.btnStReset.Click += new System.EventHandler(this.btnStReset_click);
-            // 
-            // btnStUpdate
-            // 
-            this.btnStUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnStUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnStUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnStUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnStUpdate.Location = new System.Drawing.Point(116, 402);
-            this.btnStUpdate.Name = "btnStUpdate";
-            this.btnStUpdate.Size = new System.Drawing.Size(100, 40);
-            this.btnStUpdate.TabIndex = 50;
-            this.btnStUpdate.Text = "Update";
             // 
             // btnStDelect
             // 
@@ -326,7 +312,8 @@
             this.btnStDelect.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStDelect.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStDelect.ForeColor = System.Drawing.Color.White;
-            this.btnStDelect.Location = new System.Drawing.Point(224, 401);
+            this.btnStDelect.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnStDelect.Location = new System.Drawing.Point(129, 401);
             this.btnStDelect.Name = "btnStDelect";
             this.btnStDelect.Size = new System.Drawing.Size(102, 40);
             this.btnStDelect.TabIndex = 51;
@@ -341,9 +328,10 @@
             this.btnStAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStAdd.ForeColor = System.Drawing.Color.White;
-            this.btnStAdd.Location = new System.Drawing.Point(332, 401);
+            this.btnStAdd.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnStAdd.Location = new System.Drawing.Point(265, 401);
             this.btnStAdd.Name = "btnStAdd";
-            this.btnStAdd.Size = new System.Drawing.Size(108, 40);
+            this.btnStAdd.Size = new System.Drawing.Size(179, 40);
             this.btnStAdd.TabIndex = 52;
             this.btnStAdd.Text = "Add";
             this.btnStAdd.Click += new System.EventHandler(this.btnStAdd_click);
@@ -397,8 +385,8 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(103, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 36);
@@ -473,6 +461,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvAddNewStaff);
             this.Controls.Add(this.txtContact);
@@ -482,7 +471,6 @@
             this.Controls.Add(this.txtLname);
             this.Controls.Add(this.txtFname);
             this.Controls.Add(this.btnStReset);
-            this.Controls.Add(this.btnStUpdate);
             this.Controls.Add(this.btnStDelect);
             this.Controls.Add(this.btnStAdd);
             this.Controls.Add(this.guna2HtmlLabel5);
@@ -513,7 +501,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtFname;
         private Guna.UI2.WinForms.Guna2Button btnStReset;
-        private Guna.UI2.WinForms.Guna2Button btnStUpdate;
         private Guna.UI2.WinForms.Guna2Button btnStDelect;
         private Guna.UI2.WinForms.Guna2Button btnStAdd;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;

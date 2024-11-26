@@ -16,7 +16,7 @@ namespace Stock_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            Application.Run(new Form1());
             //Application.Run(new formLoging());
             //Application.Run(new inventry());
             //Application.Run(new purchace_list());
@@ -24,7 +24,7 @@ namespace Stock_Management_System
             //Application.Run(new suppliersDashbord());
             //Application.Run(new AddNewSuppliers());
             //Application.Run(new customerDashbord());
-            Application.Run(new AddCategory());
+            //Application.Run(new AddCategory());
             //Application.Run(new addNewCustomer());
             //Application.Run(new addNewStaff());
             //Application.Run(new InvoiceCreate());

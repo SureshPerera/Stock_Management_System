@@ -43,7 +43,6 @@
             this.txtCusEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCusName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnResetCus = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateCus = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteCus = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddCus = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -62,12 +61,12 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAddNewCus.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvAddNewCus.BackgroundColor = System.Drawing.Color.Beige;
+            this.dgvAddNewCus.BackgroundColor = System.Drawing.Color.Azure;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAddNewCus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -102,7 +101,7 @@
             this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvAddNewCus.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCus.ThemeStyle.BackColor = System.Drawing.Color.Beige;
+            this.dgvAddNewCus.ThemeStyle.BackColor = System.Drawing.Color.Azure;
             this.dgvAddNewCus.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAddNewCus.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvAddNewCus.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -263,26 +262,13 @@
             this.btnResetCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnResetCus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnResetCus.ForeColor = System.Drawing.Color.White;
+            this.btnResetCus.HoverState.FillColor = System.Drawing.Color.MediumBlue;
             this.btnResetCus.Location = new System.Drawing.Point(11, 401);
             this.btnResetCus.Name = "btnResetCus";
             this.btnResetCus.Size = new System.Drawing.Size(100, 40);
             this.btnResetCus.TabIndex = 33;
             this.btnResetCus.Text = "Reset";
             this.btnResetCus.Click += new System.EventHandler(this.btnResetCus_click);
-            // 
-            // btnUpdateCus
-            // 
-            this.btnUpdateCus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateCus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateCus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateCus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdateCus.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateCus.Location = new System.Drawing.Point(117, 402);
-            this.btnUpdateCus.Name = "btnUpdateCus";
-            this.btnUpdateCus.Size = new System.Drawing.Size(100, 40);
-            this.btnUpdateCus.TabIndex = 34;
-            this.btnUpdateCus.Text = "Update";
             // 
             // btnDeleteCus
             // 
@@ -292,7 +278,8 @@
             this.btnDeleteCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteCus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDeleteCus.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteCus.Location = new System.Drawing.Point(225, 401);
+            this.btnDeleteCus.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnDeleteCus.Location = new System.Drawing.Point(134, 401);
             this.btnDeleteCus.Name = "btnDeleteCus";
             this.btnDeleteCus.Size = new System.Drawing.Size(102, 40);
             this.btnDeleteCus.TabIndex = 35;
@@ -307,9 +294,10 @@
             this.btnAddCus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddCus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddCus.ForeColor = System.Drawing.Color.White;
-            this.btnAddCus.Location = new System.Drawing.Point(333, 401);
+            this.btnAddCus.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnAddCus.Location = new System.Drawing.Point(260, 401);
             this.btnAddCus.Name = "btnAddCus";
-            this.btnAddCus.Size = new System.Drawing.Size(108, 40);
+            this.btnAddCus.Size = new System.Drawing.Size(195, 40);
             this.btnAddCus.TabIndex = 36;
             this.btnAddCus.Text = "Add";
             this.btnAddCus.Click += new System.EventHandler(this.btnAddCus_click);
@@ -362,11 +350,11 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(104, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 36);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 60);
             this.guna2HtmlLabel1.TabIndex = 32;
             this.guna2HtmlLabel1.Text = "Add New Customer";
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
@@ -426,6 +414,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvAddNewCus);
             this.Controls.Add(this.txtCusContact);
@@ -434,7 +423,6 @@
             this.Controls.Add(this.txtCusEmail);
             this.Controls.Add(this.txtCusName);
             this.Controls.Add(this.btnResetCus);
-            this.Controls.Add(this.btnUpdateCus);
             this.Controls.Add(this.btnDeleteCus);
             this.Controls.Add(this.btnAddCus);
             this.Controls.Add(this.guna2HtmlLabel5);
@@ -463,7 +451,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCusEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtCusName;
         private Guna.UI2.WinForms.Guna2Button btnResetCus;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateCus;
         private Guna.UI2.WinForms.Guna2Button btnDeleteCus;
         private Guna.UI2.WinForms.Guna2Button btnAddCus;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
