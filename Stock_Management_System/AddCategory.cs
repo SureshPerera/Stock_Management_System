@@ -130,8 +130,16 @@ namespace Stock_Management_System
 
         private void gridViwe_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = this.dgvAddNewCatogory.Rows[e.RowIndex];
-            id = Convert.ToInt32(row.Cells[0].Value);
+            try
+            {
+                DataGridViewRow row = this.dgvAddNewCatogory.Rows[e.RowIndex];
+                id = Convert.ToInt32(row.Cells[0].Value);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnClearCat_click(object sender, EventArgs e)

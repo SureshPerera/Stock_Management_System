@@ -35,7 +35,6 @@
             this.txtCatName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCatId = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClearCat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateCat = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteCat = new Guna.UI2.WinForms.Guna2Button();
             this.btnaddCat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -120,8 +119,9 @@
             this.btnClearCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClearCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClearCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClearCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClearCat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnClearCat.ForeColor = System.Drawing.Color.White;
+            this.btnClearCat.HoverState.FillColor = System.Drawing.Color.MediumBlue;
             this.btnClearCat.Location = new System.Drawing.Point(23, 400);
             this.btnClearCat.Name = "btnClearCat";
             this.btnClearCat.Size = new System.Drawing.Size(100, 40);
@@ -129,29 +129,16 @@
             this.btnClearCat.Text = "Clear";
             this.btnClearCat.Click += new System.EventHandler(this.btnClearCat_click);
             // 
-            // btnUpdateCat
-            // 
-            this.btnUpdateCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateCat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdateCat.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateCat.Location = new System.Drawing.Point(129, 401);
-            this.btnUpdateCat.Name = "btnUpdateCat";
-            this.btnUpdateCat.Size = new System.Drawing.Size(100, 40);
-            this.btnUpdateCat.TabIndex = 36;
-            this.btnUpdateCat.Text = "Update";
-            // 
             // btnDeleteCat
             // 
             this.btnDeleteCat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteCat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDeleteCat.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteCat.Location = new System.Drawing.Point(237, 400);
+            this.btnDeleteCat.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnDeleteCat.Location = new System.Drawing.Point(139, 400);
             this.btnDeleteCat.Name = "btnDeleteCat";
             this.btnDeleteCat.Size = new System.Drawing.Size(102, 40);
             this.btnDeleteCat.TabIndex = 37;
@@ -164,11 +151,12 @@
             this.btnaddCat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnaddCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnaddCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnaddCat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnaddCat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnaddCat.ForeColor = System.Drawing.Color.White;
-            this.btnaddCat.Location = new System.Drawing.Point(345, 400);
+            this.btnaddCat.HoverState.FillColor = System.Drawing.Color.MediumBlue;
+            this.btnaddCat.Location = new System.Drawing.Point(265, 400);
             this.btnaddCat.Name = "btnaddCat";
-            this.btnaddCat.Size = new System.Drawing.Size(108, 40);
+            this.btnaddCat.Size = new System.Drawing.Size(188, 40);
             this.btnaddCat.TabIndex = 38;
             this.btnaddCat.Text = "Add";
             this.btnaddCat.Click += new System.EventHandler(this.btnaddCat_click);
@@ -210,11 +198,11 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Futura-Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Coral;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(92, 9);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 36);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(386, 54);
             this.guna2HtmlLabel1.TabIndex = 34;
             this.guna2HtmlLabel1.Text = "Add New Category";
             // 
@@ -240,12 +228,13 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvAddNewCatogory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAddNewCatogory.BackgroundColor = System.Drawing.Color.Azure;
             this.dgvAddNewCatogory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAddNewCatogory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -281,7 +270,7 @@
             this.dgvAddNewCatogory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvAddNewCatogory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvAddNewCatogory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvAddNewCatogory.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvAddNewCatogory.ThemeStyle.BackColor = System.Drawing.Color.Azure;
             this.dgvAddNewCatogory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAddNewCatogory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvAddNewCatogory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
@@ -330,13 +319,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1266, 453);
             this.Controls.Add(this.dgvAddNewCatogory);
             this.Controls.Add(this.txtCatDiscription);
             this.Controls.Add(this.txtCatName);
             this.Controls.Add(this.txtCatId);
             this.Controls.Add(this.btnClearCat);
-            this.Controls.Add(this.btnUpdateCat);
             this.Controls.Add(this.btnDeleteCat);
             this.Controls.Add(this.btnaddCat);
             this.Controls.Add(this.guna2HtmlLabel4);
@@ -360,7 +349,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCatName;
         private Guna.UI2.WinForms.Guna2TextBox txtCatId;
         private Guna.UI2.WinForms.Guna2Button btnClearCat;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateCat;
         private Guna.UI2.WinForms.Guna2Button btnDeleteCat;
         private Guna.UI2.WinForms.Guna2Button btnaddCat;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;

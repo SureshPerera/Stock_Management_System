@@ -33,17 +33,17 @@
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnImgFb = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImgApple = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnImgSwiter = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLoging = new Guna.UI2.WinForms.Guna2Button();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnImgFb = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImgApple = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnImgSwiter = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -61,14 +61,13 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Coral;
-            this.label1.Location = new System.Drawing.Point(29, 60);
+            this.label1.Location = new System.Drawing.Point(12, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(468, 74);
+            this.label1.Size = new System.Drawing.Size(468, 123);
             this.label1.TabIndex = 2;
-            this.label1.Text = "WELCOME TO SP\r\nINVENTRY MANAGEMENT SYSTEM ";
+            this.label1.Text = "WELCOME  ABC PVT\r\nINVENTRY MANAGEMENT SYSTEM ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Panel1
@@ -91,6 +90,65 @@
             this.guna2Panel1.TabIndex = 3;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint_1);
             // 
+            // btnImgFb
+            // 
+            this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgFb.ImageRotate = 0F;
+            this.btnImgFb.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnImgFb.Location = new System.Drawing.Point(309, 519);
+            this.btnImgFb.Name = "btnImgFb";
+            this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
+            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnImgFb.Size = new System.Drawing.Size(76, 58);
+            this.btnImgFb.TabIndex = 9;
+            this.btnImgFb.UseTransparentBackground = true;
+            this.btnImgFb.Click += new System.EventHandler(this.btnImgFb_Click);
+            // 
+            // btnImgApple
+            // 
+            this.btnImgApple.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgApple.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.HoverState.ImageRotate = 2F;
+            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgApple.ImageRotate = 0F;
+            this.btnImgApple.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnImgApple.Location = new System.Drawing.Point(191, 519);
+            this.btnImgApple.Name = "btnImgApple";
+            this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
+            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnImgApple.Size = new System.Drawing.Size(76, 58);
+            this.btnImgApple.TabIndex = 9;
+            this.btnImgApple.UseTransparentBackground = true;
+            this.btnImgApple.Click += new System.EventHandler(this.btnImgApple_Click);
+            // 
+            // btnImgSwiter
+            // 
+            this.btnImgSwiter.BackColor = System.Drawing.Color.Transparent;
+            this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.HoverState.ImageRotate = 2F;
+            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnImgSwiter.ImageRotate = 0F;
+            this.btnImgSwiter.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnImgSwiter.Location = new System.Drawing.Point(56, 519);
+            this.btnImgSwiter.Name = "btnImgSwiter";
+            this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
+            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
+            this.btnImgSwiter.TabIndex = 9;
+            this.btnImgSwiter.UseTransparentBackground = true;
+            this.btnImgSwiter.Click += new System.EventHandler(this.btnImgSwiter_Click);
+            // 
             // btnLoging
             // 
             this.btnLoging.Animated = true;
@@ -102,9 +160,9 @@
             this.btnLoging.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLoging.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLoging.FillColor = System.Drawing.Color.MediumBlue;
-            this.btnLoging.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnLoging.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnLoging.ForeColor = System.Drawing.Color.White;
-            this.btnLoging.HoverState.FillColor = System.Drawing.Color.Blue;
+            this.btnLoging.HoverState.FillColor = System.Drawing.Color.DarkBlue;
             this.btnLoging.Location = new System.Drawing.Point(56, 307);
             this.btnLoging.Name = "btnLoging";
             this.btnLoging.Size = new System.Drawing.Size(329, 58);
@@ -112,14 +170,42 @@
             this.btnLoging.Text = "Loging";
             this.btnLoging.Click += new System.EventHandler(this.btnSingup_Click);
             // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
+            this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.txtPassword.Location = new System.Drawing.Point(56, 229);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(329, 58);
+            this.txtPassword.TabIndex = 6;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(167, 489);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label7.Location = new System.Drawing.Point(132, 481);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 17);
+            this.label7.Size = new System.Drawing.Size(155, 23);
             this.label7.TabIndex = 2;
             this.label7.Text = "Or Connect Using ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,7 +214,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.ForeColor = System.Drawing.Color.DarkBlue;
             this.label6.Location = new System.Drawing.Point(270, 385);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 17);
@@ -143,7 +229,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label5.Location = new System.Drawing.Point(72, 385);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(195, 17);
@@ -163,7 +249,7 @@
             this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Location = new System.Drawing.Point(56, 151);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -178,11 +264,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(174, 55);
+            this.label4.Location = new System.Drawing.Point(154, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 37);
+            this.label4.Size = new System.Drawing.Size(133, 45);
             this.label4.TabIndex = 5;
             this.label4.Text = "Loging ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,93 +289,6 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(57, 50);
             this.guna2ControlBox1.TabIndex = 4;
-            // 
-            // btnImgFb
-            // 
-            this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgFb.ImageRotate = 0F;
-            this.btnImgFb.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnImgFb.Location = new System.Drawing.Point(309, 519);
-            this.btnImgFb.Name = "btnImgFb";
-            this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgFb.Size = new System.Drawing.Size(76, 58);
-            this.btnImgFb.TabIndex = 9;
-            this.btnImgFb.UseTransparentBackground = true;
-            this.btnImgFb.Click += new System.EventHandler(this.btnImgFb_Click);
-            // 
-            // btnImgApple
-            // 
-            this.btnImgApple.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgApple.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.HoverState.ImageRotate = 2F;
-            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgApple.ImageRotate = 0F;
-            this.btnImgApple.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnImgApple.Location = new System.Drawing.Point(191, 519);
-            this.btnImgApple.Name = "btnImgApple";
-            this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgApple.Size = new System.Drawing.Size(76, 58);
-            this.btnImgApple.TabIndex = 9;
-            this.btnImgApple.UseTransparentBackground = true;
-            this.btnImgApple.Click += new System.EventHandler(this.btnImgApple_Click);
-            // 
-            // btnImgSwiter
-            // 
-            this.btnImgSwiter.BackColor = System.Drawing.Color.Transparent;
-            this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.HoverState.ImageRotate = 2F;
-            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnImgSwiter.ImageRotate = 0F;
-            this.btnImgSwiter.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnImgSwiter.Location = new System.Drawing.Point(56, 519);
-            this.btnImgSwiter.Name = "btnImgSwiter";
-            this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
-            this.btnImgSwiter.TabIndex = 9;
-            this.btnImgSwiter.UseTransparentBackground = true;
-            this.btnImgSwiter.Click += new System.EventHandler(this.btnImgSwiter_Click);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPassword.BorderRadius = 8;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
-            this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.txtPassword.Location = new System.Drawing.Point(56, 229);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(329, 58);
-            this.txtPassword.TabIndex = 6;
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // guna2PictureBox1
             // 
@@ -325,7 +324,6 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
