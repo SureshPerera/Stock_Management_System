@@ -138,7 +138,7 @@ namespace Stock_Management_System
                 sqlCon.Open();
                 SqlCommand cmd = new SqlCommand("supplierDetailsAdd", sqlCon);
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT supplier_Firm FROM supplierDetails";
+                cmd.CommandText = "SELECT supplier_Contact FROM supplierDetails";
                 cmd.ExecuteNonQuery();
                 DataTable dataTable = new DataTable();
 
@@ -146,7 +146,7 @@ namespace Stock_Management_System
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 comboBoxVender.DataSource = dataTable;
                 dataAdapter.Fill(dataTable);
-                comboBoxVender.DisplayMember = "supplier_Firm";
+                comboBoxVender.DisplayMember = "supplier_Contact";
 
                 sqlCon.Close();
             }

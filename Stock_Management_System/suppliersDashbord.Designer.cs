@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(suppliersDashbord));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(suppliersDashbord));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
@@ -42,14 +42,15 @@
             this.btnImgAddSuppliers = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvSpplierDetails = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
             this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
@@ -153,24 +154,6 @@
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
-            // btnimgSerach
-            // 
-            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
-            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
-            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnimgSerach.ImageRotate = 0F;
-            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnimgSerach.Location = new System.Drawing.Point(1364, 13);
-            this.btnimgSerach.Name = "btnimgSerach";
-            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
-            this.btnimgSerach.TabIndex = 29;
-            this.btnimgSerach.UseTransparentBackground = true;
-            // 
             // txtSearch
             // 
             this.txtSearch.AutoRoundedCorners = true;
@@ -198,8 +181,8 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(239)))), ((int)(((byte)(212)))));
             this.dgvSpplierDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -209,17 +192,17 @@
             this.dgvSpplierDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvSpplierDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supId,
-            this.supplier_Name,
-            this.supplier_Firm,
             this.supplier_Address,
             this.supplier_Contact,
+            this.supplier_Firm,
+            this.supplier_Name,
             this.supEmail,
             this.Tin});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(244)))), ((int)(((byte)(226)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(221)))), ((int)(((byte)(160)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSpplierDetails.DefaultCellStyle = dataGridViewCellStyle3;
@@ -264,6 +247,43 @@
             this.dgvSpplierDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(221)))), ((int)(((byte)(160)))));
             this.dgvSpplierDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // btnimgSerach
+            // 
+            this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
+            this.btnimgSerach.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnimgSerach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnimgSerach.HoverState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Image = ((System.Drawing.Image)(resources.GetObject("btnimgSerach.Image")));
+            this.btnimgSerach.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnimgSerach.ImageRotate = 0F;
+            this.btnimgSerach.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnimgSerach.Location = new System.Drawing.Point(1364, 13);
+            this.btnimgSerach.Name = "btnimgSerach";
+            this.btnimgSerach.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnimgSerach.PressedState.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnimgSerach.Size = new System.Drawing.Size(40, 39);
+            this.btnimgSerach.TabIndex = 29;
+            this.btnimgSerach.UseTransparentBackground = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRefresh.HoverState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnRefresh.ImageRotate = 0F;
+            this.btnRefresh.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRefresh.Location = new System.Drawing.Point(1482, 10);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Size = new System.Drawing.Size(44, 39);
+            this.btnRefresh.TabIndex = 31;
+            this.btnRefresh.UseTransparentBackground = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // supId
             // 
             this.supId.DataPropertyName = "supId";
@@ -273,26 +293,10 @@
             this.supId.ReadOnly = true;
             this.supId.Visible = false;
             // 
-            // supplier_Name
-            // 
-            this.supplier_Name.DataPropertyName = "supplier_Name";
-            this.supplier_Name.HeaderText = "Name";
-            this.supplier_Name.MinimumWidth = 6;
-            this.supplier_Name.Name = "supplier_Name";
-            this.supplier_Name.ReadOnly = true;
-            // 
-            // supplier_Firm
-            // 
-            this.supplier_Firm.DataPropertyName = "supplier_Firm";
-            this.supplier_Firm.HeaderText = "Company ";
-            this.supplier_Firm.MinimumWidth = 6;
-            this.supplier_Firm.Name = "supplier_Firm";
-            this.supplier_Firm.ReadOnly = true;
-            // 
             // supplier_Address
             // 
             this.supplier_Address.DataPropertyName = "supplier_Address";
-            this.supplier_Address.HeaderText = "Address";
+            this.supplier_Address.HeaderText = "Name";
             this.supplier_Address.MinimumWidth = 6;
             this.supplier_Address.Name = "supplier_Address";
             this.supplier_Address.ReadOnly = true;
@@ -300,10 +304,26 @@
             // supplier_Contact
             // 
             this.supplier_Contact.DataPropertyName = "supplier_Contact";
-            this.supplier_Contact.HeaderText = "Contact No";
+            this.supplier_Contact.HeaderText = "Company ";
             this.supplier_Contact.MinimumWidth = 6;
             this.supplier_Contact.Name = "supplier_Contact";
             this.supplier_Contact.ReadOnly = true;
+            // 
+            // supplier_Firm
+            // 
+            this.supplier_Firm.DataPropertyName = "supplier_Firm";
+            this.supplier_Firm.HeaderText = "Address";
+            this.supplier_Firm.MinimumWidth = 6;
+            this.supplier_Firm.Name = "supplier_Firm";
+            this.supplier_Firm.ReadOnly = true;
+            // 
+            // supplier_Name
+            // 
+            this.supplier_Name.DataPropertyName = "supplier_Name";
+            this.supplier_Name.HeaderText = "Contact No";
+            this.supplier_Name.MinimumWidth = 6;
+            this.supplier_Name.Name = "supplier_Name";
+            this.supplier_Name.ReadOnly = true;
             // 
             // supEmail
             // 
@@ -326,6 +346,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1722, 992);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dgvSpplierDetails);
             this.Controls.Add(this.btnimgSerach);
             this.Controls.Add(this.txtSearch);
@@ -359,11 +380,12 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnimgSerach;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dgvSpplierDetails;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn supId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Contact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn supEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tin;
     }

@@ -51,6 +51,7 @@
             // 
             this.guna2Panel1.AutoRoundedCorners = true;
             this.guna2Panel1.BackColor = System.Drawing.Color.Honeydew;
+            this.guna2Panel1.BorderRadius = 216;
             this.guna2Panel1.Controls.Add(this.btnImgFb);
             this.guna2Panel1.Controls.Add(this.btnImgApple);
             this.guna2Panel1.Controls.Add(this.btnImgSwiter);
@@ -379,7 +380,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserSingUp";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UserSingUp";
             this.Load += new System.EventHandler(this.UserSingUp_Load);
             this.guna2Panel1.ResumeLayout(false);

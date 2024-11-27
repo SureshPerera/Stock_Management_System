@@ -55,5 +55,10 @@ namespace Stock_Management_System
             inventry inventry = new inventry();
             inventry.ShowDialog();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            showSupplierDetails();
+        }
     }
 }

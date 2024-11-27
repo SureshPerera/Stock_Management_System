@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customerDashbord));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvCustomerDetails = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -49,8 +47,11 @@
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventry_Management_SystemDataSet = new Stock_Management_System.Inventry_Management_SystemDataSet();
             this.itemTableAdapter = new Stock_Management_System.Inventry_Management_SystemDataSetTableAdapters.itemTableAdapter();
-            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnimgSerach = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnaddnewItem = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
@@ -69,44 +70,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(508, 57);
             this.guna2Panel1.TabIndex = 20;
-            // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddCustomer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddCustomer.HoverState.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
-            this.btnAddCustomer.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnAddCustomer.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
-            this.btnAddCustomer.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnAddCustomer.ImageRotate = 0F;
-            this.btnAddCustomer.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAddCustomer.Location = new System.Drawing.Point(95, 3);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.PressedState.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
-            this.btnAddCustomer.PressedState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnAddCustomer.Size = new System.Drawing.Size(64, 51);
-            this.btnAddCustomer.TabIndex = 15;
-            this.btnAddCustomer.UseTransparentBackground = true;
-            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
-            // 
-            // btnaddnewItem
-            // 
-            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnaddnewItem.ImageRotate = 0F;
-            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
-            this.btnaddnewItem.Name = "btnaddnewItem";
-            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
-            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
-            this.btnaddnewItem.TabIndex = 14;
-            this.btnaddnewItem.UseTransparentBackground = true;
-            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
             // 
             // guna2ControlBox1
             // 
@@ -140,18 +103,18 @@
             // 
             // dgvCustomerDetails
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvCustomerDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCustomerDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvCustomerDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvCustomerDetails.ColumnHeadersHeight = 45;
             this.dgvCustomerDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCustomerDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -162,27 +125,27 @@
             this.cusEmail,
             this.cusTin});
             this.dgvCustomerDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomerDetails.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomerDetails.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvCustomerDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCustomerDetails.Location = new System.Drawing.Point(12, 96);
             this.dgvCustomerDetails.MultiSelect = false;
             this.dgvCustomerDetails.Name = "dgvCustomerDetails";
             this.dgvCustomerDetails.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvCustomerDetails.RowHeadersVisible = false;
             this.dgvCustomerDetails.RowHeadersWidth = 51;
             this.dgvCustomerDetails.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,6 +175,7 @@
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.Height = 33;
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCustomerDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCustomerDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomerDetails_CellContentClick);
             // 
             // cusId
             // 
@@ -276,6 +240,28 @@
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.AutoRoundedCorners = true;
+            this.txtSearch.BorderRadius = 22;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Location = new System.Drawing.Point(1070, 12);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "   Search Customer";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(404, 47);
+            this.txtSearch.TabIndex = 28;
+            // 
             // btnimgSerach
             // 
             this.btnimgSerach.BackColor = System.Drawing.Color.Transparent;
@@ -294,33 +280,69 @@
             this.btnimgSerach.TabIndex = 29;
             this.btnimgSerach.UseTransparentBackground = true;
             // 
-            // txtSearch
+            // btnAddCustomer
             // 
-            this.txtSearch.AutoRoundedCorners = true;
-            this.txtSearch.BorderRadius = 22;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(1115, 15);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "   Search Customer";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(404, 47);
-            this.txtSearch.TabIndex = 28;
+            this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddCustomer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddCustomer.HoverState.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
+            this.btnAddCustomer.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnAddCustomer.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
+            this.btnAddCustomer.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddCustomer.ImageRotate = 0F;
+            this.btnAddCustomer.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnAddCustomer.Location = new System.Drawing.Point(95, 3);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.PressedState.Image = global::Stock_Management_System.Properties.Resources.AddSupplier;
+            this.btnAddCustomer.PressedState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnAddCustomer.Size = new System.Drawing.Size(64, 51);
+            this.btnAddCustomer.TabIndex = 15;
+            this.btnAddCustomer.UseTransparentBackground = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
+            // btnaddnewItem
+            // 
+            this.btnaddnewItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnaddnewItem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.HoverState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnaddnewItem.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnaddnewItem.ImageRotate = 0F;
+            this.btnaddnewItem.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnaddnewItem.Location = new System.Drawing.Point(3, 2);
+            this.btnaddnewItem.Name = "btnaddnewItem";
+            this.btnaddnewItem.PressedState.Image = global::Stock_Management_System.Properties.Resources.Add_Databases;
+            this.btnaddnewItem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnaddnewItem.Size = new System.Drawing.Size(77, 53);
+            this.btnaddnewItem.TabIndex = 14;
+            this.btnaddnewItem.UseTransparentBackground = true;
+            this.btnaddnewItem.Click += new System.EventHandler(this.btnaddnewItem_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRefresh.HoverState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnRefresh.ImageRotate = 0F;
+            this.btnRefresh.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRefresh.Location = new System.Drawing.Point(1493, 20);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedState.Image = global::Stock_Management_System.Properties.Resources.Sync;
+            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(47, 47);
+            this.btnRefresh.Size = new System.Drawing.Size(44, 39);
+            this.btnRefresh.TabIndex = 30;
+            this.btnRefresh.UseTransparentBackground = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // customerDashbord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1722, 992);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnimgSerach);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvCustomerDetails);
@@ -360,5 +382,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cusContact;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusTin;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
     }
 }

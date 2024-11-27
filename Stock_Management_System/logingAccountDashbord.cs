@@ -11,33 +11,33 @@ using System.Windows.Forms;
 
 namespace Stock_Management_System
 {
-    public partial class customerDashbord : Form
+    public partial class logingAccountDashbord : Form
     {
+
         string connectionString = @"Data Source=SURESH;Initial Catalog=Inventry_Management_System;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
-        public customerDashbord()
+        public logingAccountDashbord()
         {
             InitializeComponent();
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void btnImgAddUsers_Click(object sender, EventArgs e)
         {
-            addNewCustomer addnew = new addNewCustomer();
-            addnew.ShowDialog();
+            UserSingUp userSingUp = new UserSingUp();
+            userSingUp.ShowDialog();
         }
 
-        private void btnaddnewItem_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
-            inventry inventory = new inventry();
-            inventory.ShowDialog();
+
         }
 
-        private void customerDashbordload_click(object sender, EventArgs e)
+        private void logingAccountDashbord_Load(object sender, EventArgs e)
         {
-            updateCustomerDetailDGV();
+            loginAccUpdateDgv();
         }
 
-        void updateCustomerDetailDGV()
+        void loginAccUpdateDgv()
         {
             try
             {
@@ -46,9 +46,9 @@ namespace Stock_Management_System
                 using (sqlCon)
                 {
                     sqlCon.Open();
-                    SqlCommand cmd = new SqlCommand("addCustomer", sqlCon);
+                    SqlCommand cmd = new SqlCommand("CheckPassword", sqlCon);
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM customerDetails";
+                    cmd.CommandText = "SELECT * FROM Passwords";
                     cmd.ExecuteNonQuery();
                     DataTable dataTable = new DataTable();
 
@@ -63,14 +63,9 @@ namespace Stock_Management_System
                 MessageBox.Show(ex.Message);
             }
         }
-        private void dgvCustomerDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            updateCustomerDetailDGV();
+            loginAccUpdateDgv();
         }
     }
 }

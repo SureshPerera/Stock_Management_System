@@ -74,6 +74,13 @@ namespace Stock_Management_System
             pnlProductDetailes.Visible = false;
 
             //no of item update 
+            txtTotalSale.Text = "0";
+            txtRevenue.Text = "0";
+            txtSaleCost.Text = "0";
+            txtProfit.Text = "0";
+            txtWillbereceived.Text = "0";
+            txtLowStockItems.Text = "0";
+            txtNoOfItems.Text = "0";
 
             updateTotalCustomer();
             updateTotalSupplier();
@@ -259,6 +266,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnInvoice);
+                SelectButtonClear(btnLoging);
                 pnlmain.Hide();
                 
                 inventry.Hide();
@@ -311,8 +319,10 @@ namespace Stock_Management_System
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnInvoice);
                 SelectButtonClear(btnCategory);
-                
-                inventryDashbord inventryDashbord = new inventryDashbord();
+                SelectButtonClear(btnLoging);
+
+
+            inventryDashbord inventryDashbord = new inventryDashbord();
                 inventryDashbord.ShowDialog();
             
               
@@ -341,6 +351,8 @@ namespace Stock_Management_System
             SelectButtonClear(btnCustomers);
             SelectButtonClear(btnStaff);
             SelectButtonClear(btnInvoice);
+            SelectButtonClear(btnLoging);
+
 
             categoryDashbord category = new categoryDashbord();
             category.ShowDialog();
@@ -370,7 +382,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnInvoice);
                 SelectButtonClear(btnCategory);
                 SelectButtonClear(btnSales);
-                
+                SelectButtonClear(btnLoging);
+
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
@@ -394,6 +407,7 @@ namespace Stock_Management_System
                 pnlNoOfUsers.Hide();
                 pnlProductDetailes.Hide();
                 pnlInventorySummary.Hide();
+                SelectButtonClear(btnLoging);
 
                 txtmainSection.Text = "Staff Dashbord";
                 pictureboxMainSection.Image = imgbtnSupReturn.Image;
@@ -440,6 +454,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+                SelectButtonClear(btnLoging);
 
                 InvoiceCreate invoiceCreate = new InvoiceCreate();
                 invoiceCreate.ShowDialog();
@@ -473,6 +488,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+                SelectButtonClear(btnLoging);
 
             }
             catch (Exception ex)
@@ -503,6 +519,7 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+                SelectButtonClear(btnLoging);
 
             }
             catch (Exception ex)
@@ -582,6 +599,25 @@ namespace Stock_Management_System
 
         }
 
+        private void btnLoging_Click(object sender, EventArgs e)
+        {
+            logingAccountDashbord logingAccountDashbord = new logingAccountDashbord();
+            logingAccountDashbord.ShowDialog();
+            txtmainSection.Text = "Login Accounts Dashbord";
+
+            SelectButton(btnLoging);
+            SelectButtonClear(btnDashbord);
+            SelectButtonClear(btnInventory);
+            SelectButtonClear(btnSales);
+            SelectButtonClear(btnInvoice);
+            SelectButtonClear(btnPurchase);
+            SelectButtonClear(btnSuppliers);
+            SelectButtonClear(btnCustomers);
+            SelectButtonClear(btnStaff);
+            SelectButtonClear(btnCategory);
+            SelectButtonClear(btnBills);
+        }
+
         private void guna2HtmlLabel23_Click(object sender, EventArgs e)
         {
 
@@ -641,6 +677,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnSuppliers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+                SelectButtonClear(btnLoging);
+
 
                 customerDashbord customerdashbord = new customerDashbord();
                 customerdashbord.ShowDialog();
@@ -675,6 +713,8 @@ namespace Stock_Management_System
                 SelectButtonClear(btnCustomers);
                 SelectButtonClear(btnStaff);
                 SelectButtonClear(btnCategory);
+                SelectButtonClear(btnLoging);
+
 
 
                 suppliersDashbord suppliersDashbord = new suppliersDashbord();

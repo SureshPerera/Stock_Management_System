@@ -28,18 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSupCon = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupAddess = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSupName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,53 +50,60 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSupCom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.supId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Firm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplier_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSupplier
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSupplier.BackgroundColor = System.Drawing.Color.Azure;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSupplier.ColumnHeadersHeight = 30;
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supId,
-            this.supplier_Name,
-            this.supplier_Firm,
             this.supplier_Address,
             this.supplier_Contact,
+            this.supplier_Firm,
+            this.supplier_Name,
             this.supEmail,
             this.Tin});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSupplier.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSupplier.Location = new System.Drawing.Point(468, 37);
             this.dgvSupplier.Name = "dgvSupplier";
             this.dgvSupplier.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSupplier.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSupplier.RowHeadersVisible = false;
             this.dgvSupplier.RowHeadersWidth = 51;
             this.dgvSupplier.RowTemplate.Height = 24;
@@ -132,63 +132,6 @@
             this.dgvSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_click);
             this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAddNewCustomer_click);
-            // 
-            // supId
-            // 
-            this.supId.DataPropertyName = "supId";
-            this.supId.HeaderText = "Id";
-            this.supId.MinimumWidth = 6;
-            this.supId.Name = "supId";
-            this.supId.ReadOnly = true;
-            this.supId.Visible = false;
-            // 
-            // supplier_Name
-            // 
-            this.supplier_Name.DataPropertyName = "supplier_Name";
-            this.supplier_Name.HeaderText = "Name";
-            this.supplier_Name.MinimumWidth = 6;
-            this.supplier_Name.Name = "supplier_Name";
-            this.supplier_Name.ReadOnly = true;
-            // 
-            // supplier_Firm
-            // 
-            this.supplier_Firm.DataPropertyName = "supplier_Firm";
-            this.supplier_Firm.HeaderText = "Company ";
-            this.supplier_Firm.MinimumWidth = 6;
-            this.supplier_Firm.Name = "supplier_Firm";
-            this.supplier_Firm.ReadOnly = true;
-            // 
-            // supplier_Address
-            // 
-            this.supplier_Address.DataPropertyName = "supplier_Address";
-            this.supplier_Address.HeaderText = "Address";
-            this.supplier_Address.MinimumWidth = 6;
-            this.supplier_Address.Name = "supplier_Address";
-            this.supplier_Address.ReadOnly = true;
-            // 
-            // supplier_Contact
-            // 
-            this.supplier_Contact.DataPropertyName = "supplier_Contact";
-            this.supplier_Contact.HeaderText = "Contact No";
-            this.supplier_Contact.MinimumWidth = 6;
-            this.supplier_Contact.Name = "supplier_Contact";
-            this.supplier_Contact.ReadOnly = true;
-            // 
-            // supEmail
-            // 
-            this.supEmail.DataPropertyName = "supEmail";
-            this.supEmail.HeaderText = "Email";
-            this.supEmail.MinimumWidth = 6;
-            this.supEmail.Name = "supEmail";
-            this.supEmail.ReadOnly = true;
-            // 
-            // Tin
-            // 
-            this.Tin.DataPropertyName = "Tin";
-            this.Tin.HeaderText = "Tin No";
-            this.Tin.MinimumWidth = 6;
-            this.Tin.Name = "Tin";
-            this.Tin.ReadOnly = true;
             // 
             // txtSupCon
             // 
@@ -465,6 +408,63 @@
             this.guna2HtmlLabel3.TabIndex = 15;
             this.guna2HtmlLabel3.Text = "Company";
             // 
+            // supId
+            // 
+            this.supId.DataPropertyName = "supId";
+            this.supId.HeaderText = "Id";
+            this.supId.MinimumWidth = 6;
+            this.supId.Name = "supId";
+            this.supId.ReadOnly = true;
+            this.supId.Visible = false;
+            // 
+            // supplier_Address
+            // 
+            this.supplier_Address.DataPropertyName = "supplier_Address";
+            this.supplier_Address.HeaderText = "Name";
+            this.supplier_Address.MinimumWidth = 6;
+            this.supplier_Address.Name = "supplier_Address";
+            this.supplier_Address.ReadOnly = true;
+            // 
+            // supplier_Contact
+            // 
+            this.supplier_Contact.DataPropertyName = "supplier_Contact";
+            this.supplier_Contact.HeaderText = "Company ";
+            this.supplier_Contact.MinimumWidth = 6;
+            this.supplier_Contact.Name = "supplier_Contact";
+            this.supplier_Contact.ReadOnly = true;
+            // 
+            // supplier_Firm
+            // 
+            this.supplier_Firm.DataPropertyName = "supplier_Firm";
+            this.supplier_Firm.HeaderText = "Address";
+            this.supplier_Firm.MinimumWidth = 6;
+            this.supplier_Firm.Name = "supplier_Firm";
+            this.supplier_Firm.ReadOnly = true;
+            // 
+            // supplier_Name
+            // 
+            this.supplier_Name.DataPropertyName = "supplier_Name";
+            this.supplier_Name.HeaderText = "Contact No";
+            this.supplier_Name.MinimumWidth = 6;
+            this.supplier_Name.Name = "supplier_Name";
+            this.supplier_Name.ReadOnly = true;
+            // 
+            // supEmail
+            // 
+            this.supEmail.DataPropertyName = "supEmail";
+            this.supEmail.HeaderText = "Email";
+            this.supEmail.MinimumWidth = 6;
+            this.supEmail.Name = "supEmail";
+            this.supEmail.ReadOnly = true;
+            // 
+            // Tin
+            // 
+            this.Tin.DataPropertyName = "Tin";
+            this.Tin.HeaderText = "Tin No";
+            this.Tin.MinimumWidth = 6;
+            this.Tin.Name = "Tin";
+            this.Tin.ReadOnly = true;
+            // 
             // AddNewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -520,10 +520,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSupCom;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn supId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Contact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Firm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplier_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn supEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tin;
     }
