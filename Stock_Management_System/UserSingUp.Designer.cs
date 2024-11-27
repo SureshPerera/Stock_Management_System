@@ -50,8 +50,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.AutoRoundedCorners = true;
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.guna2Panel1.BorderRadius = 216;
+            this.guna2Panel1.BackColor = System.Drawing.Color.Honeydew;
             this.guna2Panel1.Controls.Add(this.btnImgFb);
             this.guna2Panel1.Controls.Add(this.btnImgApple);
             this.guna2Panel1.Controls.Add(this.btnImgSwiter);
@@ -78,15 +77,15 @@
             this.btnImgFb.BackColor = System.Drawing.Color.Transparent;
             this.btnImgFb.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImgFb.HoverState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.HoverState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgFb.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
             this.btnImgFb.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgFb.ImageRotate = 0F;
-            this.btnImgFb.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgFb.ImageSize = new System.Drawing.Size(35, 35);
             this.btnImgFb.Location = new System.Drawing.Point(300, 596);
             this.btnImgFb.Name = "btnImgFb";
             this.btnImgFb.PressedState.Image = global::Stock_Management_System.Properties.Resources.Facebook_Circled;
-            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgFb.PressedState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgFb.Size = new System.Drawing.Size(76, 58);
             this.btnImgFb.TabIndex = 9;
             this.btnImgFb.UseTransparentBackground = true;
@@ -98,15 +97,15 @@
             this.btnImgApple.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnImgApple.HoverState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
             this.btnImgApple.HoverState.ImageRotate = 2F;
-            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.HoverState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgApple.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
             this.btnImgApple.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgApple.ImageRotate = 0F;
-            this.btnImgApple.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgApple.ImageSize = new System.Drawing.Size(35, 35);
             this.btnImgApple.Location = new System.Drawing.Point(182, 596);
             this.btnImgApple.Name = "btnImgApple";
             this.btnImgApple.PressedState.Image = global::Stock_Management_System.Properties.Resources.App_Symbol;
-            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgApple.PressedState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgApple.Size = new System.Drawing.Size(76, 58);
             this.btnImgApple.TabIndex = 9;
             this.btnImgApple.UseTransparentBackground = true;
@@ -117,15 +116,15 @@
             this.btnImgSwiter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnImgSwiter.HoverState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
             this.btnImgSwiter.HoverState.ImageRotate = 2F;
-            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.HoverState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgSwiter.Image = global::Stock_Management_System.Properties.Resources.Twitter;
             this.btnImgSwiter.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnImgSwiter.ImageRotate = 0F;
-            this.btnImgSwiter.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnImgSwiter.ImageSize = new System.Drawing.Size(35, 35);
             this.btnImgSwiter.Location = new System.Drawing.Point(47, 596);
             this.btnImgSwiter.Name = "btnImgSwiter";
             this.btnImgSwiter.PressedState.Image = global::Stock_Management_System.Properties.Resources.Twitter;
-            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnImgSwiter.PressedState.ImageSize = new System.Drawing.Size(47, 47);
             this.btnImgSwiter.Size = new System.Drawing.Size(76, 58);
             this.btnImgSwiter.TabIndex = 9;
             this.btnImgSwiter.UseTransparentBackground = true;
@@ -142,7 +141,7 @@
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
             this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
@@ -168,8 +167,9 @@
             this.btnSingup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSingup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSingup.FillColor = System.Drawing.Color.MediumBlue;
-            this.btnSingup.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnSingup.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnSingup.ForeColor = System.Drawing.Color.White;
+            this.btnSingup.HoverState.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnSingup.Location = new System.Drawing.Point(56, 484);
             this.btnSingup.Name = "btnSingup";
             this.btnSingup.Size = new System.Drawing.Size(329, 58);
@@ -189,7 +189,7 @@
             this.txtPasswordCon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPasswordCon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPasswordCon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPasswordCon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPasswordCon.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtPasswordCon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPasswordCon.IconRight = global::Stock_Management_System.Properties.Resources.Eye;
             this.txtPasswordCon.IconRightOffset = new System.Drawing.Point(10, 0);
@@ -208,7 +208,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.ForeColor = System.Drawing.Color.MediumBlue;
             this.label7.Location = new System.Drawing.Point(163, 576);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 17);
@@ -220,7 +220,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.ForeColor = System.Drawing.Color.MediumBlue;
             this.label6.Location = new System.Drawing.Point(282, 545);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 17);
@@ -254,7 +254,7 @@
             this.txtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFirstName.Location = new System.Drawing.Point(56, 67);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -278,7 +278,7 @@
             this.txtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Location = new System.Drawing.Point(56, 133);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -302,7 +302,7 @@
             this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(56, 199);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -326,7 +326,7 @@
             this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Location = new System.Drawing.Point(56, 274);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -341,11 +341,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkGreen;
             this.label4.Location = new System.Drawing.Point(118, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 37);
+            this.label4.Size = new System.Drawing.Size(220, 41);
             this.label4.TabIndex = 5;
             this.label4.Text = "Add New User";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -372,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(515, 739);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel1);

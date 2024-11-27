@@ -42,7 +42,7 @@ namespace Stock_Management_System
 
                 if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(conPassword))
                 {
-                    MessageBox.Show("All filled should compalsory");
+                    MessageBox.Show("All filled should compalsory","Attention!",MessageBoxButtons.OK,icon:MessageBoxIcon.Hand);
                 }
 
                 else
@@ -56,7 +56,7 @@ namespace Stock_Management_System
                         sqlCon.Open();
                         SqlCommand cmd = new SqlCommand("CheckPassword", sqlCon);
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "select * from Passwords WHERE UserName = '" + userName + "'";
+                        cmd.CommandText = "select * from Passwords WHERE Email = '" + email + "'";
                         cmd.ExecuteNonQuery();
                         DataTable dataTable = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -74,7 +74,7 @@ namespace Stock_Management_System
                         }
                         else
                         {
-                            MessageBox.Show("This Username alredy registered please choose another user name ");
+                            MessageBox.Show("This Email alredy registered please choose another Email Account ! ","WORNING!",MessageBoxButtons.OK,icon:MessageBoxIcon.Warning);
 
                         }
                     }
